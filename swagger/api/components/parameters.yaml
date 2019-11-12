@@ -1,0 +1,297 @@
+#-------------------------------
+# Common
+#-------------------------------
+language:
+  in: query
+  name: language
+  required: false
+  schema:
+    type: string
+    default: en
+    enum: [en,vi,kr]
+  description: 'en, vi, kr'
+  allowEmptyValue: true
+
+id:
+  in: query
+  name: id
+  description: "request id"
+  required: true
+  schema:
+    type: "integer"
+    default: 1
+
+OrganCode:
+  in: query
+  name: "OrganCode"
+  description: "Organization code"
+  required: false
+  schema:
+    type: "string"
+
+Code:
+  in: query
+  name: "Code"
+  description: "ex: VNINDEX"
+  required: true
+  schema:
+    type: "string"
+
+ComGroupCode:
+  in: query
+  name: "ComGroupCode"
+  description: "ex: VNINDEX, VN30, HNX30"
+  required: true
+  schema:
+    type: "string"
+
+Exchange:
+  in: query
+  name: "Exchange"
+  description: "ex: AllExchange, HSX, HNX, UPCOM"
+  required: true
+  schema:
+    type: "string"
+    
+Creiteria:
+  in: query
+  name: "Creiteria"
+  description: "ex: MarketCap, Volume, Value, FrBuyVol, FrSellVol"
+  required: true
+  schema:
+    type: "string"
+
+
+Frequently:
+  in: query
+  name: "Frequently"
+  required: true
+  schema:
+    type: string
+    default: Daily
+    enum: [Minute, Hour, Daily, Weekly, Monthly, Yearly]
+  description: '1 Minute, 5 Minute, 15 Minute, 30 Minute, 1 Hour, 4 Hour, Daily, Weekly, Monthly, Yearly'
+  allowEmptyValue: true
+
+Page:
+  in: query
+  name: Page
+  description: "Page number"
+  required: true
+  schema:
+    type: "integer"
+    default: 1
+
+PageSize:
+  in: query
+  name: PageSize
+  description: "the items in per page"
+  required: true
+  schema:
+    type: "integer"
+    default: 20
+
+From:
+  in: query
+  name: From
+  description: ""
+  required: false
+  schema:
+    type: "string"
+
+To:
+  in: query
+  name: From
+  description: ""
+  required: false
+  schema:
+    type: "string"
+
+#-------------------------------
+# WatchList
+#-------------------------------
+watchListId:
+  in: query
+  name: "WatchListId"
+  description: "id of list"
+  required: true
+  schema:
+    type: "string"
+
+watchListType:
+  in: query
+  name: "WatchListType"
+  description: "type of list"
+  required: true
+  schema:
+    type: "string"
+    enum: [CompanyGroup, Sector, Custom]
+Type:
+  in: query
+  name: "Type"
+  description: "type of list"
+  required: true
+  schema:
+    type: "string"
+    enum: [CompanyGroup, Sector, Custom]
+
+
+
+#-------------------------------
+# PriceData
+#-------------------------------
+
+#-------------------------------
+# MarketInDepth
+status:
+  in: query
+  name: status
+  required: true
+  schema:
+    type: integer
+    default: 1
+    enum: [0,1]
+  description: '0,1'
+  allowEmptyValue: false
+TimeRange: 
+  in: query
+  name: TimeRange
+  required: true
+  schema:
+    type: string
+    default: "OneDay"
+    enum: ["OneDay", "OneWeek", "OneMonth", "ThreeMonths", "SixMonths", "YearToDate", "OneYear", "ThreeYears", "FiveYears"]
+  description: "OneDay, OneWeek, OneMonth, ThreeMonths, SixMonths, YearToDate, OneYear, ThreeYears, FiveYears"
+  allowEmptyValue: false
+#-------------------------------
+
+#-------------------------------
+# MarketCalendar
+WeekOfYear:
+  in: query
+  name: WeekOfYear
+  description: "Week Of Year"
+  required: true
+  schema:
+    type: "integer"
+    default: 1
+Year:
+  in: query
+  name: Year
+  description: "Year"
+  required: true
+  schema:
+    type: "integer"
+    default: 2019
+KeyWord:
+  in: query
+  name: KeyWord
+  description: "KeyWord"
+  required: true
+  schema:
+    type: "string"
+    default: ""
+FromDate:
+  in: query
+  name: FromDate
+  description: "FromDate"
+  required: true
+  schema:
+    type: "string"
+    default: ""
+ToDate:
+  in: query
+  name: FromDate
+  description: "FromDate"
+  required: true
+  schema:
+    type: "string"
+    default: ""
+#-------------------------------
+
+#-------------------------------
+#TechnicalAnalysisSignals
+AbnormalityType:
+  in: query
+  name: AbnormalityType
+  description: "AbnormalityType"
+  required: false
+  schema:
+    type: "string"
+    default: ""
+  
+AverageVolume10D:
+  in: query
+  name: AverageVolume10D
+  description: "AverageVolume10D"
+  required: false
+  schema:
+    type: "integer"
+    default: ""
+
+RateOfUnmatched:
+  in: query
+  name: RateOfUnmatched
+  description: "RateOfUnmatched"
+  required: false
+  schema:
+    type: "number"
+    default: ""
+
+PriceVolumeAnalysis:
+  in: query
+  name: PriceVolumeAnalysis
+  description: "PriceVolumeAnalysis"
+  required: false
+  schema:
+    type: "string"
+    default: "VolumeIncreaseAndPriceIncrease"
+    enum: ["VolumeIncreaseAndPriceIncrease", "VolumeIncreaseAndPriceDecrease", "PriceIncrease", "PriceDecrease", "VolumeIncrease"]
+
+OrderType:
+  in: query
+  name: OrderType
+  description: "OrderType"
+  required: false
+  schema:
+    type: "string"
+    default: "Both"
+    enum: ["Both", "Buy", "Sell"]
+
+Proportion:
+  in: query
+  name: Proportion
+  description: "Proportion"
+  required: false
+  schema:
+    type: "number"
+    default: "0.1"
+
+ExceedingPercentage:
+  in: query
+  name: ExceedingPercentage
+  description: "ExceedingPercentage"
+  required: false
+  schema:
+    type: "number"
+    default: 0.2
+    enum: [0.2, 0.4, 0.6, 0.8, 1.0]
+TotalVolumeBuSd:
+  in: query
+  name: TotalVolumeBuSd
+  description: "TotalVolumeBuSd"
+  required: false
+  schema:
+    type: "number"
+    default: 0.3
+    enum: [0.3, 0.6, 1.0, 1.5, 2.0]
+OrderTypeAggressive:
+  in: query
+  name: OrderType
+  description: "OrderType"
+  required: false
+  schema:
+    type: "string"
+    default: "MoreThan"
+    enum: ["MoreThan", "LessThan"]
+#-------------------------------

@@ -1,0 +1,36 @@
+@import '../../../../../styles/variables';
+
+.group-button {
+  text-transform: uppercase;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  color: $white;
+
+  div {
+    font-weight: 600;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &--sell {
+    background-color: $s_color_3;
+  }
+
+  &--buy {
+    background-color: $b_color_1;
+  }
+}
+
+.light-mode {
+  .group-button {
+    color: white;
+  }
+}

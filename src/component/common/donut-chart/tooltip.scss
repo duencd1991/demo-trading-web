@@ -1,0 +1,93 @@
+.div-wrap-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  border-radius: 5px;
+  // zIndex: 10 ,
+  // backgroundColor : '#ffffff' ,
+  // borderRadius : 5 ,
+}
+.hidden {
+  display: none;
+}
+
+.ownership {
+  .color-wrapper {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+  }
+
+  .tooltip-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    border-radius: 50%;
+    color: black;
+    padding-left: 18px;
+    position: relative;
+  }
+
+  .chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .chart_wrap_ownership {
+    background-color: #1e242e;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+  }
+
+  .title_tooltip {
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    color: var(--white);
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .wrap-box-inside {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-wrap-legend {
+    width: 80px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .legend-title {
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    color: var(--white);
+  }
+}

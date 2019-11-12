@@ -1,0 +1,26 @@
+summary: Economy
+description: Economy
+get:
+  tags:
+  - "MarketCalendar"
+  summary: 'Get Economy'
+  description: 'Get Economy'
+  x-swagger-router-controller: "Calendar"
+  operationId: 'GetEconomy'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/WeekOfYear'
+    - $ref: '#/components/parameters/Year'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+    - $ref: '#/components/parameters/KeyWord'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Economy'
+    '400':
+      description: Invalid value
+      content: {}

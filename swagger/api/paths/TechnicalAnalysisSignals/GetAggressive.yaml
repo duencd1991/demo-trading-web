@@ -1,0 +1,24 @@
+summary: Aggressive
+description: Aggressive
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get Aggressive'
+  description: 'Get Aggressive'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetAggressive'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/AverageVolume10D'
+    - $ref: '#/components/parameters/OrderTypeAggressive'
+    - $ref: '#/components/parameters/TotalVolumeBuSd'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Aggressive'
+    '400':
+      description: Invalid value
+      content: {}

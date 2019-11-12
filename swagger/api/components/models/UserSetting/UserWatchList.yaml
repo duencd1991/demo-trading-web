@@ -1,0 +1,18 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        typeCode:
+          type: "string"
+          example: "CompanyGroup"
+        code:
+          type: "string"
+          example: "VN30"
+        watchListId:
+          type: "string"  
+          example: "VN30"
+        text:
+          type: "string"  
+          example: "VN30" 

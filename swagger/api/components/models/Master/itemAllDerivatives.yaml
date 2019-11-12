@@ -1,0 +1,12 @@
+type: "object"
+properties:
+  derivativeCode:
+    type: "string"
+    example: "VN30F1907"
+  derivativeName:
+    type: "string"  
+    example: "Future Index base on VN30"
+  comGroupCode:
+    type: "string"
+    example: "HNX"
+    

@@ -1,0 +1,232 @@
+type: "array"
+properties:
+  isa1: 
+    type: "integer"
+  isa2: 
+    type: "integer"
+  isa3: 
+    type: "integer"
+  isa4: 
+    type: "integer"
+  isa5: 
+    type: "integer"
+  isa6: 
+    type: "integer"
+  isa7: 
+    type: "integer"
+  isa8: 
+    type: "integer"
+  isa9: 
+    type: "integer"
+  isa10: 
+    type: "integer"
+  isa11: 
+    type: "integer"
+  isa12: 
+    type: "integer"
+  isa13: 
+    type: "integer"
+  isa14: 
+    type: "integer"
+  isa15: 
+    type: "integer"
+  isa16: 
+    type: "integer"
+  isa17: 
+    type: "integer"
+  isa18:
+    type: "integer"
+  isa19: 
+    type: "integer"
+  isa20: 
+    type: "integer"
+  isa21: 
+    type: "integer"
+  isa22: 
+    type: "integer"
+  isa23: 
+    type: "integer"
+  isa24: 
+    type: "integer"
+  isa102: 
+    type: "integer"
+  isb25: 
+    type: "integer"
+  isb26: 
+    type: "integer"
+  isb27: 
+    type: "integer"
+  isb28: 
+    type: "integer"
+  isb29: 
+    type: "integer"
+  isb30: 
+    type: "integer"
+  isb31: 
+    type: "integer"
+  isb32: 
+    type: "integer"
+  isb33: 
+    type: "integer"
+  isb34: 
+    type: "integer"
+  isb35: 
+    type: "integer"
+  isb36: 
+    type: "integer"
+  isb37: 
+    type: "integer"
+  isb38: 
+    type: "integer"
+  isb39: 
+    type: "integer"
+  isb40: 
+    type: "integer"
+  isb41: 
+    type: "integer"
+  isi51: 
+    type: "integer"
+  isi52: 
+    type: "integer"
+  isi53: 
+    type: "integer"
+  isi54: 
+    type: "integer"
+  isi55: 
+    type: "integer"
+  isi56: 
+    type: "integer"
+  isi57: 
+    type: "integer"
+  isi58: 
+    type: "integer"
+  isi59: 
+    type: "integer"
+  isi60: 
+    type: "integer"
+  isi61: 
+    type: "integer"
+  isi62: 
+    type: "integer"
+  isi63: 
+    type: "integer"
+  isi64: 
+    type: "integer"
+  isi65: 
+    type: "integer"
+  isi66: 
+    type: "integer"
+  isi67: 
+    type: "integer"
+  isi68: 
+    type: "integer"
+  isi69: 
+    type: "integer"
+  isi70: 
+    type: "integer"
+  isi71: 
+    type: "integer"
+  isi72: 
+    type: "integer"
+  isi73: 
+    type: "integer"
+  isi74: 
+    type: "integer"
+  isi75: 
+    type: "integer"
+  isi76: 
+    type: "integer"
+  isi77: 
+    type: "integer"
+  isi78: 
+    type: "integer"
+  isi79: 
+    type: "integer"
+  isi80: 
+    type: "integer"
+  isi81: 
+    type: "integer"
+  isi82: 
+    type: "integer"
+  isi83: 
+    type: "integer"
+  isi84: 
+    type: "integer"
+  isi85: 
+    type: "integer"
+  isi86: 
+    type: "integer"
+  isi87: 
+    type: "integer"
+  isi88: 
+    type: "integer"
+  isi89: 
+    type: "integer"
+  isi90: 
+    type: "integer"
+  isi91: 
+    type: "integer"
+  isi92: 
+    type: "integer"
+  isi93: 
+    type: "integer"
+  isi94: 
+    type: "integer"
+  isi95: 
+    type: "integer"
+  isi96: 
+    type: "integer"
+  isi97: 
+    type: "integer"
+  isi98: 
+    type: "integer"
+  isi99: 
+    type: "integer"
+  isi100: 
+    type: "integer"
+  isi101: 
+    type: "integer"
+  isi103: 
+    type: "integer"
+  isi104: 
+    type: "integer"
+  isi105: 
+    type: "integer"
+  isi106: 
+    type: "integer"
+  isi107: 
+    type: "integer"
+  isi108: 
+    type: "integer"
+  isi109: 
+    type: "integer"
+  isi110: 
+    type: "integer"
+  isi111: 
+    type: "integer"
+  isi112: 
+    type: "integer"
+  isi113: 
+    type: "integer"
+  isi114: 
+    type: "integer"
+  isi168: 
+    type: "integer"
+  isi169: 
+    type: "integer"
+  isi170: 
+    type: "integer"
+  isi171: 
+    type: "integer"
+  isi172: 
+    type: "integer"
+  isi173: 
+    type: "integer"
+  organCode:
+    type: "string"
+  quarterReport: 
+    type: "integer"
+  rtq29:
+    type: "number"
+  yearReport: 
+    type: "integer"

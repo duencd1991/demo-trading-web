@@ -1,0 +1,354 @@
+@font-face {
+  font-family: 'fiintrade';
+  src:url('fonts/fiintrade.eot?o8ed1l');
+  src:url('fonts/fiintrade.eot?o8ed1l#iefix') format('embedded-opentype'),
+    url('fonts/fiintrade.ttf?o8ed1l') format('truetype'),
+    url('fonts/fiintrade.woff?o8ed1l') format('woff'),
+    url('fonts/fiintrade.svg?o8ed1l#fiintrade') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+	display: inline-block;
+  font-family: 'fiintrade' !important;
+  /* speak:none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down-arrow:before {
+  content: '\e96b';
+}
+.icon-up-arrow:before {
+  content: '\e96c';
+}
+.icon-coins:before {
+  content: '\e96a';
+}
+.icon-capital-structure:before {
+  content: '\e95e';
+}
+.icon-cfo-quality:before {
+  content: '\e95f';
+}
+.icon-debt-pressure:before {
+  content: '\e960';
+}
+.icon-edit:before {
+  content: '\e961';
+}
+.icon-edit2:before {
+  content: '\e962';
+}
+.icon-financial-planning:before {
+  content: '\e963';
+}
+.icon-gross-profit-margin:before {
+  content: '\e964';
+}
+.icon-operation-efficiency:before {
+  content: '\e965';
+}
+.icon-profit-growth:before {
+  content: '\e966';
+}
+.icon-rapid-equity-issuance:before {
+  content: '\e967';
+}
+.icon-revenue-growth:before {
+  content: '\e968';
+}
+.icon-roe:before {
+  content: '\e969';
+}
+.icon-selected-box:before {
+  content: '\e95d';
+}
+.icon-bell:before {
+  content: '\e94e';
+}
+.icon-calenda:before {
+  content: '\e94f';
+}
+.icon-camera1:before {
+  content: '\e950';
+}
+.icon-chart:before {
+  content: '\e951';
+}
+.icon-clock:before {
+  content: '\e952';
+}
+.icon-date:before {
+  content: '\e953';
+}
+.icon-inbox:before {
+  content: '\e954';
+}
+.icon-list:before {
+  content: '\e955';
+}
+.icon-log-out:before {
+  content: '\e956';
+}
+.icon-money:before {
+  content: '\e957';
+}
+.icon-moon:before {
+  content: '\e958';
+}
+.icon-search1:before {
+  content: '\e959';
+}
+.icon-sun:before {
+  content: '\e95a';
+}
+.icon-trend:before {
+  content: '\e95b';
+}
+.icon-user1:before {
+  content: '\e95c';
+}
+.icon-ranking-in-tooltip:before {
+  content: '\e910';
+}
+.icon-view-table:before {
+  content: '\e94d';
+}
+.icon-info:before {
+  content: '\e94a';
+}
+.icon-padlock:before {
+  content: '\e94b';
+}
+.icon-printer-tool:before {
+  content: '\e94c';
+}
+.icon-ascendant:before {
+  content: '\e944';
+}
+.icon-descendant:before {
+  content: '\e947';
+}
+.icon-unsorted:before {
+  content: '\e948';
+}
+.icon-pop-out:before {
+  content: '\e949';
+}
+.icon-fiintrade-logo:before {
+  content: '\e946';
+}
+.icon-calendar-search:before {
+  content: '\e945';
+}
+.icon-financial-analysis:before {
+  content: '\e937';
+}
+.icon-market-calendar:before {
+  content: '\e938';
+}
+.icon-market-in-depth:before {
+  content: '\e939';
+}
+.icon-money-flow:before {
+  content: '\e93a';
+}
+.icon-news-aggregator:before {
+  content: '\e93b';
+}
+.icon-price-depth:before {
+  content: '\e93c';
+}
+.icon-snapshot:before {
+  content: '\e93d';
+}
+.icon-technical-chart:before {
+  content: '\e93e';
+}
+.icon-time-and-sales:before {
+  content: '\e93f';
+}
+.icon-watchlist:before {
+  content: '\e940';
+}
+.icon-caret-left:before {
+  content: '\e941';
+}
+.icon-caret-right:before {
+  content: '\e942';
+}
+.icon-pause:before {
+  content: '\e943';
+}
+.icon-facebook:before {
+  content: '\e932';
+}
+.icon-gmail:before {
+  content: '\e933';
+}
+.icon-share-chart:before {
+  content: '\e934';
+}
+.icon-skype:before {
+  content: '\e935';
+}
+.icon-zalo:before {
+  content: '\e936';
+}
+.icon-star-fill:before {
+  content: '\e930';
+}
+.icon-star-strock:before {
+  content: '\e931';
+}
+.icon-chart-btn:before {
+  content: '\e92e';
+}
+.icon-plus-s:before {
+  content: '\e92f';
+}
+.icon-correct:before {
+  content: '\e92c';
+}
+.icon-remove-symbol:before {
+  content: '\e92d';
+}
+.icon-bin-delete:before {
+  content: '\e92a';
+}
+.icon-pencil-edit:before {
+  content: '\e92b';
+}
+.icon-cancel:before {
+  content: '\e928';
+}
+.icon-reset:before {
+  content: '\e929';
+}
+.icon-check-em:before {
+  content: '\e926';
+}
+.icon-checked:before {
+  content: '\e927';
+}
+.icon-plus-line:before {
+  content: '\e925';
+}
+.icon-back:before {
+  content: '\e923';
+}
+.icon-next:before {
+  content: '\e924';
+}
+.icon-analytics:before {
+  content: '\e91e';
+}
+.icon-camera:before {
+  content: '\e91f';
+}
+.icon-cloud:before {
+  content: '\e920';
+}
+.icon-dollar:before {
+  content: '\e921';
+}
+.icon-folder:before {
+  content: '\e922';
+}
+.icon-bi:before {
+  content: '\e917';
+}
+.icon-caret-up:before {
+  content: '\e918';
+}
+.icon-down:before {
+  content: '\e919';
+}
+.icon-downbi:before {
+  content: '\e91a';
+}
+.icon-graph:before {
+  content: '\e91b';
+}
+.icon-up:before {
+  content: '\e91c';
+}
+.icon-upbi:before {
+  content: '\e91d';
+}
+.icon-dot:before {
+  content: '\e900';
+}
+.icon-application:before {
+  content: '\e901';
+}
+.icon-calendar:before {
+  content: '\e902';
+}
+.icon-caret:before {
+  content: '\e903';
+}
+.icon-close:before {
+  content: '\e904';
+}
+.icon-excel:before {
+  content: '\e905';
+}
+.icon-external:before {
+  content: '\e906';
+}
+.icon-fullscreen:before {
+  content: '\e907';
+}
+.icon-help:before {
+  content: '\e908';
+}
+.icon-link:before {
+  content: '\e913';
+}
+.icon-logout:before {
+  content: '\e914';
+}
+.icon-more:before {
+  content: '\e915';
+}
+.icon-notification:before {
+  content: '\e916';
+}
+.icon-plus:before {
+  content: '\e909';
+}
+.icon-refresh:before {
+  content: '\e90a';
+}
+.icon-save:before {
+  content: '\e90b';
+}
+.icon-search:before {
+  content: '\e90c';
+}
+.icon-settings:before {
+  content: '\e90d';
+}
+.icon-slide:before {
+  content: '\e90e';
+}
+.icon-star:before {
+  content: '\e90f';
+}
+.icon-tab:before {
+  content: '\e911';
+}
+.icon-user:before {
+  content: '\e912';
+}

@@ -1,0 +1,22 @@
+summary: Alert AllSystemAlerts
+description: Alert AllSystemAlerts
+get:
+  tags:
+  - "Alert"
+  summary: 'AllSystemAlerts'
+  description: 'AllSystemAlerts'
+  x-swagger-router-controller: Alert
+  operationId: 'GetAllSystemAlerts'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AllSystemAlerts'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,2003 @@
+openapi: 3.0.1
+info:
+  description: This WTP24 Mockup Server.
+  version: 1.0.0
+  title: Swagger WTP24
+servers:
+  - url: 'http://localhost:8080/api/v1'
+  - url: 'https://localhost:8080/api/v1'
+paths:
+  /Master/GetListOrganization:
+    summary: Get list organization
+    description: Get list organization
+    get:
+      tags:
+        - Master
+      summary: Get List Organization
+      description: Get List Organization
+      x-swagger-router-controller: Master
+      operationId: GetListOrganization
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListOrganization'
+        '400':
+          description: Invalid value
+          content: {}
+  /Master/GetAllCompanyGroup:
+    summary: Get AllCompanyGroup
+    description: Get AllCompanyGroup
+    get:
+      tags:
+        - Master
+      summary: AllCompanyGroup
+      description: AllCompanyGroup
+      x-swagger-router-controller: Master
+      operationId: GetAllCompanyGroup
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AllCompanyGroup'
+        '400':
+          description: Invalid value
+          content: {}
+  /Master/GetAllDerivatives:
+    summary: Get AllDerivatives
+    description: Get AllDerivatives
+    get:
+      tags:
+        - Master
+      summary: AllDerivatives
+      description: AllDerivatives
+      x-swagger-router-controller: Master
+      operationId: GetAllDerivatives
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AllDerivatives'
+        '400':
+          description: Invalid value
+          content: {}
+  /Master/GetAllIcbIndustry:
+    summary: All ICB Industry
+    description: All ICB Industry
+    get:
+      tags:
+        - Master
+      summary: AllIcbIndustry
+      description: AllIcbIndustry
+      x-swagger-router-controller: Master
+      operationId: GetAllIcbIndustry
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AllIcbIndustry'
+        '400':
+          description: Invalid value
+          content: {}
+  /UserSetting/GetUserWatchList:
+    get:
+      tags:
+        - UserSetting
+      summary: Get User Watch List
+      description: Get User Watch List
+      x-swagger-router-controller: UserSetting
+      operationId: GetUserWatchList
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserWatchList'
+        '400':
+          description: Invalid value
+          content: {}
+    summary: User Watch List
+    description: User Watch List
+  /UserSetting/GetWorkspace:
+    summary: System and User Workspace
+    description: System and User Workspace
+    get:
+      tags:
+        - UserSetting
+      summary: Get Workspace
+      description: Get Workspace
+      x-swagger-router-controller: UserSetting
+      operationId: GetWorkspace
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Workspace'
+        '400':
+          description: Invalid value
+          content: {}
+  /UserSetting/getTopScreeners:
+    get:
+      tags:
+        - UserSetting
+      summary: Get Top Screeners
+      description: Get Top Screeners
+      x-swagger-router-controller: UserSetting
+      operationId: getTopScreeners
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopScreeners'
+        '400':
+          description: Invalid value
+          content: {}
+    summary: Top Screeners
+    description: Top Screeners
+  /WatchList/GetWatchListSummary:
+    get:
+      tags:
+        - WatchList
+      summary: Get Summary Watch List
+      description: Get Summary Watch List
+      x-swagger-router-controller: WatchList
+      operationId: GetWatchListSummary
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/watchListId'
+        - $ref: '#/components/parameters/watchListType'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SummaryWatchList'
+        '400':
+          description: Invalid value
+          content: {}
+    summary: Summary Watch List
+    description: Summary Watch List
+  /WatchList/GetTwoDaysSeries:
+    summary: 2 day series
+    description: 2 day series
+    get:
+      tags:
+        - WatchList
+      summary: Get 2 day series
+      description: Get 2 day series
+      x-swagger-router-controller: WatchList
+      operationId: GetTwoDaysSeries
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChartTwoDaySeries'
+        '400':
+          description: Invalid value
+          content: {}
+  /WatchList/GetPutThrough:
+    summary: Putthrough Detail
+    description: Putthrough Detail
+    get:
+      tags:
+        - WatchList
+      summary: Get Putthrough Detail
+      description: Get Putthrough Detail
+      x-swagger-router-controller: WatchList
+      operationId: GetPutThrough
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PutthroughList'
+        '400':
+          description: Invalid value
+          content: {}
+  /WatchList/GetDerivatives:
+    summary: Derivatives Detail
+    description: Derivatives Detail
+    get:
+      tags:
+        - WatchList
+      summary: Get Derivatives Detail
+      description: Get Derivatives Detail
+      x-swagger-router-controller: WatchList
+      operationId: GetDerivatives
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DerivativesList'
+        '400':
+          description: Invalid value
+          content: {}
+  /WatchList/GetWatchListNews:
+    summary: Get WatchListNews
+    description: Get WatchListNews
+    get:
+      tags:
+        - WatchList
+      summary: Get WatchListNews
+      description: Get WatchListNews
+      x-swagger-router-controller: WatchList
+      operationId: GetWatchListNews
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/watchListId'
+        - $ref: '#/components/parameters/watchListType'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WatchListNews'
+        '400':
+          description: Invalid value
+          content: {}
+  /WatchList/GetTickerSeries:
+    summary: Get Ticker series
+    description: Get Ticker series
+    get:
+      tags:
+        - WatchList
+      summary: Get 2 day series
+      description: Get 2 day series
+      x-swagger-router-controller: WatchList
+      operationId: GetTickerSeries
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+        - $ref: '#/components/parameters/TimeRange'
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TickerSeries'
+        '400':
+          description: Invalid value
+          content: {}
+  /WatchList/GetTechnical:
+    summary: Get Technical
+    description: Get Technical
+    get:
+      tags:
+        - WatchList
+      summary: Get Technical
+      description: Get Technical
+      x-swagger-router-controller: WatchList
+      operationId: GetTechnical
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/watchListId'
+        - $ref: '#/components/parameters/Type'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Technical'
+        '400':
+          description: Invalid value
+          content: {}
+  /PriceData/GetPriceData:
+    summary: Price Data
+    description: Price Data
+    get:
+      tags:
+        - Price Data
+      summary: Get Price Data
+      description: Get Price Data
+      x-swagger-router-controller: PriceData
+      operationId: GetPriceData
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+        - $ref: '#/components/parameters/Frequently'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PriceDataList'
+        '400':
+          description: Invalid value
+          content: {}
+  /PriceData/GetLatestPrice:
+    summary: Price Data
+    description: Price Data
+    get:
+      tags:
+        - Price Data
+      summary: GetLatestPrice
+      description: GetLatestPrice
+      x-swagger-router-controller: PriceData
+      operationId: GetLatestPrice
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+      responses:
+        '200':
+          description: successful operation
+          content: {}
+        '400':
+          description: Invalid value
+          content: {}
+  /PriceDepth/GetPriceDepth:
+    summary: Price Depth
+    description: Price Depth
+    get:
+      tags:
+        - Price Depth
+      summary: GetPriceDepth
+      description: GetPriceDepth
+      x-swagger-router-controller: PriceDepth
+      operationId: GetPriceDepth
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PriceDepth'
+        '400':
+          description: Invalid value
+          content: {}
+  /TimeAndSales/GetTimeAndSales:
+    summary: Price Depth
+    description: Price Depth
+    get:
+      tags:
+        - Price Depth
+      summary: GetTimeAndSales
+      description: GetTimeAndSales
+      x-swagger-router-controller: PriceDepth
+      operationId: GetTimeAndSales
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TimeAndSales'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopVolume:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopVolume
+      description: TopVolume
+      x-swagger-router-controller: TopMover
+      operationId: GetTopVolume
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopVolume'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopValue:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: GetTopValue
+      description: GetTopValue
+      x-swagger-router-controller: TopMover
+      operationId: GetTopValue
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopValue'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopBreakout:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopBreakout
+      description: TopBreakout
+      x-swagger-router-controller: TopMover
+      operationId: GetTopBreakout
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopBreakout'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopGainers:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopGainers
+      description: TopGainers
+      x-swagger-router-controller: TopMover
+      operationId: GetTopGainers
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopGainers'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopLosers:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopLosers
+      description: TopLosers
+      x-swagger-router-controller: TopMover
+      operationId: GetTopLosers
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopLosers'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetMoneyFlow:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: MoneyFlow
+      description: MoneyFlow
+      x-swagger-router-controller: TopMover
+      operationId: GetMoneyFlow
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MoneyFlow'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopNewHigh:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopNewHigh
+      description: TopNewHigh
+      x-swagger-router-controller: TopMover
+      operationId: GetTopNewHigh
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopNewHigh'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopNewLow:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopNewLow
+      description: TopNewLow
+      x-swagger-router-controller: TopMover
+      operationId: GetTopNewLow
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopNewLow'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetTopForeignTrading:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: TopForeignTrade
+      description: TopForeignTrade
+      x-swagger-router-controller: TopMover
+      operationId: GetTopForeignTrading
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopForeignTrade'
+        '400':
+          description: Invalid value
+          content: {}
+  /TopMover/GetMarketCalendar:
+    summary: Top Mover
+    description: Top Mover
+    get:
+      tags:
+        - Top Mover
+      summary: MarketCalendar
+      description: MarketCalendar
+      x-swagger-router-controller: TopMover
+      operationId: GetMarketCalendar
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MarketCalendar'
+        '400':
+          description: Invalid value
+          content: {}
+  /HeatMap/GetHeatMap:
+    summary: Heat Map
+    description: Heat Map
+    get:
+      tags:
+        - Heat Map
+      summary: HeatMap
+      description: HeatMap
+      x-swagger-router-controller: Heatmap
+      operationId: GetHeatMap
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Exchange'
+        - $ref: '#/components/parameters/Creiteria'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Heatmap'
+        '400':
+          description: Invalid value
+          content: {}
+  /Snapshot/GetCompanyScore:
+    summary: Fundamental CompanyScore
+    description: Fundamental CompanyScore
+    get:
+      tags:
+        - Fundamental
+      summary: CompanyScore
+      description: CompanyScore
+      x-swagger-router-controller: Snapshot
+      operationId: GetCompanyScore
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompanyScore'
+        '400':
+          description: Invalid value
+          content: {}
+  /Snapshot/GetSnapshot:
+    summary: Fundamental Snapshot
+    description: Fundamental Snapshot
+    get:
+      tags:
+        - Fundamental
+      summary: Snapshot
+      description: Snapshot
+      x-swagger-router-controller: Snapshot
+      operationId: GetSnapshot
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Snapshot'
+        '400':
+          description: Invalid value
+          content: {}
+  /Ownership/GetOwnership:
+    summary: Fundamental Ownership
+    description: Fundamental Ownership
+    get:
+      tags:
+        - Fundamental
+      summary: Ownership
+      description: Ownership
+      x-swagger-router-controller: Ownership
+      operationId: GetOwnership
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ownership'
+        '400':
+          description: Invalid value
+          content: {}
+  /Ownership/GetShareHolderTooltip:
+    summary: Fundamental ShareHolderTooltip
+    description: Fundamental ShareHolderTooltip
+    get:
+      tags:
+        - Fundamental
+      summary: ShareHolderTooltip
+      description: ShareHolderTooltip
+      x-swagger-router-controller: Ownership
+      operationId: GetShareHolderTooltip
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShareHolderTooltip'
+        '400':
+          description: Invalid value
+          content: {}
+  /MarketInDepth/GetLatestIndices:
+    summary: Latest Indices
+    description: Latest Indices
+    get:
+      tags:
+        - MarketInDepth
+      summary: Get Latest Indices
+      description: Get Latest Indices
+      x-swagger-router-controller: MarketInDepth
+      operationId: GetLatestIndices
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/status'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LatestIndices'
+        '400':
+          description: Invalid value
+          content: {}
+  /MarketInDepth/GetProspect:
+    summary: Prospect
+    description: Prospect
+    get:
+      tags:
+        - MarketInDepth
+      summary: Get Prospect
+      description: Get Prospect
+      x-swagger-router-controller: MarketInDepth
+      operationId: GetProspect
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Prospect'
+        '400':
+          description: Invalid value
+          content: {}
+  /MarketInDepth/GetIndexSeries:
+    summary: Index Series
+    description: Index Series
+    get:
+      tags:
+        - MarketInDepth
+      summary: Get Index Series
+      description: Get Index Series
+      x-swagger-router-controller: MarketInDepth
+      operationId: GetIndexSeries
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+        - $ref: '#/components/parameters/TimeRange'
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IndexSeries'
+        '400':
+          description: Invalid value
+          content: {}
+  /MarketIndepth/GetValuationSeries:
+    summary: Valuation Series
+    description: Valuation Series
+    get:
+      tags:
+        - MarketInDepth
+      summary: Get Valuation Series
+      description: Get Valuation Series
+      x-swagger-router-controller: MarketInDepth
+      operationId: GetValuationSeries
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+        - $ref: '#/components/parameters/TimeRange'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValuationSeries'
+        '400':
+          description: Invalid value
+          content: {}
+  /MarketIndepth/GetLiquiditySeries:
+    summary: Liquidity Series
+    description: Liquidity Series
+    get:
+      tags:
+        - MarketInDepth
+      summary: Get Liquidity Series
+      description: Get Liquidity Series
+      x-swagger-router-controller: MarketInDepth
+      operationId: GetLiquiditySeries
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+        - $ref: '#/components/parameters/TimeRange'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LiquiditySeries'
+        '400':
+          description: Invalid value
+          content: {}
+  /MarketIndepth/GetMarketAnomaly:
+    summary: Get MarketAnomaly
+    description: Get MarketAnomaly
+    get:
+      tags:
+        - MarketInDepth
+      summary: Get MarketAnomaly
+      description: Get MarketAnomaly
+      x-swagger-router-controller: MarketInDepth
+      operationId: GetMarketAnomaly
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Code'
+        - $ref: '#/components/parameters/TimeRange'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MarketAnomaly'
+        '400':
+          description: Invalid value
+          content: {}
+  /MoneyFlow/GetContribution:
+    summary: Contribution
+    description: Contribution
+    get:
+      tags:
+        - MoneyFlow
+      summary: Get Contribution
+      description: Get Contribution
+      x-swagger-router-controller: MoneyFlow
+      operationId: GetContribution
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Contribution'
+        '400':
+          description: Invalid value
+          content: {}
+  /MoneyFlow/GetForeign:
+    summary: Foreign
+    description: Foreign
+    get:
+      tags:
+        - MoneyFlow
+      summary: Get Foreign
+      description: Get Foreign
+      x-swagger-router-controller: MoneyFlow
+      operationId: GetForeign
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Foreign'
+        '400':
+          description: Invalid value
+          content: {}
+  /MoneyFlow/GetProprietary:
+    summary: Proprietary
+    description: Proprietary
+    get:
+      tags:
+        - MoneyFlow
+      summary: Get Proprietary
+      description: Get Proprietary
+      x-swagger-router-controller: MoneyFlow
+      operationId: GetProprietary
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/ComGroupCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Proprietary'
+        '400':
+          description: Invalid value
+          content: {}
+  /Calendar/GetEconomy:
+    summary: Economy
+    description: Economy
+    get:
+      tags:
+        - MarketCalendar
+      summary: Get Economy
+      description: Get Economy
+      x-swagger-router-controller: Calendar
+      operationId: GetEconomy
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/WeekOfYear'
+        - $ref: '#/components/parameters/Year'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/KeyWord'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Economy'
+        '400':
+          description: Invalid value
+          content: {}
+  /Calendar/GetCalendarWatchList:
+    summary: CalendarWatchList
+    description: CalendarWatchList
+    get:
+      tags:
+        - MarketCalendar
+      summary: Get CalendarWatchList
+      description: Get CalendarWatchList
+      x-swagger-router-controller: Calendar
+      operationId: GetCalendarWatchList
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalendarWatchList'
+        '400':
+          description: Invalid value
+          content: {}
+  /Calendar/GetCorporateEarning:
+    summary: CorporateEarning
+    description: CorporateEarning
+    get:
+      tags:
+        - MarketCalendar
+      summary: Get CorporateEarning
+      description: Get CorporateEarning
+      x-swagger-router-controller: Calendar
+      operationId: GetCorporateEarning
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CorporateEarning'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetIndicators:
+    summary: Indicators
+    description: Indicators
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get Indicators
+      description: Get Indicators
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetIndicators
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Indicators'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/getOverview:
+    summary: Overview
+    description: Overview
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get Overview
+      description: Get Overview
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: getOverview
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/watchListId'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Overview'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetCEFLAbnormality:
+    summary: CEFLAbnormality
+    description: CEFLAbnormality
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get CEFLAbnormality
+      description: Get CEFLAbnormality
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetCEFLAbnormality
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/AbnormalityType'
+        - $ref: '#/components/parameters/AverageVolume10D'
+        - $ref: '#/components/parameters/RateOfUnmatched'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CEFLAbnormality'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetCancelled:
+    summary: Cancelled
+    description: Cancelled
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get Cancelled
+      description: Get Cancelled
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetCancelled
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/AverageVolume10D'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cancelled'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetPressing:
+    summary: Pressing
+    description: Pressing
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get Pressing
+      description: Get Pressing
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetPressing
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/AverageVolume10D'
+        - $ref: '#/components/parameters/OrderType'
+        - $ref: '#/components/parameters/Proportion'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pressing'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetAggressive:
+    summary: Aggressive
+    description: Aggressive
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get Aggressive
+      description: Get Aggressive
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetAggressive
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/AverageVolume10D'
+        - $ref: '#/components/parameters/OrderTypeAggressive'
+        - $ref: '#/components/parameters/TotalVolumeBuSd'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Aggressive'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetClosing:
+    summary: Closing
+    description: Closing
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get Closing
+      description: Get Closing
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetClosing
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/AverageVolume10D'
+        - $ref: '#/components/parameters/ExceedingPercentage'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Closing'
+        '400':
+          description: Invalid value
+          content: {}
+  /TechnicalAnalysisSignals/GetPriceVolumeAnalysis:
+    summary: PriceVolumeAnalysis
+    description: PriceVolumeAnalysis
+    get:
+      tags:
+        - TechnicalAnalysisSignals
+      summary: Get PriceVolumeAnalysis
+      description: Get PriceVolumeAnalysis
+      x-swagger-router-controller: TechnicalAnalysisSignals
+      operationId: GetPriceVolumeAnalysis
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/PriceVolumeAnalysis'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PriceVolumeAnalysis'
+        '400':
+          description: Invalid value
+          content: {}
+  /News/GetAggregatorNews:
+    summary: AggregatorNews
+    description: AggregatorNews
+    get:
+      tags:
+        - News
+      summary: Get AggregatorNews
+      description: Get AggregatorNews
+      x-swagger-router-controller: News
+      operationId: GetAggregatorNews
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AggregatorNews'
+        '400':
+          description: Invalid value
+          content: {}
+  /News/GetAutoNews:
+    summary: AutoNews
+    description: AutoNews
+    get:
+      tags:
+        - News
+      summary: Get AutoNews
+      description: Get AutoNews
+      x-swagger-router-controller: News
+      operationId: GetAutoNews
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutoNews'
+        '400':
+          description: Invalid value
+          content: {}
+  /News/GetPremiumAnalysis:
+    summary: PremiumAnalysis
+    description: PremiumAnalysis
+    get:
+      tags:
+        - News
+      summary: Get PremiumAnalysis
+      description: Get PremiumAnalysis
+      x-swagger-router-controller: News
+      operationId: GetPremiumAnalysis
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PremiumAnalysis'
+        '400':
+          description: Invalid value
+          content: {}
+  /News/GetMostRecent:
+    summary: MostRecent
+    description: MostRecent
+    get:
+      tags:
+        - News
+      summary: Get MostRecent
+      description: Get MostRecent
+      x-swagger-router-controller: News
+      operationId: GetMostRecent
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MostRecent'
+        '400':
+          description: Invalid value
+          content: {}
+  /News/GetRumors:
+    summary: Rumors
+    description: Rumors
+    get:
+      tags:
+        - News
+      summary: Get Rumors
+      description: Get Rumors
+      x-swagger-router-controller: News
+      operationId: GetRumors
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rumors'
+        '400':
+          description: Invalid value
+          content: {}
+  /FinancialAnalysis/GetCheckup:
+    summary: FinancialAnalysis GetCheckup
+    description: FinancialAnalysis GetCheckup
+    get:
+      tags:
+        - FinancialAnalysis
+      summary: GetCheckup
+      description: GetCheckup
+      x-swagger-router-controller: FinancialAnalysis
+      operationId: GetCheckup
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Checkup'
+        '400':
+          description: Invalid value
+          content: {}
+  /FinancialAnalysis/GetFinancialRatio:
+    summary: FinancialAnalysis FinancialRatio
+    description: FinancialAnalysis FinancialRatio
+    get:
+      tags:
+        - FinancialAnalysis
+      summary: FinancialRatio
+      description: FinancialRatio
+      x-swagger-router-controller: FinancialAnalysis
+      operationId: GetFinancialRatio
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FinancialRatio'
+        '400':
+          description: Invalid value
+          content: {}
+  /FinancialAnalysis/GetZMFScore:
+    summary: FinancialAnalysis ZMFScore
+    description: FinancialAnalysis ZMFScore
+    get:
+      tags:
+        - FinancialAnalysis
+      summary: ZMFScore
+      description: ZMFScore
+      x-swagger-router-controller: FinancialAnalysis
+      operationId: GetZMFScore
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ZMFScore'
+        '400':
+          description: Invalid value
+          content: {}
+  /CashDividendAnalysis/GetAnalysis:
+    summary: CashDividendAnalysis Analysis
+    description: CashDividendAnalysis Analysis
+    get:
+      tags:
+        - CashDividendAnalysis
+      summary: Analysis
+      description: Analysis
+      x-swagger-router-controller: CashDividendAnalysis
+      operationId: GetAnalysis
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Analysis'
+        '400':
+          description: Invalid value
+          content: {}
+  /ConsensusAnalysis/GetConsensus:
+    summary: ConsensusAnalysis Consensus
+    description: ConsensusAnalysis Consensus
+    get:
+      tags:
+        - ConsensusAnalysis
+      summary: Consensus
+      description: Consensus
+      x-swagger-router-controller: ConsensusAnalysis
+      operationId: GetConsensus
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Consensus'
+        '400':
+          description: Invalid value
+          content: {}
+  /FinancialStatement/GetBalanceSheet:
+    summary: FinancialStatement BalanceSheet
+    description: FinancialStatement BalanceSheet
+    get:
+      tags:
+        - FinancialStatement
+      summary: BalanceSheet
+      description: BalanceSheet
+      x-swagger-router-controller: FinancialStatement
+      operationId: GetBalanceSheet
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BalanceSheet'
+        '400':
+          description: Invalid value
+          content: {}
+  /FinancialStatement/GetIncomeStatement:
+    summary: FinancialStatement IncomeStatement
+    description: FinancialStatement IncomeStatement
+    get:
+      tags:
+        - FinancialStatement
+      summary: IncomeStatement
+      description: IncomeStatement
+      x-swagger-router-controller: FinancialStatement
+      operationId: GetIncomeStatement
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IncomeStatement'
+        '400':
+          description: Invalid value
+          content: {}
+  /FinancialStatement/GetCashFlow:
+    summary: FinancialStatement CashFlow
+    description: FinancialStatement CashFlow
+    get:
+      tags:
+        - FinancialStatement
+      summary: CashFlow
+      description: CashFlow
+      x-swagger-router-controller: FinancialStatement
+      operationId: GetCashFlow
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CashFlow'
+        '400':
+          description: Invalid value
+          content: {}
+  /Alert/GetNotificationList:
+    summary: Alert GetNotificationList
+    description: Alert GetNotificationList
+    get:
+      tags:
+        - Alert
+      summary: NotificationList
+      description: NotificationList
+      x-swagger-router-controller: Alert
+      operationId: GetNotificationList
+      parameters:
+        - $ref: '#/components/parameters/language'
+        - $ref: '#/components/parameters/OrganCode'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotificationList'
+        '400':
+          description: Invalid value
+          content: {}
+  /Alert/GetAllSystemAlerts:
+    summary: Alert AllSystemAlerts
+    description: Alert AllSystemAlerts
+    get:
+      tags:
+        - Alert
+      summary: AllSystemAlerts
+      description: AllSystemAlerts
+      x-swagger-router-controller: Alert
+      operationId: GetAllSystemAlerts
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AllSystemAlerts'
+        '400':
+          description: Invalid value
+          content: {}
+  /PersonalAlert/GetPersonalAlertTypes:
+    summary: Alert PersonalAlertTypes
+    description: Alert PersonalAlertTypes
+    get:
+      tags:
+        - Alert
+      summary: PersonalAlertTypes
+      description: PersonalAlertTypes
+      x-swagger-router-controller: Alert
+      operationId: GetPersonalAlertTypes
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PersonalAlertTypes'
+        '400':
+          description: Invalid value
+          content: {}
+  /Screener/GetScreenerParameters:
+    summary: Alert ScreenerParameters
+    description: Screener ScreenerParameters
+    get:
+      tags:
+        - Screener
+      summary: ScreenerParameters
+      description: ScreenerParameters
+      x-swagger-router-controller: Screener
+      operationId: GetScreenerParameters
+      parameters:
+        - $ref: '#/components/parameters/language'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ScreenerParameters'
+        '400':
+          description: Invalid value
+          content: {}
+components:
+  schemas:
+    type: object
+    properties:
+      error:
+        type: string
+      packageId:
+        type: string
+      page:
+        type: integer
+      pageSize:
+        type: integer
+      status:
+        type: string
+      totalCount:
+        type: integer
+      items:
+        type: array
+        properties:
+          ceilingPrice:
+            type: integer
+          floorPrice:
+            type: integer
+          lastClose:
+            type: integer
+          lastVolume:
+            type: integer
+          matchPrice:
+            type: integer
+          nrOfDay:
+            type: integer
+          organCode:
+            type: string
+          rank:
+            type: integer
+          referencePrice:
+            type: integer
+          rsI14:
+            type: number
+          ticker:
+            type: string
+          totalMatchVolume:
+            type: integer
+          totalRank:
+            type: integer
+          totalTradingTime:
+            type: number
+          tradingDate:
+            type: string
+          volumeExpected:
+            type: number
+  parameters:
+    language:
+      in: query
+      name: language
+      required: false
+      schema:
+        type: string
+        default: en
+        enum:
+          - en
+          - vi
+          - kr
+      description: 'en, vi, kr'
+      allowEmptyValue: true
+    id:
+      in: query
+      name: id
+      description: request id
+      required: true
+      schema:
+        type: integer
+        default: 1
+    OrganCode:
+      in: query
+      name: OrganCode
+      description: Organization code
+      required: false
+      schema:
+        type: string
+    Code:
+      in: query
+      name: Code
+      description: 'ex: VNINDEX'
+      required: true
+      schema:
+        type: string
+    ComGroupCode:
+      in: query
+      name: ComGroupCode
+      description: 'ex: VNINDEX, VN30, HNX30'
+      required: true
+      schema:
+        type: string
+    Exchange:
+      in: query
+      name: Exchange
+      description: 'ex: AllExchange, HSX, HNX, UPCOM'
+      required: true
+      schema:
+        type: string
+    Creiteria:
+      in: query
+      name: Creiteria
+      description: 'ex: MarketCap, Volume, Value, FrBuyVol, FrSellVol'
+      required: true
+      schema:
+        type: string
+    Frequently:
+      in: query
+      name: Frequently
+      required: true
+      schema:
+        type: string
+        default: Daily
+        enum:
+          - Minute
+          - Hour
+          - Daily
+          - Weekly
+          - Monthly
+          - Yearly
+      description: >-
+        1 Minute, 5 Minute, 15 Minute, 30 Minute, 1 Hour, 4 Hour, Daily, Weekly,
+        Monthly, Yearly
+      allowEmptyValue: true
+    Page:
+      in: query
+      name: Page
+      description: Page number
+      required: true
+      schema:
+        type: integer
+        default: 1
+    PageSize:
+      in: query
+      name: PageSize
+      description: the items in per page
+      required: true
+      schema:
+        type: integer
+        default: 20
+    From:
+      in: query
+      name: From
+      description: ''
+      required: false
+      schema:
+        type: string
+    To:
+      in: query
+      name: From
+      description: ''
+      required: false
+      schema:
+        type: string
+    watchListId:
+      in: query
+      name: WatchListId
+      description: id of list
+      required: true
+      schema:
+        type: string
+    watchListType:
+      in: query
+      name: WatchListType
+      description: type of list
+      required: true
+      schema:
+        type: string
+        enum:
+          - CompanyGroup
+          - Sector
+          - Custom
+    Type:
+      in: query
+      name: Type
+      description: type of list
+      required: true
+      schema:
+        type: string
+        enum:
+          - CompanyGroup
+          - Sector
+          - Custom
+    status:
+      in: query
+      name: status
+      required: true
+      schema:
+        type: integer
+        default: 1
+        enum:
+          - 0
+          - 1
+      description: '0,1'
+      allowEmptyValue: false
+    TimeRange:
+      in: query
+      name: TimeRange
+      required: true
+      schema:
+        type: string
+        default: OneDay
+        enum:
+          - OneDay
+          - OneWeek
+          - OneMonth
+          - ThreeMonths
+          - SixMonths
+          - YearToDate
+          - OneYear
+          - ThreeYears
+          - FiveYears
+      description: >-
+        OneDay, OneWeek, OneMonth, ThreeMonths, SixMonths, YearToDate, OneYear,
+        ThreeYears, FiveYears
+      allowEmptyValue: false
+    WeekOfYear:
+      in: query
+      name: WeekOfYear
+      description: Week Of Year
+      required: true
+      schema:
+        type: integer
+        default: 1
+    Year:
+      in: query
+      name: Year
+      description: Year
+      required: true
+      schema:
+        type: integer
+        default: 2019
+    KeyWord:
+      in: query
+      name: KeyWord
+      description: KeyWord
+      required: true
+      schema:
+        type: string
+        default: ''
+    FromDate:
+      in: query
+      name: FromDate
+      description: FromDate
+      required: true
+      schema:
+        type: string
+        default: ''
+    ToDate:
+      in: query
+      name: FromDate
+      description: FromDate
+      required: true
+      schema:
+        type: string
+        default: ''
+    AbnormalityType:
+      in: query
+      name: AbnormalityType
+      description: AbnormalityType
+      required: false
+      schema:
+        type: string
+        default: ''
+    AverageVolume10D:
+      in: query
+      name: AverageVolume10D
+      description: AverageVolume10D
+      required: false
+      schema:
+        type: integer
+        default: ''
+    RateOfUnmatched:
+      in: query
+      name: RateOfUnmatched
+      description: RateOfUnmatched
+      required: false
+      schema:
+        type: number
+        default: ''
+    PriceVolumeAnalysis:
+      in: query
+      name: PriceVolumeAnalysis
+      description: PriceVolumeAnalysis
+      required: false
+      schema:
+        type: string
+        default: VolumeIncreaseAndPriceIncrease
+        enum:
+          - VolumeIncreaseAndPriceIncrease
+          - VolumeIncreaseAndPriceDecrease
+          - PriceIncrease
+          - PriceDecrease
+          - VolumeIncrease
+    OrderType:
+      in: query
+      name: OrderType
+      description: OrderType
+      required: false
+      schema:
+        type: string
+        default: Both
+        enum:
+          - Both
+          - Buy
+          - Sell
+    Proportion:
+      in: query
+      name: Proportion
+      description: Proportion
+      required: false
+      schema:
+        type: number
+        default: '0.1'
+    ExceedingPercentage:
+      in: query
+      name: ExceedingPercentage
+      description: ExceedingPercentage
+      required: false
+      schema:
+        type: number
+        default: 0.2
+        enum:
+          - 0.2
+          - 0.4
+          - 0.6
+          - 0.8
+          - 1
+    TotalVolumeBuSd:
+      in: query
+      name: TotalVolumeBuSd
+      description: TotalVolumeBuSd
+      required: false
+      schema:
+        type: number
+        default: 0.3
+        enum:
+          - 0.3
+          - 0.6
+          - 1
+          - 1.5
+          - 2
+    OrderTypeAggressive:
+      in: query
+      name: OrderType
+      description: OrderType
+      required: false
+      schema:
+        type: string
+        default: MoreThan
+        enum:
+          - MoreThan
+          - LessThan
+

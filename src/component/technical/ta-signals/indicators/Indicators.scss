@@ -1,0 +1,27 @@
+@import "../../../../styles/variables";
+
+.technical-wrapper {
+  position: relative;
+}
+
+.technical-wrapper {
+  .custom-table > tbody > tr > td, .custom-table > tbody > tr > th {
+    padding: 0 !important;
+    overflow: inherit !important;
+  }
+
+  .custom-table > tbody > tr > td > div > .group-sticker {
+    padding: 10px !important;
+  }
+
+  .bg-blue {
+    background-color: $l_color_4 !important;
+  }
+
+  .bg-gray {
+    background-color: $ta_color_2 !important;
+  }
+
+  .table-sticky-first-column tbody tr.hover td {
+  }
+}

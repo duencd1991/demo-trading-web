@@ -1,0 +1,22 @@
+summary: Overview
+description: Overview
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get Overview'
+  description: 'Get Overview'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'getOverview'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/watchListId'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Overview'
+    '400':
+      description: Invalid value
+      content: {}

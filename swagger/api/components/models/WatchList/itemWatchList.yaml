@@ -1,0 +1,8 @@
+type: "object"
+properties:
+  code:
+    type: "string"
+    example: "SSI"
+  name:
+    type: "string"
+    example: "Saigon Securities JSC" 

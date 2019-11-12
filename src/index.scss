@@ -1,0 +1,49 @@
+.root {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  touch-action: none;
+  overflow: hidden;
+}
+
+.lm_root {
+  height: 100vh;
+}
+
+.goldenLayout {
+  height: 100%;
+}
+
+.lm_content {
+  //overflow-y: scroll !important;
+}
+
+.fiintrade-main {
+  overflow: hidden !important;
+}
+
+.content-scroll-table {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+
+.lm_maximised .lm_header {
+  background-color: #25282e !important;
+}
+.light-mode {
+  .lm_maximised .lm_header {
+    background-color: #e8eaed !important;
+  }
+}
+
+.lm_title {
+  margin-left: 10px !important;
+}
+
+.bg-blur {
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}

@@ -1,0 +1,139 @@
+@import '../../../styles/variables';
+$watermelon: #eb505a;
+$corn_flower_blue: #5f99ff;
+$medium_spring_green: #00de8b;
+$sandy_brown: #facc5c;
+$coral: #f88634;
+$peach_puff: #f5d0c5;
+$indian_red: #eb505a;
+$warm-grey: #969696;
+$very-light-pink: #d2d2d2;
+.a-b-color {
+  color: $corn_flower_blue;
+}
+.b-b-color {
+  color: $medium_spring_green;
+}
+.c-b-color {
+  color: $sandy_brown;
+}
+.d-b-color {
+  color: $coral;
+}
+.e-b-color {
+  color: $peach_puff;
+}
+.f-b-color {
+  color: $indian_red;
+}
+.top-rate {
+  position: relative;
+  height: 36px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .top-rate-top {
+    border-radius: 100%;
+    text-align: center;
+    color: #2d2d2d;
+    z-index: 2;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+  }
+  .top-rate-top,
+  .top-rate-bottom {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .top-rate-bottom {
+    background: transparent;
+    z-index: 1;
+  }
+  .top-rate-bottom:after,
+  .top-rate-bottom::before {
+    position: absolute;
+    top: 15px;
+    right: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    content: ' ';
+  }
+  .top-rate-bottom:after {
+    border-width: 13px 14px 0 0;
+  }
+  .top-rate-bottom::before {
+    border-width: 13px 0 0 14px;
+  }
+}
+.full-ticker-detail {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  .rank-down,
+  .rank-up,
+  .rank-balance {
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+  .rank-down {
+    border-top: 6px solid $watermelon;
+  }
+  .rank-up {
+    border-bottom: 6px solid #00de8b;
+  }
+  .rank-balance {
+    border-width: 0.5px 6px 0.5px 6px;
+    border-style: solid;
+    border-color: #ffffff;
+  }
+  .full-ticker-detail-name,
+  .full-ticker-detail-name-exchange {
+    font-size: 10px;
+    color: $very-light-pink;
+  }
+  .full-ticker-detail-name {
+    max-width: calc(100% - 85px);
+  }
+}
+.text-overflow-eclipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+tr.hover {
+  .icon-pencil-edit,
+  .icon-bin-delete {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+.good-b-color {
+  color: $good_color_1;
+}
+.average-b-color {
+  color: $average_color_1;
+}
+.weak-b-color {
+  color: $weak_color_1;
+}
+
+.light-mode {
+  .full-ticker-detail {
+    .full-ticker-detail-name,
+    .full-ticker-detail-name-exchange {
+      color: $warm-grey;
+    }
+  }
+}

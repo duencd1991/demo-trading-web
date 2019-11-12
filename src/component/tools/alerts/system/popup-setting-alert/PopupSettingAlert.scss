@@ -1,0 +1,104 @@
+@import './../../../../../styles/variables';
+
+.popup-setting-alert {
+  cursor: pointer;
+  cursor: pointer;
+  position: absolute;
+  z-index: 101;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .small-text {
+    margin-left: -25px;
+  }
+
+  .popup-content {
+    box-shadow: 0 2px 4px 0 rgba(16, 16, 16, 0.5);
+    background-color: $ta_color_1;
+    position: absolute;
+    z-index: 4;
+    min-width: 325px;
+    border-radius: 4px;
+    .popup-header {
+      background-color: $b_color_3;
+      padding-top: 3px;
+      padding-left: 16px;
+      height: 26px;
+      border-radius: 4px 4px 0px 0px;
+      .popup-header-text {
+        width: 42px;
+        height: 14px;
+        font-size: 11px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: white;
+      }
+    }
+
+    .popup-body {
+      padding: 12px 10px 12px 20px;
+      .popup-body-content {
+        height: 246px;
+        .row-setting {
+          .row {
+            align-items: baseline;
+            .toggle-component {
+              margin: 0 !important;
+              margin-right: 6px !important;
+            }
+            .title-setting {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .btn-setting {
+        .btn-setting-save {
+          font-size: 11px;
+          height: 20px;
+          width: 60px;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          color: white;
+          box-shadow: 0 1px 0 0 $l_b_color_2;
+          background: $l_b_color_2;
+        }
+
+        .btn-setting-cancel {
+          margin-left: 5px;
+          font-size: 11px;
+          height: 20px;
+          width: 60px;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          color: white;
+          box-shadow: 0 1px 0 0 $s_color_3;
+          background: $s_color_3;
+        }
+      }
+    }
+  }
+
+  .icon-close-popup:before {
+    content: '\e904';
+    color: white;
+    padding: 5px 10px 0px 0px;
+    float: right;
+  }
+}
+.light-mode {
+  .popup-setting-alert {
+    .popup-content {
+      background-color: white;
+    }
+  }
+}

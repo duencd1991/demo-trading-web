@@ -1,0 +1,21 @@
+get:
+  tags:
+  - "UserSetting"
+  summary: 'Get Top Screeners'
+  description: 'Get Top Screeners'
+  x-swagger-router-controller: UserSetting
+  operationId: 'getTopScreeners'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TopScreeners'
+    '400':
+      description: Invalid value
+      content: {}
+summary: Top Screeners
+description: Top Screeners

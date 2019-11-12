@@ -1,0 +1,538 @@
+$white: #ffffff; //global text color
+$grey: #808080; //global text color
+$t_color_1: #1f2329; //background container color
+$t_color_2: #1e242e; //background top header color
+$t_color_3: #191d25; //background body color
+$t_color_4: #25282e; //bg header tabs golden layout
+$t_color_5: #2e3034;
+
+//stock color
+$s_color_1: #ffffff; // reference price
+$s_color_2: #00ffff; //floor price
+$s_color_3: #eb505a; //floor reference price , danger button color
+$s_color_4: #facc5c; //equal reference price
+$s_color_5: #00de8b; //reference ceiling price
+$s_color_6: #e26fff; //equal ceiling price
+
+//button color
+$b_color_1: #1d97ef; //active button bg color
+$b_color_2: #005197; //primary button bg color
+$b_color_3: #153f63; //general button bg color
+$b_color_4: #00cfff; //swicth button bg color
+$b_color_5: #215368; //active color tr news
+$b_color_6: #92c0d1; //bg button on row ticker
+
+//label color
+$l_color_1: #ffc859; //orangle label bg color
+$l_color_2: #facc5c; //med label bg color
+$l_color_3: #009d5b; //low label bg color
+$l_color_4: #1f2329; //high label bg color
+$l_color_5: #47c3ff; //low label bg color
+$l_color_6: #359ee4; //link color
+$l_color_7: #969696; //text in table technical
+$l_color_8: #f68b1f; //text in pin news
+$l_color_9: #2f936f; //color day range
+$l_color_10: #8d2595; //color share link hover
+$l_color_11: #252b35; //bg color list group sidebar
+$l_color_12: #6749c4;
+
+//panel color
+$p_color_1: #3694e9; //panel header bg color
+$p_color_2: #555555; //panel bg color
+$p_color_3: rgba(#555555, 0.3); //panel bg color
+
+//card color
+$c_color_1: #009d5b; //up bg color
+$c_color_2: #cc3b37; //down bg color
+$c_color_3: #00bfbe; //pvi bg color
+$c_color_4: #f1ad57; //other bg color
+
+//border color
+$bo_color_1: #47c3ff; //border bottom tabs
+$bo_color_2: #424955; //border color line
+
+//top sub menu color
+$ts_color_1: #3a4454;
+$ts_color_2: #59616f;
+$ts_color_3: #8d8d8e;
+
+//left sidebar color
+$le_color_1: #d2d2d2;
+
+//table color
+$ta_color_1: #273040;
+$ta_color_2: #232931;
+$ta_color_3: #555555;
+$ta_color_4: #2d3034;
+$ta_color_5: #3e434a;
+$ta_color_6: #3f4045;
+$ta_color_7: #2c73e8;
+$ta_color_8: #232931;
+
+//Levels In Assessment color
+$good_color_1: #00de8b;
+$average_color_1: #facc5c;
+$weak_color_1: #eb505a;
+
+//top filter search bg
+$tf_color_1: #2a2d34;
+$tf_color_2: #1a3241;
+$tf_color_3: #273040;
+$tf_color_4: #1b3242;
+
+//scroll color
+$sc_color_1: #2e333c;
+$sc_color_2: #202328;
+$sc_color_3: #363b45;
+
+//Heatmap color
+$sector_hover_bg: #fdfbde;
+$floor_sector_title_bg: #b6434a;
+$ceil_sector_title_bg: #187a64;
+$ref_sector_title_bg: #f3b662;
+
+///////////calendar component colors////////////
+$border-date: #243041;
+$bg-wrap-date: #1c222b;
+$bg-input-date: #292f3f;
+///////////////////////////////////////////////
+$tab-bg-color: rgba(#153f63, 0.5);
+$tab-active-color: #005197;
+$border-color-chart: #555555;
+$text-color-subtitle: #50e3c2;
+
+//light mode
+//
+$color-hover-table-light: #c3d7f8;
+// Color system
+//
+$l_dark: #ffffff;
+$l_white: #1f2023; //global text color
+$l_grey: #808080; //global text color
+$l_t_color_1: #ffffff; //background container color
+$l_t_color_2: #ffffff; //background top header color
+$l_t_color_3: #e8eaed; //background body color
+$l_t_color_4: #e8eaed; //bg header tabs golden layout
+$l_t_color_5: #1f2023;
+
+//stock color
+$l_s_color_1: #333333; // reference price
+$l_s_color_2: #00ffff; //floor price
+$l_s_color_3: #eb505a; //floor reference price , danger button color
+$l_s_color_4: #facc5c; //equal reference price
+$l_s_color_5: #00de8b; //reference ceiling price
+$l_s_color_6: #e26fff; //equal ceiling price
+
+//button color
+$l_b_color_1: #1d97ef; //active button bg color
+$l_b_color_2: #2c73e8; //primary button bg color
+$l_b_color_3: #f1f3f4; //general button bg color
+$l_b_color_4: #00cfff; //swicth button bg color
+$l_b_color_5: #215368; //active color tr news
+$l_b_color_6: #92c0d1; //bg button on row ticker
+
+//label color
+$l_l_color_1: #ffc859; //orangle label bg color
+$l_l_color_2: #facc5c; //med label bg color
+$l_l_color_3: #009d5b; //low label bg color
+$l_l_color_4: #1f2329; //high label bg color
+$l_l_color_5: #47c3ff; //low label bg color
+$l_l_color_6: #359ee4; //link color
+$l_l_color_7: #969696; //text in table technical
+$l_l_color_8: #f68b1f; //text in pin news
+$l_l_color_9: #2f936f; //color day range
+$l_l_color_10: #8d2595; //color share link hover
+$l_l_color_11: #252b35; //bg color list group sidebar
+$l_l_color_12: #6749c4;
+
+//panel color
+$l_p_color_1: #3694e9; //panel header bg color
+$l_p_color_2: #555555; //panel bg color
+
+//card color
+$l_c_color_1: #009d5b; //up bg color
+$l_c_color_2: #cc3b37; //down bg color
+$l_c_color_3: #00bfbe; //pvi bg color
+$l_c_color_4: #f1ad57; //other bg color
+
+//border color
+$l_bo_color_1: #2c73e8; //border bottom tabs
+$l_bo_color_2: #424955; //border color line
+
+//top sub menu color
+$l_ts_color_1: #3a4454;
+$l_ts_color_2: #59616f;
+$l_ts_color_3: #8d8d8e;
+
+//left sidebar color
+$l_le_color_1: #2b457d;
+
+//table color
+$l_ta_color_1: #2b457d;
+$l_ta_color_2: #f1f3f4;
+$l_ta_color_3: #555555;
+$l_ta_color_4: #2d3034;
+$l_ta_color_5: #3e434a;
+$l_ta_color_6: #3f4045;
+$l_ta_color_7: #2c73e8;
+$l_ta_color_8: #232931;
+
+//top filter search bg
+$l_tf_color_1: #f1f3f4;
+$l_tf_color_2: #1a3241;
+$l_tf_color_3: #273040;
+$l_tf_color_4: #f1f3f4;
+
+//scroll color
+$l_sc_color_1: #e8eaed;
+$l_sc_color_2: #ffffff;
+$l_sc_color_3: #363b45;
+
+//Heatmap color
+$l_sector_hover_bg: #fdfbde;
+$l_floor_sector_title_bg: #b6434a;
+$l_reduce_ticker_percent: #e94235;
+$l_ceil_sector_title_bg: #187a64;
+$l_ref_sector_title_bg: #f3b662;
+
+///////////calendar component colors////////////
+$l_border-date: #243041;
+$l_bg-wrap-date: #1c222b;
+$l_bg-input-date: #292f3f;
+///////////////////////////////////////////////
+$l_tab-bg-color: rgba(#153f63, 0.5);
+$l_tab-active-color: #2b457d;
+$l_bg_container: #bdc1c5;
+
+@mixin color-theme($mode) {
+  @if ($mode == 'dark') {
+    $arr-colors-name: ();
+    $arr-colors-name: map-merge(
+      (
+        't-color-1': $t_color_1,
+        't-color-2': $t_color_2,
+        't-color-3': $t_color_3,
+        't-color-4': $t_color_4,
+        't-color-5': $t_color_5,
+        's-color-1': $s_color_1,
+        's-color-2': $s_color_2,
+        's-color-3': $s_color_3,
+        's-color-4': $s_color_4,
+        's-color-5': $s_color_5,
+        's-color-6': $s_color_6,
+        'b-color-1': $b_color_1,
+        'b-color-2': $l_color_2,
+        'b-color-3': $b_color_3,
+        'b-color-4': $l_color_4,
+        'b-color-5': $b_color_5,
+        'b-color-6': $b_color_6,
+        'l-color-1': $l_color_1,
+        'l-color-2': $l_color_2,
+        'l-color-3': $l_color_3,
+        'l-color-4': $l_color_4,
+        'l-color-5': $l_color_5,
+        'l-color-6': $l_color_6,
+        'l-color-7': $l_color_7,
+        'l-color-8': $l_color_8,
+        'l-color-9': $l_color_9,
+        'l-color-10': $l_color_10,
+        'l-color-11': $l_color_11,
+        'l-color-12': $l_color_12,
+        'p-color-1': $p_color_1,
+        'p-color-2': $p_color_2,
+        'p-color-3': $p_color_3,
+        'c-color-1': $c_color_1,
+        'c-color-2': $c_color_2,
+        'c-color-3': $c_color_3,
+        'c-color-4': $c_color_4,
+        'bo-color-1': $bo_color_1,
+        'bo-color-2': $bo_color_2,
+        'ts-color-1': $ts_color_1,
+        'ts-color-2': $ts_color_2,
+        'ts-color-3': $ts_color_3,
+        'le-color-1': $le_color_1,
+        'ta-color-1': $ta_color_1,
+        'ta-color-2': $ta_color_2,
+        'ta-color-3': $ta_color_3,
+        'ta-color-4': $ta_color_4,
+        'ta-color-5': $ta_color_5,
+        'ta-color-6': $ta_color_6,
+        'ta-color-7': $ta_color_7,
+        'ta-color-8': $ta_color_8,
+        '$tf_color_1': $tf-color-1,
+        '$tf_color_2': $tf-color-2,
+        '$tf_color_3': $tf-color-3,
+        '$tf_color_4': $tf-color-4,
+      ),
+      $arr-colors-name
+    );
+
+    $arr-colors-number: ();
+    $arr-colors-number: map-merge((), $arr-colors-number);
+    @each $name, $val in $arr-colors-name {
+      .text-#{$name} {
+        color: $val;
+      }
+
+      .bg-#{$name} {
+        background-color: $val;
+      }
+      .bor-#{$name} {
+        border-color: $val;
+      }
+    }
+  }
+  @if ($mode == 'light') {
+    $arr-colors-name: ();
+    $arr-colors-name: map-merge(
+      (
+        't-color-1': $l_t_color_1,
+        't-color-2': $l_t_color_2,
+        't-color-3': $l_t_color_3,
+        't-color-4': $l_t_color_4,
+        't-color-5': $l_t_color_5,
+        's-color-1': $l_s_color_1,
+        's-color-2': $l_s_color_2,
+        's-color-3': $l_s_color_3,
+        's-color-4': $l_s_color_4,
+        's-color-5': $l_s_color_5,
+        's-color-6': $l_s_color_6,
+        'b-color-1': $l_b_color_1,
+        'b-color-2': $l_l_color_2,
+        'b-color-3': $l_b_color_3,
+        'b-color-4': $l_l_color_4,
+        'b-color-5': $l_b_color_5,
+        'b-color-6': $l_b_color_6,
+        'l-color-1': $l_l_color_1,
+        'l-color-2': $l_l_color_2,
+        'l-color-3': $l_l_color_3,
+        'l-color-4': $l_l_color_4,
+        'l-color-5': $l_l_color_5,
+        'l-color-6': $l_l_color_6,
+        'l-color-7': $l_l_color_7,
+        'l-color-8': $l_l_color_8,
+        'l-color-9': $l_l_color_9,
+        'l-color-10': $l_l_color_10,
+        'l-color-11': $l_l_color_11,
+        'l-color-12': $l_l_color_12,
+        'p-color-1': $l_p_color_1,
+        'p-color-2': $l_p_color_2,
+        'c-color-1': $l_c_color_1,
+        'c-color-2': $l_c_color_2,
+        'c-color-3': $l_c_color_3,
+        'c-color-4': $l_c_color_4,
+        'bo-color-1': $l_bo_color_1,
+        'bo-color-2': $l_bo_color_2,
+        'ts-color-1': $l_ts_color_1,
+        'ts-color-2': $l_ts_color_2,
+        'ts-color-3': $l_ts_color_3,
+        'le-color-1': $l_le_color_1,
+        'ta-color-1': $l_ta_color_1,
+        'ta-color-2': $l_ta_color_2,
+        'ta-color-3': $l_ta_color_3,
+        'ta-color-4': $l_ta_color_4,
+        'ta-color-5': $l_ta_color_5,
+        'ta-color-6': $l_ta_color_6,
+        '$tf_color_1': $l_tf-color-1,
+        '$tf_color_2': $l_tf-color-2,
+        '$tf_color_3': $l_tf-color-3,
+        '$tf_color_4': $l_tf-color-4,
+      ),
+      $arr-colors-name
+    );
+
+    $arr-colors-number: ();
+    $arr-colors-number: map-merge((), $arr-colors-number);
+    @each $name, $val in $arr-colors-name {
+      .text-#{$name} {
+        color: $val !important;
+      }
+
+      .bg-#{$name} {
+        background-color: $val !important;
+      }
+      .bor-#{$name} {
+        border-color: $val !important;
+      }
+    }
+  }
+}
+
+body {
+  @include color-theme('dark');
+}
+.light-mode {
+  @include color-theme('light');
+}
+/*
+//light mode
+//
+// Color system
+//
+$l_dark: #333333;
+$l_white: #ffffff; //global text color
+$l_grey: #808080; //global text color
+$l_t_color_1: #ffffff; //background container color
+$l_t_color_2: #ffffff; //background top header color
+$l_t_color_3: #e8eaed; //background body color
+$l_t_color_4: #e8eaed; //bg header tabs golden layout
+$l_t_color_5: #1f2023; //color tab goldent layout
+
+//stock color
+$l_s_color_1: #333333; // reference price
+$l_s_color_2: #00ffff; //floor price
+$l_s_color_3: #eb505a; //floor reference price , danger button color
+$l_s_color_4: #facc5c; //equal reference price
+$l_s_color_5: #00de8b; //reference ceiling price
+$l_s_color_6: #e26fff; //equal ceiling price
+
+//button color
+$l_b_color_1: #1d97ef; //active button bg color
+$l_b_color_2: #005197; //primary button bg color
+$l_b_color_3: #f1f3f4; //general button bg color
+$l_b_color_4: #00cfff; //swicth button bg color
+$l_b_color_5: #215368; //active color tr news
+$l_b_color_6: #92c0d1; //bg button on row ticker
+
+//label color
+$l_l_color_1: #ffc859; //orangle label bg color
+$l_l_color_2: #facc5c; //med label bg color
+$l_l_color_3: #009d5b; //low label bg color
+$l_l_color_4: #1f2329; //high label bg color
+$l_l_color_5: #47c3ff; //low label bg color
+$l_l_color_6: #359ee4; //link color
+$l_l_color_7: #969696; //text in table technical
+$l_l_color_8: #f68b1f; //text in pin news
+$l_l_color_9: #2f936f; //color day range
+$l_l_color_10: #8d2595; //color share link hover
+$l_l_color_11: #252b35; //bg color list group sidebar
+$l_l_color_12: #6749c4;
+
+//panel color
+$l_p_color_1: #3694e9; //panel header bg color
+$l_p_color_2: #555555; //panel bg color
+
+//card color
+$l_c_color_1: #009d5b; //up bg color
+$l_c_color_2: #cc3b37; //down bg color
+$l_c_color_3: #00bfbe; //pvi bg color
+$l_c_color_4: #f1ad57; //other bg color
+
+//border color
+$l_bo_color_1: #2c73e8; //border bottom tabs
+$l_bo_color_2: #424955; //border color line
+
+//top sub menu color
+$l_ts_color_1: #3a4454;
+$l_ts_color_2: #59616f;
+$l_ts_color_3: #8d8d8e;
+
+//left sidebar color
+$l_le_color_1: #10477e;
+
+//table color
+$l_ta_color_1: #2b457d;
+$l_ta_color_2: #f1f3f4;
+$l_ta_color_3: #555555;
+$l_ta_color_4: #2d3034;
+$l_ta_color_5: #3e434a;
+$l_ta_color_6: #3f4045;
+$l_ta_color_7: #2c73e8;
+
+//top filter search bg
+$l_tf_color_1: #f1f3f4;
+$l_tf_color_2: #1a3241;
+$l_tf_color_3: #273040;
+$l_tf_color_4: #f1f3f4;
+
+//scroll color
+$l_sc_color_1: #e8eaed;
+$l_sc_color_2: #ffffff;
+$l_sc_color_3: #363b45;
+
+//Heatmap color
+$l_sector_hover_bg: #fdfbde;
+$l_floor_sector_title_bg: #b6434a;
+$l_ceil_sector_title_bg: #187a64;
+$l_ref_sector_title_bg: #f3b662;
+
+///////////calendar component colors////////////
+$l_border-date: #243041;
+$l_bg-wrap-date: #1c222b;
+$l_bg-input-date: #292f3f;
+///////////////////////////////////////////////
+
+$l-arr-colors-name: ();
+$l-arr-colors-name: map-merge(
+  (
+    'l-t-color-1': $l_t_color_1,
+    'l-t-color-2': $l_t_color_2,
+    'l-t-color-3': $l_t_color_3,
+    'l-t-color-4': $l_t_color_4,
+    'l-t-color-5': $l_t_color_5,
+    'l-s-color-1': $l_s_color_1,
+    'l-s-color-2': $l_s_color_2,
+    'l-s-color-3': $l_s_color_3,
+    'l-s-color-4': $l_s_color_4,
+    'l-s-color-5': $l_s_color_5,
+    'l-s-color-6': $l_s_color_6,
+    'l-b-color-1': $l_b_color_1,
+    'l-b-color-2': $l_b_color_2,
+    'l-b-color-3': $l_b_color_3,
+    'l-b-color-4': $l_b_color_4,
+    'l-b-color-5': $l_b_color_5,
+    'l-b-color-6': $l_b_color_6,
+    'l-l-color-1': $l_l_color_1,
+    'l-l-color-2': $l_l_color_2,
+    'l-l-color-3': $l_l_color_3,
+    'l-l-color-4': $l_l_color_4,
+    'l-l-color-5': $l_l_color_5,
+    'l-l-color-6': $l_l_color_6,
+    'l-l-color-7': $l_l_color_7,
+    'l-l-color-8': $l_l_color_8,
+    'l-l-color-9': $l_l_color_9,
+    'l-l-color-10': $l_l_color_10,
+    'l-l-color-11': $l_l_color_11,
+    'l-l-color-12': $l_l_color_12,
+    'l-p-color-1': $l_p_color_1,
+    'l-p-color-2': $l_p_color_2,
+    'l-c-color-1': $l_c_color_1,
+    'l-c-color-2': $l_c_color_2,
+    'l-c-color-3': $l_c_color_3,
+    'l-c-color-4': $l_c_color_4,
+    'l-bo-color-1': $l_bo_color_1,
+    'l-bo-color-2': $l_bo_color_2,
+    'l-ts-color-1': $l_ts_color_1,
+    'l-ts-color-2': $l_ts_color_2,
+    'l-ts-color-3': $l_ts_color_3,
+    'l-le-color-1': $l_le_color_1,
+    'l-ta-color-1': $l_ta_color_1,
+    'l-ta-color-2': $l_ta_color_2,
+    'l-ta-color-3': $l_ta_color_3,
+    'l-ta-color-4': $l_ta_color_4,
+    'l-ta-color-5': $l_ta_color_5,
+    'l-ta-color-6': $l_ta_color_6,
+    'l-tf_color_1': $l_tf-color-1,
+    'l-tf_color_2': $l_tf-color-2,
+    'l-tf_color_3': $l_tf-color-3,
+    'l-tf_color_4': $l_tf-color-4
+  ),
+  $l-arr-colors-name
+);
+
+$l-arr-colors-number: ();
+$l-arr-colors-number: map-merge(
+  (),
+  $l-arr-colors-number
+);
+*/
+
+//$arr-line-height: ();
+//$arr-line-height: map-merge(
+//  (
+//    "1": 1,
+//    "base": $line-height-base,
+//    "2": 2
+//  ),
+//  $arr-line-height
+//);

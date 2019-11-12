@@ -1,0 +1,24 @@
+summary: Top Mover
+description: Top Mover
+get:
+  tags:
+  - "Top Mover"
+  summary: 'TopGainers'
+  description: 'TopGainers'
+  x-swagger-router-controller: TopMover
+  operationId: 'GetTopGainers'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TopGainers'
+    '400':
+      description: Invalid value
+      content: {}

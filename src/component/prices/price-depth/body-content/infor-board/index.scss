@@ -1,0 +1,56 @@
+@import '../../../../../styles/variables';
+
+.infor-board-wrapper {
+  // border-left: solid 1px #969696;
+  padding: 40px 0px 0px 0px;
+  font-size: 10px;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  // &:before {
+  //   content : "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   width  : 1px;
+  //   height: 343px;
+  //   border-left: solid 1px #969696;
+
+  //   // fix column border === box content
+  // }
+
+  .top-content,
+  .bottom-content {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+
+    .column-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .item {
+        margin-bottom: 8px;
+
+        .main-text {
+          margin-bottom: 2px;
+          white-space: nowrap;
+        }
+
+        .sub-text {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .divide-line {
+    // height: 1px;
+    // width: 100%;
+    // background-color: #969696;
+    // margin: 10px 0;
+  }
+}

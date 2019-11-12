@@ -1,0 +1,21 @@
+summary: Indicators
+description: Indicators
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get Indicators'
+  description: 'Get Indicators'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetIndicators'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Indicators'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,36 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        sectors:
+          type: "array"
+          items:
+            properties:
+              tickers:
+                type: "array"
+                items:
+                  properties:
+                    ticker:
+                      type: "string"
+                    organCode:
+                      type: "string"
+                    rate:
+                      type: "number"
+                    matchPrice:
+                      type: "number"
+                    percentPriceChange:
+                      type: "number"
+                    ceilingPrice:
+                      type: "number"
+                    floorPrice:
+                      type: "number"
+                    referencePrice:
+                      type: "number"                     
+              icbCode:
+                type: "number"                
+              name:
+                type: "string"
+              rate:
+                type: "number"

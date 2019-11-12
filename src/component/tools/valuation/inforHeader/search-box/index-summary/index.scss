@@ -1,0 +1,85 @@
+// .item-first {
+//     font-size: 28px;
+//     font-weight: bold;
+//     display: flex;
+
+//     strong {
+//       float: right;
+//     }
+
+//     > span {
+//       font-size: 12px;
+//       font-weight: 600;
+//       display: inline-block;
+//       margin-top: 10px;
+//       line-height: 12px;
+//       width: 26px;
+//     }
+
+//     > span > small {
+//       float: right;
+//       display: block;
+//       font-size: 12px;
+//       width: 100%;
+//     }
+
+//     > span > small:first-child {
+//       font-weight: 600;
+//     }
+
+//     > span > small:last-child {
+//       font-size: 8px;
+//     }
+//   }
+
+.summary-info-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+
+  .left-container, .right-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .left-container {
+    margin-right: 8px;
+
+    .main-price {
+      flex: 1;
+      font-size: 29px;
+      font-weight: 700;
+      margin-right: 2px;
+    }
+
+    .sub-price {
+      height: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .currency {
+      display: flex;
+      align-self: flex-end;
+      font-size: 8px;
+      font-weight: 300;
+    }
+  }
+
+  .right-container {
+    .sub-price {
+      height: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .percent {
+      font-size: 8px;
+      font-weight: 300;
+      white-space: nowrap;
+    }
+  }
+}

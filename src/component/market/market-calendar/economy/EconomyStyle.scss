@@ -1,0 +1,150 @@
+@import "../../../../styles/variables";
+.table-economy {
+  .group-list-date {
+    border-left: 2px solid $bo_color_1;
+    margin: 0px;
+    padding-left: 10px;
+    height: 20px;
+    margin: 5px 0px;
+    font-weight: 600;
+    margin-left: -9px;
+  }
+}
+
+.economy {
+  .list-filter {
+    width: 105px;
+  }
+
+  .top-nav {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .check-list-inline {
+    margin-left: 10px;
+  }
+
+  .checkbox {
+    margin-left: -5px;
+    margin-top: 2px;
+  }
+
+  .text-div {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .text-left {
+    margin-left: -8px;
+  }
+
+  .filterEvent {
+    margin-left: 20px;
+  }
+
+  .item-filter {
+    width: 100px;
+  }
+}
+
+$tooltip-color: $white;
+$tooltip-text-color: #009dff;
+
+.tooltip-watchlist {
+  position: relative;
+}
+
+.tooltip-trigger {
+  display: inline-block;
+  text-decoration: none;
+  width: 151px;
+  height: 29px;
+}
+
+.tooltip-bubble {
+  min-width: 120px;
+  max-width: 210px;
+  position: absolute;
+  z-index: 10;
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  padding-bottom: 9px;
+  transform: translateX(-50%);
+
+  &::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid $tooltip-color;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  padding-top: 9px;
+  transform: translateX(-50%);
+
+  &::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid $tooltip-color;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltip-left {
+  top: 50%;
+  right: 100%;
+  padding-right: 9px;
+  transform: translateY(-50%);
+
+  &::after {
+    border-left: 9px solid $tooltip-color;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.tooltip-right {
+  top: 50%;
+  left: 100%;
+  padding-left: 9px;
+  transform: translateY(-50%);
+
+  &::after {
+    border-right: 9px solid $tooltip-color;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.tooltip-message {
+  background: $tooltip-color;
+  border-radius: 3px;
+  color: $tooltip-text-color;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding: 0.75em;
+  text-align: left;
+}

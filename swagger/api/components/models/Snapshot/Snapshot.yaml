@@ -1,0 +1,166 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        quarterly:
+          type: "array"
+          properties:
+            bsa1:
+              type: "integer"
+            bsa23:
+              type: "integer"
+            bsa53: 
+              type: "integer"
+            bsa54: 
+              type: "integer"
+            bsa78: 
+              type: "integer"
+            bsa80: 
+              type: "integer"
+            bsb98:
+              type: "integer"
+            bsb104: 
+              type: "integer"
+            bsb113: 
+              type: "integer"
+            cfa18: 
+              type: "integer"
+            cfa26: -
+              type: "integer"
+            cfa34: 
+              type: "integer"
+            isa1: 
+              type: "integer"
+            isa22: 
+              type: "integer"
+            isb27: 
+              type: "integer"
+            isi103: 
+              type: "integer"
+            nob44:
+              type: "integer"
+            quarter:
+              type: "integer"
+            rqq41:
+              type: "integer"
+            rtq1:
+              type: "number"
+            rtq2: 
+              type: "number"
+            rtq3:
+              type: "number"
+            rtq25: 
+              type: "number"
+            rtq29: 
+              type: "number"
+            rtq44:
+              type: "integer"
+            rtq137:
+              type: "integer"
+            year:
+              type: "integer"
+        summary:
+          type: "array"
+          properties:
+            averageMatchVolume1Month:
+              type: "integer"
+            ceo: 
+              type: "string"
+            competitors:
+              type: "string"
+            foreignerPercentage:
+              type: "number"
+            freeFloat: 
+              type: "integer"
+            highestPrice1Year: 
+              type: "integer"
+            lowestPrice1Year: 
+              type: "integer"
+            majorHoldings:
+              type: "number"
+            organCode: 
+              type: "string"
+            outstandingShare: 
+              type: "integer"
+            rtd11: 
+              type: "integer"
+            rtd14:
+              type: "number"
+            rtd21: 
+              type: "number"
+            rtd25: 
+              type: "number"
+            rtd53: 
+              type: "number"
+            rtq10: 
+              type: "number"
+            rtq12: 
+              type: "number"
+            rtq14: 
+              type: "number"
+            rtq29: 
+              type: "number"
+            statePercentage: 
+              type: "integer"
+            valuePerShare: 
+              type: "integer"
+        yearly:
+          type: "array"
+          properties:
+            bsa1:
+              type: "integer"
+            bsa23: 
+              type: "integer"
+            bsa53: 
+              type: "integer"
+            bsa54: 
+              type: "integer"
+            bsa78: 
+              type: "integer"
+            bsa80: 
+              type: "integer"
+            bsb98: 
+              type: "integer"
+            bsb104: 
+              type: "integer"
+            bsb113: 
+              type: "integer"
+            cfa18: 
+              type: "integer"
+            cfa26: 
+              type: "integer"
+            cfa34: 
+              type: "integer"
+            isa1: 
+              type: "integer"
+            isa22: 
+              type: "integer"
+            isb27: 
+              type: "integer"
+            isi103: 
+              type: "integer"
+            nob44: 
+              type: "integer"
+            quarter: 
+              type: "integer"
+            rqq41: 
+              type: "integer"
+            rtq1:
+              type: "number"
+            rtq2: 
+              type: "number"
+            rtq3: 
+              type: "number"
+            rtq25: 
+              type: "number"
+            rtq29:
+              type: "number"
+            rtq44: 
+              type: "integer"
+            rtq137:
+              type: "integer"
+            year:
+              type: "integer"
+        

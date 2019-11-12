@@ -1,0 +1,16 @@
+type: "object"
+properties:
+  daily:
+    $ref: "#/components/schemas/itemIndicator"
+  hourly:
+    $ref: "#/components/schemas/itemIndicator"
+  quarterly:
+    $ref: "#/components/schemas/itemIndicator"
+  weekly:
+    $ref: "#/components/schemas/itemIndicator"
+  matchPrice:
+    type: "integer"
+  organCode:
+    type: "string"
+  
+    

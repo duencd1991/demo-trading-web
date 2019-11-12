@@ -1,0 +1,27 @@
+summary: CorporateEarning
+description: CorporateEarning
+get:
+  tags:
+  - "MarketCalendar"
+  summary: 'Get CorporateEarning'
+  description: 'Get CorporateEarning'
+  x-swagger-router-controller: "Calendar"
+  operationId: 'GetCorporateEarning'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+    - $ref: '#/components/parameters/OrganCode'
+    # - $ref: '#/components/parameters/FromDate'
+    # - $ref: '#/components/parameters/ToDate'
+    # - $ref: '#/components/parameters/watchListType'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CorporateEarning'
+    '400':
+      description: Invalid value
+      content: {}

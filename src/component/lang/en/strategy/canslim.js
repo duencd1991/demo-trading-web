@@ -1,0 +1,14 @@
+export default {
+  tableCanslim: {
+    TICKER: 'TICKER',
+    MARKET_CAP: 'MARKET_CAP <br>(BN.)</br>',
+    CURRENT_EARNING: 'CURRENT <br>EARNINGS</br>',
+    ANNUAL_EARNING: 'ANNUAL <br>EARNING</br>',
+    NEW_PRODUCT: 'NEW<br>PRODUCT</br>',
+    SUPPLY_AND_DEMAND: 'SUPPLY &<br>DEMAND</br>',
+    LEADER_AND_LARGARD: 'LEADER &<br>LARGARD</br>',
+    INSTITUTIONAL_SPONSORSHIP: 'INSTITUTIONAL <br>SPONSORSHIP</br>',
+    MARKET_DIRECTION: 'MARKET <br>DIRECTION</br>',
+    TOTAL: 'TOTAL',
+  },
+};

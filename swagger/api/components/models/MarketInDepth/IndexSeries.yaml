@@ -1,0 +1,33 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    properties:
+      closeIndex:
+        type: "number"
+      comGroupCode:
+        type: "string"
+      highestIndex:
+        type: "number"
+      indexChange:
+        type: "number"
+      indexValue:
+        type: "number"
+      lowestIndex: 
+        type: "number"
+      matchValue:
+        type: "number"
+      matchVolume:
+        type: "number"
+      openIndex:
+        type: "number"
+      percentIndexChange:
+        type: "number"
+      referenceIndex:
+        type: "number"
+      totalMatchValue:
+        type: "number"
+      totalMatchVolume:
+        type: "number"
+      tradingDate:
+        type: "string"

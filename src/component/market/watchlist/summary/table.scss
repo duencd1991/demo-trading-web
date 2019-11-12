@@ -1,0 +1,29 @@
+@import '../../../../styles/variables';
+
+.watchlist-summary-wrap {
+  .custom-table > tbody > tr > td,
+  .custom-table > tbody > tr > th {
+    padding-left: 1px !important;
+    padding-right: 2px !important;
+    overflow: inherit !important;
+  }
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.dropdown-item {
+  &.trend-active {
+    background-color: $b_color_2;
+  }
+}
+
+.light-mode {
+  .dropdown-item {
+    &.trend-active {
+      background-color: $ta_color_7;
+      color: $white !important;
+    }
+  }
+}

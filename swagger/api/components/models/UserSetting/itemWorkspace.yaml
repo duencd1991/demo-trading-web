@@ -1,0 +1,18 @@
+type: "object"
+properties:
+  typeCode:
+    type: "string"
+    example: "System"
+  workspaceId:
+    type: "string"
+    example: "VN30"
+  name:
+    type: "string"  
+    example: "VN30"
+  thumbnails:
+    type: "string"  
+    example: "https://localhost/imgres?imgurl=<>"
+  workspace:
+    type: "string"
+    example: "{}"
+    

@@ -1,0 +1,24 @@
+summary: Fundamental ShareHolderTooltip
+description: Fundamental ShareHolderTooltip
+get:
+  tags:
+  - "Fundamental"
+  summary: 'ShareHolderTooltip'
+  description: 'ShareHolderTooltip'
+  x-swagger-router-controller: Ownership
+  operationId: 'GetShareHolderTooltip'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ShareHolderTooltip'
+    '400':
+      description: Invalid value
+      content: {}

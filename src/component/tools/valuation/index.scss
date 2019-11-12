@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.valuation-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 20px;
+
+  .valuation-top-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .valuation-body-content {
+    margin-top: 15px;
+    display: flex;
+  }
+}

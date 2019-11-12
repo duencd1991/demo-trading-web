@@ -1,0 +1,10 @@
+type: "object"
+properties:
+  topGainers:
+    type: "array"
+      items:
+        $ref: "#/components/schemas/itemTop"
+  topLosers:
+    type: "array"
+      items:
+        $ref: "#/components/schemas/itemTop"

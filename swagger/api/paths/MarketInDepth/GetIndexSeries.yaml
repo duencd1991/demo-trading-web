@@ -1,0 +1,24 @@
+summary: Index Series
+description: Index Series
+get:
+  tags:
+  - "MarketInDepth"
+  summary: 'Get Index Series'
+  description: 'Get Index Series'
+  x-swagger-router-controller: "MarketInDepth"
+  operationId: 'GetIndexSeries'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+    - $ref: '#/components/parameters/TimeRange'
+    - $ref: '#/components/parameters/id'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/IndexSeries'
+    '400':
+      description: Invalid value
+      content: {}

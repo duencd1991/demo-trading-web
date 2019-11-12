@@ -1,0 +1,24 @@
+summary: PriceVolumeAnalysis
+description: PriceVolumeAnalysis
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get PriceVolumeAnalysis'
+  description: 'Get PriceVolumeAnalysis'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetPriceVolumeAnalysis'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/PriceVolumeAnalysis'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PriceVolumeAnalysis'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,24 @@
+summary: Top Mover
+description: Top Mover
+get:
+  tags:
+  - "Top Mover"
+  summary: 'TopBreakout'
+  description: 'TopBreakout'
+  x-swagger-router-controller: TopMover
+  operationId: 'GetTopBreakout'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TopBreakout'
+    '400':
+      description: Invalid value
+      content: {}

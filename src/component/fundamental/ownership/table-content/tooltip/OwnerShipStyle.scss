@@ -1,0 +1,200 @@
+@import '../../../../../styles/variables';
+// $tooltip-color: $white;
+// $tooltip-text-color: #009dff;
+
+.tooltip-ownship {
+  position: relative;
+}
+
+.tooltip-bubble-ownship {
+  font-style: normal;
+  position: absolute;
+  z-index: 10;
+  border-radius: 5px;
+  border: 1px solid rgba(#555555, 0.2);
+  background-color: #273040;
+  min-width: 250px;
+  max-width: 450px;
+  width: 450px;
+  //transform: translateX(150px);
+  // height: 100px;
+  //   position: absolute;
+  //   z-index: 10;
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //   }
+
+  .tooltip-title-ownship {
+    padding-left: 10px;
+    height: 20px;
+    border-bottom: 1px solid rgba(#555555, 0.2);
+    font-weight: bold;
+  }
+
+  .tooltip-header-ownship {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    height: 20px;
+    border-bottom: 1px solid rgba(#555555, 0.2);
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+
+    .align-left {
+      text-align: left;
+      padding-left: 5px;
+    }
+    .align-right {
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+
+  .tooltip-header-bod-ownship {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    height: 35px;
+    border-bottom: 1px solid rgba(#555555, 0.2);
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+
+    .align-left {
+      text-align: left;
+      padding-left: 5px;
+    }
+    .align-right {
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+
+  .div-wrapper-tooltip-body {
+    overflow-y: auto;
+  }
+  .tooltip-body-ownship {
+    padding-left: 5px;
+    padding-top: 2px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+
+    .children-div-body-align-right {
+      text-align: right;
+      padding-right: 5px;
+      border-right: 1px solid rgba(#555555, 0.2);
+    }
+    .children-div-body-align-right:last-child {
+      text-align: right;
+      padding-right: 5px;
+      border-right: 0px;
+    }
+
+    .children-div-body-align-left {
+      //textAlign : "left" , paddingLeft : 5
+      text-align: left;
+      padding-left: 5px;
+      border-right: 1px solid rgba(#555555, 0.2);
+    }
+    .children-div-body-align-left:last-child {
+      text-align: left;
+      padding-left: 5px;
+      border-right: 0px;
+    }
+  }
+
+  .tooltip-body-ownship-no-data {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// .tooltip-right {
+//     border-radius: 5px solid #121975de;
+//     background-color: aqua;
+//     top: 50%;
+//     left: 100%;
+//     padding-left: 9px;
+//     transform: translateY(-50%);
+//   }
+
+// .tooltip-message {
+//   background: $tooltip-color;
+//   border-radius: 3px;
+//   color: $tooltip-text-color;
+//   font-size: 0.75rem;
+//   line-height: 1.4;
+//   padding: 0.75em;
+//   text-align: center;
+// }
+
+// import React, { Component } from "react";
+// import { render } from "react-dom";
+
+// class HoverExample extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.handleMouseHover = this.handleMouseHover.bind(this);
+//     this.handleMouseOut = this.handleMouseOut.bind(this);
+//     this.state = {
+//       isHovering: false,
+//       top: "0px",
+//       left: "0px"
+//     };
+//   }
+
+//   handleMouseHover(e) {
+//     var rect = e.target.getBoundingClientRect();
+//     var x = e.clientX - rect.left + "px"; //x position within the element.
+//     var y = e.clientY - rect.top + "px";
+
+//     console.log("x , y :", x, y);
+
+//     this.setState({ isHovering: true, top: y, left: x });
+//   }
+
+//   handleMouseOut() {
+//     this.setState({ isHovering: false });
+//   }
+
+//   toggleHoverState(state) {
+//     return {
+//       isHovering: !state.isHovering
+//     };
+//   }
+
+//   render() {
+//     console.log("aaaaaa : ", this.state.top, this.state.left);
+//     return (
+//       <div>
+//         <div
+//           style={{ width: 150 }}
+//           onMouseMove={e => this.handleMouseHover(e)}
+//           onMouseLeave={e => this.handleMouseOut(e)}
+//         >
+//           Hover Me
+//         </div>
+//         {this.state.isHovering && (
+//           <div
+//             style={{
+//               display: "block",
+//               position: "relative",
+//               top: this.state.top,
+//               left: this.state.left
+//             }}
+//           >
+//             Hovering right meow! 🐱
+//           </div>
+//         )}
+//       </div>
+//     );
+//   }
+// }
+
+// render(<HoverExample />, document.getElementById("root"));

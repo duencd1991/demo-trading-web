@@ -1,0 +1,21 @@
+summary: All ICB Industry
+description: All ICB Industry
+get:
+  tags:
+  - "Master"
+  summary: 'AllIcbIndustry'
+  description: 'AllIcbIndustry'
+  x-swagger-router-controller: Master
+  operationId: 'GetAllIcbIndustry'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:      
+          schema:
+            $ref: "#/components/schemas/AllIcbIndustry"
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,18 @@
+@import '../../../../styles/variables';
+
+.price-volume {
+  .icon-infor-name-of-feature {
+    color: $grey;
+    padding-left: 3px;
+  }
+
+  .name-of-feature {
+    padding: 14px 0px 14px 10px;
+    margin-bottom: 0;
+  }
+
+  .item-filter .drop-cus,
+  .item-filter .drop-mecus {
+    min-width: max-content;
+  }
+}

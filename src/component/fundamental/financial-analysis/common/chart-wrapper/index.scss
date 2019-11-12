@@ -1,0 +1,101 @@
+@import '../../../../../styles/variables';
+
+.fa-chart-wrapper {
+  border-radius: 4px;
+  border: solid 0.5px #555555;
+  padding: 12px;
+  // min-width: 350px;
+  // min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1e242e;
+
+  .chart-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .chart-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .chart-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 8px;
+
+      .line-chart {
+        margin-right: 4px;
+        background-color: red;
+      }
+
+      .box {
+        width: 10px;
+        height: 10px;
+        border-radius: 1px;
+        margin-right: 4px;
+      }
+
+      .bg-blue {
+        background-color: #04beb8;
+      }
+      .bg-white {
+        background-color: #f3ffe2;
+      }
+      .bg-cyan {
+        background-color: #acf0f2;
+      }
+      .bg-red {
+        background-color: #ee6352;
+      }
+      .bg-yellow {
+        background-color: #facc5c;
+      }
+      .bg-green {
+        background-color: #00de8b;
+      }
+
+      .title {
+        font-size: 10px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .img-legend-circle,
+      .img-legend-triangle,
+      .img-legend-square {
+        width: 24px;
+        height: 18px;
+        -webkit-mask-size: 100%, auto, contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-size: 100%, auto, contain;
+        mask-position: center;
+        mask-repeat: no-repeat;
+      }
+
+      .img-legend-circle {
+        -webkit-mask-image: url('./icons/circlemarkerline.svg');
+        mask-image: url('./icons/circlemarkerline.svg');
+      }
+      .img-legend-triangle {
+        -webkit-mask-image: url('./icons/trianglemarkerline.svg');
+        mask-image: url('./icons/trianglemarkerline.svg');
+      }
+      .img-legend-square {
+        -webkit-mask-image: url('./icons/squareline.svg');
+        mask-image: url('./icons/squareline.svg');
+      }
+    }
+  }
+}

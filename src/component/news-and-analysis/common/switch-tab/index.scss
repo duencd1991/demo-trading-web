@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+.na-search-box-wrapper {
+  width: 100px;
+  position: relative;
+
+  input {
+    width: 100%;
+    border: 0px;
+    height: 23px;
+    border-radius: 10px;
+    padding: 0px 25px 0px 10px;
+    background: #2a2d34;
+    color: #ffffff;
+    overflow: visible;
+  }
+
+  button {
+    position: absolute;
+    background: transparent;
+    border: 0px;
+    width: 20px;
+    height: 23px;
+    top: 2px;
+    right: 10px;
+    color: #ffffff;
+  }
+
+  [type='search'] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+  }
+}
+
+.light-mode {
+  input {
+    background: #f1f3f4;
+    color: #1f2023;
+  }
+  button {
+    color: #1f2023;
+  }
+}

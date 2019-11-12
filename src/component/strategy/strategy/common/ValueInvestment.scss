@@ -1,0 +1,169 @@
+.value-investment {
+  display: flex;
+  padding-bottom: 15px;
+  width: fit-content;
+  align-items: stretch;
+  position: relative;
+  flex-flow: row wrap;
+  .Rectangle {
+    min-width: 34px;
+    min-height: 100%;
+    border-radius: 2px;
+    background-color: #f5761d;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .Vis {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+
+  .value-text {
+    margin-left: 10px;
+    min-width: fit-content;
+    align-self: flex-end;
+    .Value-Investment-Str {
+      font-size: 12px;
+      color: #d2d2d2;
+    }
+
+    .HIGH-RANKING-A-VAL {
+      font-size: 8px;
+      font-weight: 600;
+      // color: #ffffff;
+    }
+  }
+
+  .Rectangle-4 {
+    border-radius: 1px;
+    border: solid 0.6px rgba(255, 255, 255, 0.36);
+    margin-left: 10px;
+  }
+
+  .Rectangle-5 {
+    text-align: center;
+    border-radius: 1px 1px 0px 0px;
+    background-color: #00de8b;
+    padding: 2px 4px 2px 4px;
+    .RETURN {
+      font-size: 10px;
+      line-height: 10px;
+      font-weight: 600;
+      color: #1f2329;
+      display: block;
+    }
+  }
+  .Rectangle-6 {
+    display: flex;
+    padding: 3px 4px 3px 4px;
+    .number {
+      font-size: 16px;
+      line-height: 13px;
+      font-weight: bold;
+      text-align: right;
+      color: #00de8b;
+    }
+    .number-percent {
+      font-size: 10px;
+      line-height: 10px;
+      color: #00de8b;
+    }
+  }
+  .Rectangle-Index {
+    border-radius: 1px;
+    border: solid 0.6px rgba(255, 255, 255, 0.36);
+    margin-left: 10px;
+    .Rectangle-5 {
+      text-align: center;
+      border-radius: 1px 1px 0px 0px;
+      background-color: #f3ffe2;
+      padding: 2px 4px 2px 4px;
+      .RETURN {
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: 600;
+        color: #1f2329;
+        display: block;
+      }
+    }
+    .Rectangle-6 {
+      display: flex;
+      padding: 3px 4px 3px 4px;
+      .number {
+        font-size: 16px;
+        line-height: 13px;
+        font-weight: bold;
+        text-align: right;
+        color: #f3ffe2;
+      }
+      .number-percent {
+        font-size: 10px;
+        line-height: 10px;
+        color: #f3ffe2;
+      }
+    }
+  }
+
+  .div .value-footer {
+    font-size: 10px;
+    font-style: italic;
+    color: #d2d2d2;
+  }
+}
+
+.light-mode {
+  .value-investment {
+    .Rectangle-Index {
+      border-radius: 1px;
+      border: solid 0.6px rgba(255, 255, 255, 0.36);
+      margin-left: 10px;
+      .Rectangle-5 {
+        text-align: center;
+        border-radius: 1px 1px 0px 0px;
+        background-color: #f8bc06;
+        padding: 2px 4px 2px 4px;
+        .RETURN {
+          font-size: 10px;
+          line-height: 10px;
+          font-weight: 600;
+          color: #1f2329;
+          display: block;
+        }
+      }
+      .Rectangle-6 {
+        display: flex;
+        padding: 3px 4px 3px 4px;
+        .number {
+          font-size: 16px;
+          line-height: 13px;
+          font-weight: bold;
+          text-align: right;
+          color: #f8bc06;
+        }
+        .number-percent {
+          font-size: 10px;
+          line-height: 10px;
+          color: #f8bc06;
+        }
+      }
+    }
+
+    .value-text {
+      margin-left: 10px;
+      min-width: fit-content;
+      align-self: flex-end;
+      .Value-Investment-Str {
+        font-size: 12px;
+        color: #1f2023 !important;
+      }
+    }
+
+    .div .value-footer {
+      font-size: 10px;
+      font-style: italic;
+      color: #d2d2d2;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+summary: Liquidity Series
+description: Liquidity Series
+get:
+  tags:
+  - "MarketInDepth"
+  summary: 'Get Liquidity Series'
+  description: 'Get Liquidity Series'
+  x-swagger-router-controller: "MarketInDepth"
+  operationId: 'GetLiquiditySeries'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+    - $ref: '#/components/parameters/TimeRange'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LiquiditySeries'
+    '400':
+      description: Invalid value
+      content: {}

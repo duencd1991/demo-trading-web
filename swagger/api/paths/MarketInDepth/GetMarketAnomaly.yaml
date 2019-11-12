@@ -1,0 +1,23 @@
+summary: Get MarketAnomaly
+description: Get MarketAnomaly
+get:
+  tags:
+  - "MarketInDepth"
+  summary: 'Get MarketAnomaly'
+  description: 'Get MarketAnomaly'
+  x-swagger-router-controller: "MarketInDepth"
+  operationId: 'GetMarketAnomaly'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    - $ref: '#/components/parameters/TimeRange'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/MarketAnomaly'
+    '400':
+      description: Invalid value
+      content: {}

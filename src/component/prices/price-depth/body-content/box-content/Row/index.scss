@@ -1,0 +1,44 @@
+@import "../../../../../../styles/variables";
+
+.row-wrapper {
+
+  .box-column {
+    display: flex;
+
+    &--left {
+      padding: .5px .5px .5px 8px;
+    }
+
+    &--right {
+      padding: .5px 8px .5px .5px;
+    }
+
+    &--left, &--right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      position: relative;
+
+      .main-text , .sub-text {
+        height: 100%;
+        padding: 8px 0;
+        transition: all 500ms ease-out;
+      }
+
+      .main-text {
+        font-size: 12px;
+      }
+
+      .absolute-text-left {
+        position: absolute;
+        left: 10px;
+      }
+
+      .absolute-text-right {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+}

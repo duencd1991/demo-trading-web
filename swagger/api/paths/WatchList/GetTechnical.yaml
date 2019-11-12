@@ -1,0 +1,24 @@
+summary: Get Technical
+description: Get Technical
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get Technical'
+  description: 'Get Technical'
+  x-swagger-router-controller: "WatchList"
+  operationId: 'GetTechnical'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/id'
+    - $ref: '#/components/parameters/watchListId'
+    - $ref: '#/components/parameters/Type'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Technical'
+    '400':
+      description: Invalid value
+      content: {}

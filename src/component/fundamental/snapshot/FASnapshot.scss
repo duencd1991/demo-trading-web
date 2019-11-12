@@ -1,0 +1,171 @@
+@import '../../../styles/variables';
+.snapshot-wrapper {
+  .fa-body-content {
+    border: 1.3px solid $bo_color_2;
+    border-radius: 4px;
+    min-width: 750px;
+    //width: fit-content;
+  }
+  .fa-top-content {
+    //width: fit-content;
+  }
+  .headerAndFooterPdf {
+    width: 1856px;
+    position: absolute;
+    top: -65555px;
+    height: 2612px;
+    #Footer,
+    #headerPDF {
+      width: 100%;
+      position: absolute;
+    }
+    #Footer {
+      bottom: 0;
+      padding: 40px 40px 0px 40px;
+      .Note {
+        padding: 70px 0px 100px 0px;
+        border-bottom: 1px solid #0069a6;
+        font-size: 24px;
+      }
+      .Footer-text {
+        width: 100%;
+        span {
+          padding: 24px 0px 24px 0px;
+          color: #0069a6;
+          font-size: 24px;
+        }
+      }
+    }
+    #headerPDF {
+      height: 160px;
+      background-color: #0069a6;
+      top: 0;
+      .headerPDF-logo {
+        width: 440px;
+        display: inline-block;
+        padding: 0px 20px;
+        float: left !important;
+        .brand {
+          margin: 36px 10px 25px 0px;
+        }
+        .brand a i {
+          color: #fff;
+          font-size: 87px;
+        }
+      }
+      .headerPDF-logo::after,
+      .headerPDF-logo:before {
+        content: '/';
+        font-size: 183px;
+        position: absolute;
+        color: #fff;
+        top: -74px;
+      }
+      .headerPDF-logo::after {
+        left: 440px;
+      }
+      .headerPDF-logo:before {
+        left: 464px;
+      }
+      .headerPDF-title {
+        margin: 43px 10px 17px 200px;
+        span {
+          font-size: 57px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+        }
+      }
+    }
+  }
+
+  .boder-r {
+    border-right: 1px solid #facc5c;
+  }
+  .snapShot-table {
+    padding: 16px;
+    height: 230px;
+    min-width: 750px;
+    //display: flex;
+    .snapShotTable-Chart {
+      width: 50%;
+      float: left;
+      min-width: 350px;
+    }
+    .snapShotTable-Infor {
+      width: 50%;
+      float: left;
+      display: flex;
+      padding: 0px 0px 0px 6px;
+      min-width: 350px;
+      .snapShotTable-col {
+        width: 50%;
+        padding: 0 0px 0px 15px;
+        .snapShotTable-row {
+          display: block;
+          line-height: 1.6rem;
+          white-space: nowrap;
+          span {
+            opacity: 0.55;
+          }
+
+          .snapShotTable-item-end {
+            float: right;
+            display: inline-block;
+            span {
+              font-weight: 600;
+              opacity: 1;
+              color: $white;
+            }
+          }
+          .snapShotTable-item-end-yRange {
+            width: 100px;
+            background: #2974c1;
+            position: relative;
+            .range-line {
+              width: 1px;
+              height: 100%;
+              background-color: #facc5c;
+              position: absolute;
+              bottom: 0px;
+              z-index: 10;
+              left: 30%;
+            }
+            .snapShot-infor-yRange {
+              padding: 0px 4px;
+              font-size: 9px;
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .snapShot-chart {
+    padding: 16px;
+    border-top: 1.3px solid $bo_color_2;
+    .cast-chart {
+      .responsive-wrapper {
+        overflow-y: hidden !important;
+      }
+    }
+
+    .snapShot-FinancialPer {
+      height: 26px;
+      .snapShot-FinancialPer-tab {
+        float: right;
+      }
+    }
+  }
+}
+.light-mode {
+  .snapshot-wrapper {
+    .snapShotTable-item-end {
+      span {
+        color: inherit !important;
+      }
+    }
+  }
+}

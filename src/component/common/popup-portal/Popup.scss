@@ -1,0 +1,112 @@
+@import '../../../styles/variables';
+$dark_slate_gray: #43484f;
+$l_dark_slate_gray: #ffffff;
+$bg_overlay: rgba(0, 0, 0, 0.25);
+$l_bg_overlay: rgba(255, 255, 255, 0.25);
+.popup-warning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: $bg_overlay;
+  z-index: 100;
+}
+.popup_inner {
+  min-width: 257px;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #43484f;
+  border-radius: 5px;
+  z-index: 100;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 4px, rgba(0, 0, 0, 0.28) 0px 4px 8px;
+  transition-property: transform;
+  transition-timing-function: ease;
+  transition-duration: 200ms;
+
+  .popup-button {
+    .btn-delete,
+    .btn-cancel {
+      min-width: 60px;
+      height: 20px;
+      border-radius: 9.5px;
+      color: white !important;
+      border: solid 0.3px #555555;
+    }
+    .btn-delete {
+      background-color: #005197;
+    }
+    .btn-cancel {
+      background-color: #eb505a;
+    }
+  }
+  .popup_inner_title {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .popup_inner_content {
+    display: block;
+  }
+  .warn,
+  .warn::before,
+  .warn::after {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .warn {
+    font-size: 17px;
+    color: transparent;
+    &.warning {
+      display: inline-block;
+      top: -1px;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+      float: left;
+      border: none;
+      margin-right: 5px;
+      background-color: transparent;
+      border-radius: 1px;
+      &::before {
+        content: '';
+        display: block;
+        top: -1.5px;
+        left: 0;
+        position: absolute;
+        border: transparent 10px solid;
+        border-bottom-color: #facc5c;
+        border-bottom-width: 20px;
+        border-top-width: 0;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        top: -2.5px;
+        left: 0;
+        width: 100%;
+        padding: 0 1px;
+        text-align: center;
+        content: '!';
+        font-size: 18px;
+        font-weight: bolder;
+        color: #595850;
+      }
+    }
+  }
+}
+.light-mode {
+  .popup-warning {
+    background-color: $l_bg_overlay !important;
+  }
+  .popup_inner {
+    background-color: $l_dark_slate_gray !important;
+  }
+}

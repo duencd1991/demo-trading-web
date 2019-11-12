@@ -1,0 +1,93 @@
+@import '../../../../styles/variables';
+
+.cell-hover-icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  .circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    margin-right: 4px;
+  }
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3px 6px 3px;
+  margin-top: -2px;
+  border-color: transparent transparent $white transparent;
+}
+
+.watchlist-popup {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  height: auto;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: $ta_color_1;
+  transition: max-height 0.3s linear;
+
+  &__header {
+    border-bottom: 1px solid rgba($l_color_7, 0.2);
+    text-transform: uppercase;
+    padding: 6px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    &--sell {
+      background-color: $s_color_3;
+    }
+
+    &--buy {
+      background-color: $b_color_1;
+    }
+  }
+
+  &__body {
+    padding: 10px 0;
+
+    &--item {
+      white-space: nowrap;
+      cursor: pointer;
+      padding: 5px 15px;
+      &:hover {
+        background-color: $b_color_1;
+      }
+      i {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.light-mode {
+  .watchlist-popup {
+    background-color: $white;
+  }
+  .watchlist-popup {
+    &__header {
+      &--sell {
+        color: $l_dark;
+      }
+      &--buy {
+        color: $l_dark;
+      }
+    }
+  }
+}

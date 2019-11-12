@@ -1,0 +1,87 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        ticker:
+          type: "string"
+        sectorName:
+          type: "string"
+        rank:
+          type: "number"
+        volume:
+          type: "number"
+        price:
+          type: "number"
+        priceChange:
+          type: "number" 
+        ceilingPrice:
+          type: "number" 
+        floorPrice:
+          type: "number" 
+        referencePrice:
+          type: "number" 
+        o:
+          type: "number"
+        performance:
+          type: "object"
+          properties:
+            percentPriceChange1Day:
+              type: "number"
+            percentPriceChange1Week:
+              type: "number"
+            percentPriceChange1Month:
+              type: "number"
+            percentPriceChange3Month:
+              type: "number"
+            percentPriceChange6Month:
+              type: "number"
+            percentPriceChange1Year:
+              type: "number"
+            percentPriceChangeYTD:
+              type: "number"
+        financial:
+          type: "object"
+          properties:
+            isa3:
+              type: "number"          
+            rtd7:
+              type: "number"          
+            rtd11:
+              type: "number"
+            rtd21:
+              type: "number"
+            rtd25:
+              type: "number"
+            isa20:
+              type: "number"
+        technical:
+          type: "object"
+          properties:
+            o1:
+              type: "number"
+            o2:
+              type: "number"
+            h1:
+              type: "number"
+            h2:
+              type: "number"
+            l1:
+              type: "number"
+            l2:
+              type: "number"
+            c1:
+              type: "number"        
+            c2:
+              type: "number"   
+            sma20:
+              type: "number" 
+            sma50:
+              type: "number" 
+            sma100:
+              type: "number" 
+            sma20Past4:
+              type: "number" 
+            rsi:
+              type: "number" 

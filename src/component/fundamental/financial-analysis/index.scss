@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.fa-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .fa-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .fa-top-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 400px;
+  }
+
+  .fa-body-content {
+    margin-top: 8px;
+  }
+
+  .fa-footer-content {
+  }
+}

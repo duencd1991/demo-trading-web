@@ -1,0 +1,71 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      boardOfDirectors:
+        type: "array"
+        properties:
+          fullName:
+            type: "string"
+          isRelationship:
+            type: "boolean"
+          percentage:
+            type: "integer"
+          personId: 
+            type: "integer"
+          positionName:
+            type: "string"
+          publicDate:
+            type: "string"
+          quantity: 
+            type: "integer"
+        majorOwnershipsChartData:
+          type: "array"
+          properties:
+            item1: 
+              type: "string"
+            item2: 
+              type: "number"
+        majorShareHolders:
+          type: "array"
+          properties:
+            isFounder:
+              type: "boolean"
+            ownerTypeCode:
+              type: "string"
+            percentage: 
+              type: "number"
+            percentageAdjusted: 
+              type: "integer"
+            publicDate: 
+              type: "string"
+            quantity: 
+              type: "integer"
+            quantityAdjusted: 
+              type: "integer"
+            shareHolderCode: 
+              type: "string"
+            shareHolderName:
+              type: "string"
+            shareHolderType:
+              type: "string"
+        overviewChartData:
+          type: "object"
+          properties:
+            item1:
+              type: "string"
+            item2: 
+              type: "integer"

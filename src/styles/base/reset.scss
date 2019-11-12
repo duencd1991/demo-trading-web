@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-weight: normal;
+  color: $white;
+  background-color: $t_color_3;
+}
+
+.lm_header .lm_tab {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+a {
+  @include transition(all 0.25s ease);
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+.btn-cus-nomal iframe {
+  width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+textarea:hover,
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='password']:hover,
+input[type='button']:hover,
+input[type='tel']:hover,
+input[type='search']:hover,
+textarea:active,
+input[type='text']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='button']:active,
+input[type='tel']:active,
+input[type='search']:active,
+textarea:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='button']:focus,
+input[type='tel']:focus,
+input[type='search']:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.overflow-scroll {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/*custom scroll*/
+/*
+.lm_item.lm_stack{
+  &:hover{
+    ::-webkit-scrollbar {
+      display: block;
+    }
+    .scroll-table {
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  .scroll-table{
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    &:hover{
+      ::-webkit-scrollbar {
+        display: block;
+      }
+    }
+  }
+}
+*/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  top: 0px;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $sc_color_1;
+  border: 71px none $sc_color_2;
+  border-radius: 31px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $sc_color_3;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: $sc_color_3;
+}
+
+::-webkit-scrollbar-track {
+  background: $sc_color_2;
+  border: 65px none $sc_color_2;
+  border-radius: 34px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: $sc_color_2;
+}
+
+::-webkit-scrollbar-track:active {
+  background: $sc_color_2;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.scrollbars {
+  .track {
+    //background: $sc_color_2 !important;
+    border: 65px none $sc_color_2 !important;
+    border-radius: 34px !important;
+    right: 0px !important;
+    z-index: 999;
+    &:hover {
+      background: transparent !important;
+    }
+
+    &:active {
+      background: transparent !important;
+    }
+
+    div {
+      background: $sc_color_1 !important;
+      border: 71px none $sc_color_2 !important;
+      border-radius: 31px !important;
+
+      &:hover {
+        background: $sc_color_3 !important;
+      }
+
+      &:active {
+        background: $sc_color_3 !important;
+      }
+    }
+  }
+}
+
+.light-mode {
+  body {
+    color: $l_white;
+    background-color: $l_t_color_3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $l_sc_color_1;
+    border: 71px none #e8eaed;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $l_sc_color_2;
+    border: 65px none $l_sc_color_2;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background: $l_sc_color_2;
+  }
+
+  ::-webkit-scrollbar-track:active {
+    background: $l_sc_color_2;
+  }
+  .scrollbars {
+    .track {
+      //background: $sc_color_2 !important;
+      border: 65px none #e8eaed !important;
+      border-radius: 34px !important;
+
+      &:hover {
+        background: #fff !important;
+      }
+
+      &:active {
+        background: #fff !important;
+      }
+
+      div {
+        background: #e8eaed !important;
+        border: 71px none #e8eaed !important;
+        border-radius: 31px !important;
+
+        &:hover {
+          background: #ccc !important;
+        }
+
+        &:active {
+          background: #ccc !important;
+        }
+      }
+    }
+  }
+}
+
+/*end custom scroll*/
+// Rounded
+@each $var in 0 {
+  .rounded-top-#{$var} {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  .rounded-right-#{$var} {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .rounded-bottom-#{$var} {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .rounded-left-#{$var} {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+
+// Margin & Padding
+@each $var in 2, 5, 6, 8, 10, 12, 13, 16, 20, 30, 40, 50, 70, 250 {
+  // Margin
+  .mt-#{$var} {
+    margin-top: #{$var}px !important;
+  }
+
+  .mr-#{$var} {
+    margin-right: #{$var}px !important;
+  }
+
+  .mb-#{$var} {
+    margin-bottom: #{$var}px !important;
+  }
+
+  .ml-#{$var} {
+    margin-left: #{$var}px !important;
+  }
+
+  .my-#{$var} {
+    margin-top: #{$var}px !important;
+    margin-bottom: #{$var}px !important;
+  }
+
+  .mx-#{$var} {
+    margin-right: #{$var}px !important;
+    margin-left: #{$var}px !important;
+  }
+
+  .m-#{$var} {
+    margin: #{$var}px !important;
+  }
+
+  // Padding
+  .pt-#{$var} {
+    padding-top: #{$var}px !important;
+  }
+
+  .pr-#{$var} {
+    padding-right: #{$var}px !important;
+  }
+
+  .pb-#{$var} {
+    padding-bottom: #{$var}px !important;
+  }
+
+  .pl-#{$var} {
+    padding-left: #{$var}px !important;
+  }
+
+  .py-#{$var} {
+    padding-top: #{$var}px !important;
+    padding-bottom: #{$var}px !important;
+  }
+
+  .px-#{$var} {
+    padding-right: #{$var}px !important;
+    padding-left: #{$var}px !important;
+  }
+
+  .p-#{$var} {
+    padding: #{$var}px !important;
+  }
+}
+
+// Position x, y
+@each $var in 0 {
+  .top-#{$var} {
+    top: #{$var}px !important;
+  }
+
+  .right-#{$var} {
+    right: #{$var}px !important;
+  }
+
+  .bottom-#{$var} {
+    bottom: #{$var}px !important;
+  }
+
+  .left-#{$var} {
+    left: #{$var}px !important;
+  }
+}
+
+// Typo
+@each $var in h1, h2, h3, h4, h5, h6 {
+  #{$var},
+  .#{$var} {
+    font-family: $font-custom-heading;
+  }
+}
+
+// Font weights
+@each $name, $val in $arr-font-weight {
+  .font-weight-#{$name} {
+    font-weight: $val !important;
+  }
+}
+
+// Font sizes
+@each $name, $val in $arr-font-size {
+  .fs-#{$name} {
+    @include rem(
+      (
+        font-size: $val !important,
+      )
+    );
+  }
+}
+
+// Colors
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+// Border style
+@each $var in 'solid', 'dotted', 'dashed' {
+  .border--style-#{$var} {
+    border-style: $var !important;
+  }
+
+  .border-top--style-#{$var} {
+    border-top-style: $var !important;
+  }
+
+  .border-right--style-#{$var} {
+    border-right-style: $var !important;
+  }
+
+  .border-bottom--style-#{$var} {
+    border-bottom-style: $var !important;
+  }
+
+  .border-left--style-#{$var} {
+    border-left-style: $var !important;
+  }
+}
+
+// Width %
+@each $var in 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85,
+  90, 95, 100
+{
+  .w-#{$var} {
+    width: #{$var}% !important;
+  }
+
+  .max-w-#{$var} {
+    max-width: #{$var}% !important;
+  }
+}
+
+[id='app'] {
+  width: 100%;
+  height: 100%;
+  color: gold;
+  font-family: sans-serif;
+}
+
+[id='A'],
+[id='B'],
+[id='C'] {
+  padding: 1rem;
+}
+
+.mx--10 {
+  margin-right: -10px;
+  margin-left: -10px;
+}

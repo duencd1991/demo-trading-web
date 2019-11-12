@@ -1,0 +1,12 @@
+type: "object"
+properties:
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    items:
+      $ref: "#/components/schemas/itemTickerSeries"

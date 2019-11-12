@@ -1,0 +1,21 @@
+summary: Get AllCompanyGroup
+description: Get AllCompanyGroup
+get:
+  tags:
+  - "Master"
+  summary: 'AllCompanyGroup'
+  description: 'AllCompanyGroup'
+  x-swagger-router-controller: Master
+  operationId: 'GetAllCompanyGroup'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:      
+          schema:
+            $ref: "#/components/schemas/AllCompanyGroup"
+    '400':
+      description: Invalid value
+      content: {}

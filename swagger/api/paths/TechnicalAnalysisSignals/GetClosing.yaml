@@ -1,0 +1,23 @@
+summary: Closing
+description: Closing
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get Closing'
+  description: 'Get Closing'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetClosing'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/AverageVolume10D'
+    - $ref: '#/components/parameters/ExceedingPercentage'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Closing'
+    '400':
+      description: Invalid value
+      content: {}

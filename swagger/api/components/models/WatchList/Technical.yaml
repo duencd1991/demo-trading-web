@@ -1,0 +1,82 @@
+type: "object"
+properties:
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  totalCount:
+    type: "integer"
+  errors:
+    type: "string"
+  packageId:
+    type: "string"
+  status:
+    type: "string"
+  items:
+    type: "array"
+    properties:
+      daily:
+        type: "object"
+        properties:
+          ma5:
+            type: "integer"
+          rsi:
+            type: "integer"
+          rsiPrev:
+            type: "integer"
+          cmf:
+            type: "number"
+          roc:
+            type: "integer"
+          rockPrev:
+            type: "number"
+      hourly:
+        type: "object"
+        properties:
+          ma5:
+            type: "integer"
+          rsi:
+            type: "integer"
+          rsiPrev:
+            type: "integer"
+          cmf:
+            type: "number"
+          roc:
+            type: "number"
+          rockPrev:
+            type: "integer"
+      matchPrice:
+        type: "integer"
+      organCode:
+        type: "string"
+      quarterly:
+        type: "object"
+        properties:
+          cmf:
+            type: "number"
+          ma5:
+            type: "integer"
+          roc:
+            type: "number"
+          rockPrev: 
+            type: "number"
+          rsi:
+            type: "integer"
+          rsiPrev:
+            type: "integer"
+      weekly:
+        type: "object"
+        properties:
+          cmf:
+            type: "number"
+          ma5:
+            type: "integer"
+          roc: 
+            type: "number"
+          rockPrev:
+            type: "integer"
+          rsi:
+            type: "integer"
+          rsiPrev:
+            type: "integer"
+      

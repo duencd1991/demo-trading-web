@@ -1,0 +1,50 @@
+export default {
+  tabs: {
+    fiinTradeRankings: 'MBS Rankings',
+    allScore: 'All Score',
+  },
+  tabChildrens: {
+    all: 'All',
+    hose: 'HOSE',
+    hnx: 'HNX',
+    rankingIndicators: 'Indicators',
+    ranking: 'Rankings',
+  },
+  popup: {
+    warning: {
+      title: 'Stock Not Found',
+      content:
+        'The stock you entered is not ranked in this group. Please try again.',
+    },
+    ranking: {
+      fiinTradeRank: 'MBS Rank',
+      transportation: 'Transportation',
+      value: 'Value',
+      growth: 'Growth',
+      momentum: 'Momentum',
+      vgm: 'VGM',
+    },
+  },
+  footerText: 'For more details on how to utilize MBS Investment Score,',
+  footerClickHere: 'click here',
+  titleTableAllScore: 'MBS Investment Score',
+  titleTableRanking: 'MBS Stock Rankings',
+  fiinTradeRankingsHeader: {
+    rankValue: 'Rank',
+    ticker: 'Ticker',
+    icbName: 'Industry',
+    last5RankValues: 'Ranking History',
+    size: 'Size',
+    profit: 'Profit',
+    cashflow: 'Cashflow',
+    valuation: 'Valuation',
+    trading: 'Trading',
+    analysisCover: 'Analysis Cover',
+    allIndustries: 'All Industries',
+    marketCap: 'Market Cap (Bn.)',
+    value: 'Value',
+    growth: 'Growth',
+    momentum: 'Momentum',
+    vgm: 'VGM',
+  },
+};

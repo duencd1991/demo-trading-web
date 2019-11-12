@@ -1,0 +1,21 @@
+summary: Derivatives Detail
+description: Derivatives Detail
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get Derivatives Detail'
+  description: 'Get Derivatives Detail'
+  x-swagger-router-controller: "WatchList"
+  operationId: 'GetDerivatives'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/DerivativesList'
+    '400':
+      description: Invalid value
+      content: {}

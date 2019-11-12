@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+.rc-slider-rail {
+  background-color: $ta_color_3;
+  height: 2px;
+  border-radius: 1px;
+}
+.rc-slider-handle {
+  width: 8px;
+  height: 8px;
+  border: solid 1px $l_color_5;
+  background-color: $ta_color_1;
+  touch-action: pan-x;
+  margin-top: -3px;
+}
+.rc-slider-track {
+  background-color: $l_color_5;
+  height: 2px;
+  border-radius: 1px;
+}
+.rc-slider-tooltip {
+  z-index: 9;
+  .rc-slider-tooltip-arrow {
+    display: none;
+  }
+  .rc-slider-tooltip-inner {
+    box-shadow: none;
+    background-color: transparent;
+    position: relative;
+
+    .tooltip-content {
+      position: absolute;
+      bottom: -40px;
+    }
+  }
+}

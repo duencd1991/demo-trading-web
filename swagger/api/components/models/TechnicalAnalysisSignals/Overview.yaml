@@ -1,0 +1,43 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      aggressive:
+        type: "boolean"
+      cancelled:
+        type: "boolean"
+      ceFl:
+        type: "boolean"
+      ceilingPrice:
+        type: "integer"
+      closing:
+        type: "boolean"
+      floorPrice: 
+        type: "integer"
+      matchPrice: 
+        type: "integer"
+      organCode:
+        type: "string"
+      percentPriceChange:
+        type: "number"
+      pressing: 
+        type: "boolean"
+      referencePrice: 
+        type: "integer"
+      ticker:
+        type: "string"
+      totalMatchedVolume:
+        type: "integer"

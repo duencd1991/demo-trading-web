@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+$tooltip_bg_color: #43484f;
+
+.th-tooltip-content {
+  position: absolute;
+  z-index: 10;
+  white-space: nowrap;
+
+  .tooltip-content-inner {
+    position: relative;
+    padding: 2px 8px;
+    background-color: $tooltip_bg_color;
+    border-radius: 2px;
+    color: $white;
+    font-size: 10px;
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 4px 0 4px;
+      border-color: $tooltip_bg_color transparent transparent transparent;
+      position: absolute;
+      left: 6px;
+      bottom: -3px;
+    }
+
+    &.right {
+      &:after {
+        right: 6px;
+        left: unset;
+      }
+    }
+
+    &.center {
+      &:after {
+        right: calc(50% - 3px);
+        left: unset;
+      }
+    }
+  }
+}
+
+.portal-tooltip {
+  .portal-tooltip-inner {
+    padding: 4px 10px;
+  }
+}

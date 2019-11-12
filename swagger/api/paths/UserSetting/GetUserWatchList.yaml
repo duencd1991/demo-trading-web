@@ -1,0 +1,21 @@
+get:
+  tags:
+  - "UserSetting"
+  summary: 'Get User Watch List'
+  description: 'Get User Watch List'
+  x-swagger-router-controller: UserSetting
+  operationId: 'GetUserWatchList'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UserWatchList'
+    '400':
+      description: Invalid value
+      content: {}
+summary: User Watch List
+description: User Watch List

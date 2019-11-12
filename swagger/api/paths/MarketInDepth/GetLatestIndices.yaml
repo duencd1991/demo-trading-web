@@ -1,0 +1,23 @@
+summary: Latest Indices
+description: Latest Indices
+get:
+  tags:
+  - "MarketInDepth"
+  summary: 'Get Latest Indices'
+  description: 'Get Latest Indices'
+  x-swagger-router-controller: "MarketInDepth"
+  operationId: 'GetLatestIndices'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/PageSize'
+    - $ref: '#/components/parameters/status'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LatestIndices'
+    '400':
+      description: Invalid value
+      content: {}

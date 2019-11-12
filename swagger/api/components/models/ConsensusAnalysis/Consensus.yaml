@@ -1,0 +1,74 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      organCode:
+        type: "string"
+      recommendationHistories:
+        type: "array"
+        properties:
+          recommendations:
+            type: "array"
+            properties:
+              localRecommendationTypeName:
+                type: "string"
+              numOfReport: 
+                type: "integer"
+              publicDate: 
+                type: "string"
+              recommendationTypeCode:
+                type: "string"
+              reportDate: 
+                type: "string"
+          reportDate:
+            type: "string"
+      recommendations:
+        type: "array"
+        properties:
+          localRecommendationTypeName:
+            type: "string"
+          numOfReport: 
+            type: "integer"
+          publicDate:
+            type: "string"
+          recommendationTypeCode:
+            type: "string"
+          reportDate:
+            type: "string"
+      targetPrice:
+        type: "object"
+        properties:
+          averagePrice: 
+            type: "integer"
+          closePrice: 
+            type: "integer"
+          closePriceAdjusted:  
+            type: "integer"
+          highestPrice:  
+            type: "integer"
+          lowestPrice:  
+            type: "integer"
+      targetPriceHistories:
+        type: "array"
+        properties:
+          actualPrice:   
+            type: "integer"
+          numOfRating:   
+            type: "integer"
+          reportDate:  
+            type: "string"
+          targetPrice:   
+            type: "integer"

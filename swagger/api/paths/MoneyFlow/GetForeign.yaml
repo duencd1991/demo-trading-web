@@ -1,0 +1,22 @@
+summary: Foreign
+description: Foreign
+get:
+  tags:
+  - "MoneyFlow"
+  summary: 'Get Foreign'
+  description: 'Get Foreign'
+  x-swagger-router-controller: "MoneyFlow"
+  operationId: 'GetForeign'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Foreign'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,21 @@
+.help-link{
+  display: inline-block;
+  a{
+    color: $white;
+    display: inline-block;
+    position: relative;
+    i{
+      font-size: 15px;
+      float: left;
+      margin-top: 0px;
+      margin-right: 5px;
+    }
+  }
+}
+.light-mode{
+  .help-link{
+    a{
+      color: $l_white;
+    }
+  }
+}

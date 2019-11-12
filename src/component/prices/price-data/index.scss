@@ -1,0 +1,91 @@
+@import '../../../styles/variables';
+
+.pd-price-data-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .pd-top-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+
+      .ticker-name {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fff;
+        border-bottom: 2px solid #555555;
+        padding-bottom: 6px;
+        min-width: 135px;
+      }
+
+      .group-button {
+        text-transform: uppercase;
+        padding: 6px;
+        color: $white;
+        div {
+          width: 50px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        &--sell {
+          background-color: $s_color_3;
+        }
+
+        &--buy {
+          background-color: $b_color_1;
+        }
+      }
+
+      .item-infor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+
+        &--first-row,
+        &--second-row {
+          display: flex;
+          .item {
+            display: flex;
+            margin-right: 4px;
+
+            .main-text {
+              color: $grey;
+            }
+
+            .sub-text {
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    &--right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .pd-body {
+    margin-top: 12px;
+  }
+
+  .border-table tbody tr td:first-child {
+    font-weight: normal;
+  }
+}

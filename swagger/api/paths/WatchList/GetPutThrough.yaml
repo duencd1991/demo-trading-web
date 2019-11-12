@@ -1,0 +1,21 @@
+summary: Putthrough Detail
+description: Putthrough Detail
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get Putthrough Detail'
+  description: 'Get Putthrough Detail'
+  x-swagger-router-controller: "WatchList"
+  operationId: 'GetPutThrough'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PutthroughList'
+    '400':
+      description: Invalid value
+      content: {}

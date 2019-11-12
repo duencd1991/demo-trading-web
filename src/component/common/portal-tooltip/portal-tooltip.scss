@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+$tooltip_bg_color: #43484f;
+.portal-tooltip-content {
+  z-index: 999;
+  background-color: $tooltip_bg_color;
+  color: $white;
+  padding: 4px 10px;
+  border-radius: 3px;
+  position: fixed;
+}
+
+.portal-tooltip-content-inner {
+  position: relative;
+  white-space: nowrap;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -7px;
+    left: calc(50% - 3px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: $tooltip_bg_color transparent transparent transparent;
+  }
+}

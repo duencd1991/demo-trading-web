@@ -1,0 +1,10 @@
+type: "object"
+properties:
+  previousDate:
+    type: "array"
+    items:
+      $ref: "#/components/schemas/itemsChartOnedaySeries"
+  toDate:
+    type: "array"
+    items:
+      $ref: "#/components/schemas/itemsChartOnedaySeries"

@@ -1,0 +1,15 @@
+type: "object"
+properties:
+  ticker:
+    type: "string"
+    example: "SSI"
+  organCode:
+    type: "string"
+    example: "SSI"
+  organShortName:
+    type: "string"  
+    example: "Saigon Securities JSC"
+  comGroupCode:
+    type: "string"
+    example: "HSX"
+    

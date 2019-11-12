@@ -1,0 +1,14 @@
+.label-left-wrap {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  opacity: 0.5;
+}
+
+.label-right-wrap {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: top right;
+  opacity: 0.5;
+  right: 0;
+}

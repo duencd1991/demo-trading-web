@@ -1,0 +1,28 @@
+.account-info{
+  display: inline-block;
+  a{
+    i{
+      font-size: 13px;
+      margin-top: 0px;
+    }
+    .notifi-dot{
+      position: absolute;
+      background: $l_color_1;
+      width: 4px;
+      height: 4px;
+      border-radius: 5px;
+      z-index: 1;
+      bottom: 1px;
+      left: 13px;
+    }
+  }
+}
+.light-mode{
+  .account-info{
+    a{
+      .notifi-dot{
+        background: $l_l_color_1;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        code: 
+          type: "string"
+        r21:
+          type: "number"
+        r25:
+          type: "number"
+        r26:
+          type: "number"
+        r27:
+          type: "number"
+        tradingDate:
+          type: "string"
+        value:
+          type: "number"     

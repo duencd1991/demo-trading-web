@@ -1,0 +1,160 @@
+@import './../../../styles/variables';
+.screener-wrapper {
+  .screener-filter {
+    .w-120px {
+      width: 120px;
+    }
+  }
+
+  .screener-checkbox {
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .criteria-content {
+    clear: both;
+    .criteria-table {
+      display: flex;
+
+      .criteria-item {
+        width: 50%;
+        background-color: #273040;
+        border-radius: 1px;
+
+        .criteria-head {
+          line-height: 29px;
+          border-radius: 1px;
+          background-color: #3694e9;
+          padding-left: 12px;
+          vertical-align: middle;
+        }
+        .criteria-row {
+          line-height: 28px;
+          vertical-align: middle;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 12px;
+          font-weight: 600;
+          .group-active {
+            background-color: #005197;
+          }
+          .scroll-item {
+            height: 150px;
+            .text-pointer {
+              cursor: pointer;
+            }
+            .scroll-item-content div:first-child {
+              margin-top: 0px !important;
+            }
+          }
+          .row-left {
+            border-right: 1px solid #555555;
+
+            width: 40%;
+          }
+          .row-right {
+            width: 60%;
+          }
+          .slider-detail {
+            display: flex;
+            font-size: 10px;
+            font-weight: normal;
+            div {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .criteria-button {
+      height: 30px;
+    }
+
+    .value-range-content {
+      .param-header {
+        display: flex;
+      }
+      .selected-value {
+        display: flex;
+      }
+    }
+  }
+
+  .my-screeners {
+    background-color: #273040;
+    z-index: 1;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 #191b1f;
+    padding: 4px;
+    .screener-item-content {
+      width: 192px;
+      border-radius: 2px;
+      background-color: #343e4f;
+      padding: 8px;
+      .screener-name {
+        text-transform: uppercase;
+        color: $l_color_5;
+        font-size: 11px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 95%;
+      }
+      .expand-status-icon {
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      .expand-button {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+      }
+
+      .icon-pencil-edit {
+        cursor: pointer;
+      }
+
+      .icon-bin-delete {
+        cursor: pointer;
+      }
+
+      .icon-correct {
+        cursor: pointer;
+      }
+      .icon-remove-symbol {
+        cursor: pointer;
+      }
+
+      hr {
+        background-color: $white;
+        height: 1px;
+        border: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .text-input {
+        border: 0px;
+        display: inline-block;
+        background: transparent;
+        float: left;
+        padding: 0px;
+        margin: 0px;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 11px;
+      }
+      .confirm-delete {
+        font-size: 12px;
+        text-align: center;
+      }
+      .btn-cancel-delete {
+        background-color: $s_color_3;
+      }
+    }
+    .screener-item {
+      padding-bottom: 4px;
+    }
+    .detail-param {
+      font-size: 9px;
+    }
+  }
+}

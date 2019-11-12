@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+
+.dividend-analysis-wrapper {
+  .da-top-content {
+    display: flex;
+    align-items: center;
+  }
+  .isRed {
+    background-color: #e84855;
+    color: #ffffff;
+  }
+  .isBlue {
+    background-color: #1d97ef;
+  }
+  .tooltip-light-wrap {
+    .tooltip-top {
+      bottom: calc(100% - 3px) !important;
+      margin-left: -19px !important;
+    }
+    .tooltip-top::after {
+      border-top: 5px solid #43484f !important ;
+      bottom: 5px !important ;
+    }
+    .tooltip-content {
+      .tooltip-message {
+        width: fit-content;
+        height: 18px;
+        background-color: #43484f;
+        padding: 0 10px 0 10px;
+        span {
+          font-size: 8px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.light-mode {
+  .dividend-analysis-wrapper {
+    .isRed {
+      color: #ffffff !important;
+    }
+    .isBlue {
+      color: #ffffff !important;
+    }
+  }
+}

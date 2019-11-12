@@ -1,0 +1,61 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    properties:
+      anomalyItems:
+        type: "array"
+        properties:
+          apr:
+            type: "number"
+          aug:
+            type: "number"
+          code:
+            type: "string"
+          dec:
+            type: "number"
+          feb:
+            type: "number"
+          fri:
+            type: "number"
+          i:
+            type: "number"
+          ii:
+            type: "number"
+          iii:
+            type: "number"
+          iv:
+            type: "number"
+          jan:
+            type: "number"
+          jul:
+            type: "number"
+          jun:
+            type: "number"
+          mar:
+            type: "number"
+          may:
+            type: "number"
+          mon:
+            type: "number"
+          nov:
+            type: "number"
+          oct:
+            type: "number"
+          sep:
+            type: "number"
+          thu: 
+            type: "number"
+          tue:
+            type: "number"
+          wed:
+            type: "number"
+          year:
+            type: "number"
+      percentValueChange:
+        type: "number"
+      value:
+        type: "number"
+      valueChange:
+        type: "number"
+      

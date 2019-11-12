@@ -1,0 +1,264 @@
+@import "../../../../styles/variables";
+
+.prospect-layout {
+  width: 100%;
+  float: left;
+  min-width: 1024px;
+
+  .summary-layout {
+    width: 300px;
+    float: left;
+  }
+
+  .prospect-wrapper {
+    width: calc(100% - 320px);
+    float: right;
+  }
+
+  .prospect-content {
+    width: 100%;
+    float: left;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .prospect-flex {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .prospect-item-width-sm {
+    width: 100%;
+  }
+
+  .prospect-item-width-md {
+    width: calc(50% - 3px)
+  }
+
+  .prospect-item-width-lg {
+    width: calc(25% - 5px);
+  }
+
+  .prospect-item {
+    margin-bottom: 6px;
+    height: 128px;
+    background: rgba(#000, 0.1);
+    border-radius: 2px;
+    cursor: pointer;
+
+    &__icon {
+      margin-top: 11px;
+      text-align: center;
+
+      img {
+        width: 72px;
+      }
+    }
+
+    &__title {
+      width: 100%;
+      float: left;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      span {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+      }
+
+      .time-range {
+        font-size: 9px;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      flex: 1;
+      float: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      text-transform: uppercase;
+
+      h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 5px 0 0;
+      }
+
+      span {
+        color: $white;
+      }
+    }
+
+    &__row {
+      width: 100%;
+      padding: 3px 8px;
+      text-align: left;
+
+      span.label {
+        text-transform: uppercase;
+        margin-right: 5px;
+        color: $ta_color_2;
+      }
+
+      strong {
+        color: $ta_color_2;
+        margin-right: 5px;
+      }
+
+      span {
+        font-size: 11px;
+        color: $c_color_2;
+      }
+    }
+  }
+
+  .prospect-item-hover {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    .prospect-item__content {
+      background: rgba(#fff, 0.7);
+      flex: 1;
+
+      .index-change {
+        font-size: 9px;
+      }
+
+      .text-increase {
+        color: $c_color_1;
+      }
+
+      .text-decrease {
+        color: $c_color_2;
+      }
+    }
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .prospect-item:hover {
+    .prospect-item-hover {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prospect-no-hover {
+      display: none;
+      width: 100%;
+    }
+  }
+
+  .fix-size-1000 {
+    min-width: 1000px !important;
+  }
+
+  //* Animation *//
+
+  /* entire container, keeps perspective */
+  .flip-container {
+    perspective: 1000px;
+  }
+
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+    height: 160px;
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    width: 100%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .vertical.flip-container {
+    position: relative;
+  }
+
+  .vertical .back {
+    transform: rotateX(180deg);
+  }
+
+  .vertical.flip-container .flipper {
+    transform-origin: 100% 80px; /* half of height */
+  }
+
+  .vertical.flip-container:hover .flipper {
+    transform: rotateX(-180deg);
+  }
+
+  .newtral-icon {
+    width: 50px;
+    height: 3px;
+    border-radius: 3px;
+    background: $white;
+    display: inline-block;
+  }
+
+}
+
+.light-mode {
+  .prospect-layout {
+    .prospect-item__title {
+      color: $white;
+    }
+  }
+}

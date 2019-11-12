@@ -1,0 +1,33 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      contrib1Day:
+        type: "object"
+        items: $ref: "#/components/schemas/itemContribution"
+      contrib5Day:
+        type: "object"
+        items: $ref: "#/components/schemas/itemContribution"
+      contrib10Day:
+        type: "object"
+        items: $ref: "#/components/schemas/itemContribution"
+      contrib20Day:
+        type: "object"
+        items: $ref: "#/components/schemas/itemContribution"
+      series:
+        type: "object"
+        properties:
+      

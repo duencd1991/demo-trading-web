@@ -1,0 +1,40 @@
+@import "../../../styles/variables";
+
+.Calendar-wraper {
+  position: absolute;
+  z-index: 999;
+  right: 0px;
+  top: 20px;
+}
+
+.calendar-btnsug {
+  position: relative !important;
+}
+
+.Calendar-wraper .DateRangePickerInput {
+  padding: 0px 129px 0px 30px;
+}
+
+.date-range-title {
+  align-items: center;
+
+  &--sub-text {
+    font-size: 12px;
+    color: $white;
+  }
+
+  &--main-text {
+    font-size: 12px;
+    color: $l_color_5;
+    margin: 0 6px;
+    white-space: nowrap;
+  }
+}
+
+.light-mode {
+  .date-range-title {
+    .date-range-title--sub-text {
+      color: #1f2023;
+    }
+  }
+}

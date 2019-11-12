@@ -1,0 +1,234 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      organCode:
+        type: "string"
+      scorings:
+        type: "object"
+        properties:
+          comTypeCode:
+            type: "string"
+          icbCode:
+            type: "string"
+          isBank:
+            type: "boolean"
+          organCode:
+            type: "string"
+          ratios:
+            type: "array"
+            properties:
+              bsa53:
+                type: "number"
+              bsb103: 
+                type: "number"
+              lengthReport: 
+                type: "integer"
+              lengthReportCal: 
+                type: "integer"
+              rtd3: 
+                type: "number"
+              rtd7: 
+                type: "number"
+              rtd11: 
+                type: "number"
+              rtd14:
+                type: "number"
+              rtd20:
+                type: "number"
+              rtd21:
+                type: "number"
+              rtd25:
+                type: "number"
+              rtd26:
+                type: "number"
+              rtd28: 
+                type: "number"
+              rtd30:
+                type: "number"
+              rtd51: 
+                type: "number"
+              rtq1:
+                type: "number"
+              rtq3: 
+                type: "number"
+              rtq12: 
+                type: "number"
+              rtq14:
+                type: "number"
+              rtq16: 
+                type: "number"
+              rtq18:
+                type: "number"
+              rtq20:
+                type: "number"
+              rtq23: 
+                type: "number"
+              rtq25: 
+                type: "number"
+              rtq29: 
+                type: "number"
+              rtq31: 
+                type: "number"
+              rtq44: 
+                type: "number"
+              rtq45: 
+                type: "number"
+              rtq46: 
+                type: "number"
+              rtq47: 
+                type: "number"
+              rtq50: 
+                type: "number"
+              rtq51: 
+                type: "number"
+              rtq54: 
+                type: "number"
+              rtq55: 
+                type: "number"
+              rtq56: 
+                type: "number"
+              rtq57: 
+                type: "number"
+              rtq58: 
+                type: "number"
+              rtq59: 
+                type: "number"
+              rtq60: 
+                type: "number"
+              rtq61: 
+                type: "number"
+              rtq67: 
+                type: "number"
+              rtq69: 
+                type: "number"
+              rtq71: 
+                type: "number"
+              rtq77: 
+                type: "number"
+              rtq78:
+                type: "number"
+              rtq81: 
+                type: "number"
+              rtq83: 
+                type: "number"
+              rtq118: 
+                type: "number"
+              ryd20: 
+                type: "number"
+              ryd51: 
+                type: "number"
+              yearReport: 
+                type: "integer"
+              yearReportCal: 
+                type: "integer"
+          ratiosIndustry:
+            type: "object"
+            properties:
+              icbCode:
+                type: "string"
+              rsd3: 
+                type: "number"
+              rsd7: 
+                type: "number"
+              rsd11: 
+                type: "number"
+              rsd14:
+                type: "number"
+              rsd20:
+                type: "number"
+              rsd21: 
+                type: "number"
+              rsd25: 
+                type: "number"
+              rsd26: 
+                type: "number"
+              rsd28: 
+                type: "number"
+              rsd30:
+                type: "number"
+              rsd51: 
+                type: "number"
+              rsq1: 
+                type: "number"
+              rsq3:
+                type: "number"
+              rsq12: 
+                type: "number"
+              rsq14:
+                type: "number"
+              rsq16:
+                type: "number"
+              rsq18:
+                type: "number"
+              rsq20:
+                type: "number"
+              rsq23: 
+                type: "number"
+              rsq25: 
+                type: "number"
+              rsq29: 
+                type: "number"
+              rsq31:
+                type: "number"
+              rsq34: 
+                type: "number"
+              rsq37: 
+                type: "number"
+              rsq39: 
+                type: "number"
+              rsq44: 
+                type: "number"
+              rsq45: 
+                type: "number"
+              rsq46: 
+                type: "number"
+              rsq47: 
+                type: "number"
+              rsq50: 
+                type: "number"
+              rsq51: 
+                type: "number"
+              rsq57: 
+                type: "number"
+              rsq58: 
+                type: "number"
+              rsq59: 
+                type: "number"
+              rsq60: 
+                type: "number"
+              rsq61: 
+                type: "number"
+              rsq67: 
+                type: "number"
+              rsq71: 
+                type: "number"
+              rsq77: 
+                type: "number"
+              rsq118: 
+                type: "number"
+              rtq12Max: 
+                type: "number"
+              rtq14Max: 
+                type: "number"
+              rtq25Max: 
+                type: "number"
+              rtq29Max: 
+                type: "number"
+              rtq44Max: 
+                type: "number"
+              rtq45Max: 
+                type: "number"

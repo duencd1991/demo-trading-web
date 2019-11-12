@@ -1,0 +1,26 @@
+type: "object"
+properties:
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  totalCount:
+    type: "integer"
+  errors:
+    type: "string"
+  packageId:
+    type: "string"
+  status:
+    type: "string"
+  items:
+    type: "array"
+    properties:
+      newsId:
+        type: "integer"
+      organCode:
+        type: "string" 
+      ticker:
+        type: "string" 
+      newsTitle:
+        type: "string"
+      

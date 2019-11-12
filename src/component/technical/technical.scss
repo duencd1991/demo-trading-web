@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.deceptive-wrapper {
+  .custom-table > tbody > tr > td,
+  .custom-table > tbody > tr > th {
+    padding-left: 1px !important;
+    padding-right: 2px !important;
+    overflow: inherit !important;
+  }
+  .tab-timer__link {
+    text-transform: none;
+  }
+
+  .light-text {
+    font-size: 12px;
+    font-weight: 100;
+  }
+
+  .bold-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .item-tab {
+    text-transform: none;
+  }
+}
+
+.technical-wrapper {
+  .drop-mecus {
+    width: 346px;
+
+    a {
+      display: flex;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.hover {
+        background-color: $b_color_2;
+        opacity: 1;
+      }
+    }
+  }
+}

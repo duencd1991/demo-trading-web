@@ -1,0 +1,23 @@
+summary: AggregatorNews
+description: AggregatorNews
+get:
+  tags:
+  - "News"
+  summary: 'Get AggregatorNews'
+  description: 'Get AggregatorNews'
+  x-swagger-router-controller: "News"
+  operationId: 'GetAggregatorNews'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AggregatorNews'
+    '400':
+      description: Invalid value
+      content: {}

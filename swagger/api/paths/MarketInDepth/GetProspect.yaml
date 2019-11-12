@@ -1,0 +1,22 @@
+summary: Prospect
+description: Prospect
+get:
+  tags:
+  - "MarketInDepth"
+  summary: 'Get Prospect'
+  description: 'Get Prospect'
+  x-swagger-router-controller: "MarketInDepth"
+  operationId: 'GetProspect'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Prospect'
+    '400':
+      description: Invalid value
+      content: {}

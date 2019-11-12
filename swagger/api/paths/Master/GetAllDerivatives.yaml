@@ -1,0 +1,21 @@
+summary: Get AllDerivatives
+description: Get AllDerivatives
+get:
+  tags:
+  - "Master"
+  summary: 'AllDerivatives'
+  description: 'AllDerivatives'
+  x-swagger-router-controller: Master
+  operationId: 'GetAllDerivatives'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:      
+          schema:
+            $ref: "#/components/schemas/AllDerivatives"
+    '400':
+      description: Invalid value
+      content: {}

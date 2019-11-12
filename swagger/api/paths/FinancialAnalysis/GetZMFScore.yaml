@@ -1,0 +1,24 @@
+summary: FinancialAnalysis ZMFScore
+description: FinancialAnalysis ZMFScore
+get:
+  tags:
+  - "FinancialAnalysis"
+  summary: 'ZMFScore'
+  description: 'ZMFScore'
+  x-swagger-router-controller: FinancialAnalysis
+  operationId: 'GetZMFScore'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/OrganCode'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ZMFScore'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,12 @@
+type: "object"
+properties:
+  parentComGroupCode:
+    type: "string"
+    example: ""
+  comGroupName:
+    type: "string"  
+    example: ""
+  comGroupCode:
+    type: "string"
+    example: ""
+    

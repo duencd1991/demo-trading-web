@@ -1,0 +1,189 @@
+{
+  "items" : [ 
+    {"icbCode":"9000", "icbLevel": 1, "icbName": "Technology", "icbNameVI": "Công nghệ Thông tin L1"}
+    ,{"icbCode":"6000", "icbLevel": 1, "icbName": "Telecommunications", "icbNameVI": "Viễn thông L1"}
+    ,{"icbCode":"4000", "icbLevel": 1, "icbName": "Health Care", "icbNameVI": "Dược phẩm và Y tế L1"}
+    ,{"icbCode":"8000", "icbLevel": 1, "icbName": "Financials", "icbNameVI": "Tài chính L1"}
+    ,{"icbCode":"3000", "icbLevel": 1, "icbName": "Consumer Goods", "icbNameVI": "Hàng Tiêu dùng L1"}
+    ,{"icbCode":"5000", "icbLevel": 1, "icbName": "Consumer Services", "icbNameVI": "Dịch vụ Tiêu dùng L1"}
+    ,{"icbCode":"2000", "icbLevel": 1, "icbName": "Industrials", "icbNameVI": "Công nghiệp L1"}
+    ,{"icbCode":"1000", "icbLevel": 1, "icbName": "Basic Materials", "icbNameVI": "Nguyên vật liệu L1"}
+    ,{"icbCode":"0001", "icbLevel": 1, "icbName": "Oil & Gas", "icbNameVI": "Dầu khí  L1"}
+    ,{"icbCode":"7000", "icbLevel": 1, "icbName": "Utilities", "icbNameVI": "Tiện ích Cộng đồng L1"}
+      ,{"icbCode":"9500", "icbLevel": 2, "icbName": "Technology", "icbNameVI": "Công nghệ Thông tin L2"}
+      ,{"icbCode":"6500", "icbLevel": 2, "icbName": "Telecommunications", "icbNameVI": "Viễn thông L2"}
+      ,{"icbCode":"4500", "icbLevel": 2, "icbName": "Health Care", "icbNameVI": "Y tế L2"}
+      ,{"icbCode":"8300", "icbLevel": 2, "icbName": "Banks", "icbNameVI": "Ngân hàng L2"}
+      ,{"icbCode":"8700", "icbLevel": 2, "icbName": "Financial Services", "icbNameVI": "Dịch vụ tài chính L2"}
+      ,{"icbCode":"8500", "icbLevel": 2, "icbName": "Insurance", "icbNameVI": "Bảo hiểm L2"}
+      ,{"icbCode":"8600", "icbLevel": 2, "icbName": "Real Estate", "icbNameVI": "Bất động sản L2"}
+      ,{"icbCode":"3300", "icbLevel": 2, "icbName": "Automobiles & Parts", "icbNameVI": "Ô tô và phụ tùng L2"}
+      ,{"icbCode":"3700", "icbLevel": 2, "icbName": "Personal & Household Goods", "icbNameVI": "Hàng cá nhân & Gia dụng L2"}
+      ,{"icbCode":"5500", "icbLevel": 2, "icbName": "Media", "icbNameVI": "Truyền thông L2"}
+      ,{"icbCode":"5300", "icbLevel": 2, "icbName": "Retail", "icbNameVI": "Bán lẻ L2"}
+      ,{"icbCode":"5700", "icbLevel": 2, "icbName": "Travel & Leisure", "icbNameVI": "Du lịch và Giải trí L2"}
+      ,{"icbCode":"3500", "icbLevel": 2, "icbName": "Food & Beverage", "icbNameVI": "Thực phẩm và đồ uống L2"}
+      ,{"icbCode":"2300", "icbLevel": 2, "icbName": "Construction & Materials", "icbNameVI": "Xây dựng và Vật liệu L2"}
+      ,{"icbCode":"2700", "icbLevel": 2, "icbName": "Industrial Goods & Services", "icbNameVI": "Hàng & Dịch vụ Công nghiệp L2"}
+      ,{"icbCode":"1700", "icbLevel": 2, "icbName": "Basic Resources", "icbNameVI": "Tài nguyên Cơ bản L2"}
+      ,{"icbCode":"1300", "icbLevel": 2, "icbName": "Chemicals", "icbNameVI": "Hóa chất L2"}
+      ,{"icbCode":"0500", "icbLevel": 2, "icbName": "Oil & Gas", "icbNameVI": "Dầu khí L2"}
+      ,{"icbCode":"7500", "icbLevel": 2, "icbName": "Utilities", "icbNameVI": "Điện, nước & xăng dầu khí đốt L2"}
+        ,{"icbCode":"9530", "icbLevel": 3, "icbName": "Software & Computer Services", "icbNameVI": "Phần mềm & Dịch vụ Máy tính L3"}
+        ,{"icbCode":"9570", "icbLevel": 3, "icbName": "Technology Hardware & Equipment", "icbNameVI": "Thiết bị và Phần cứng L3"}
+        ,{"icbCode":"6530", "icbLevel": 3, "icbName": "Fixed Line Telecommunications", "icbNameVI": "Viễn thông cố định L3"}
+        ,{"icbCode":"6570", "icbLevel": 3, "icbName": "Mobile Telecommunications", "icbNameVI": "Viễn thông di động L3"}
+        ,{"icbCode":"4530", "icbLevel": 3, "icbName": "Health Care Equipment & Services", "icbNameVI": "Thiết bị và Dịch vụ Y tế L3"}
+        ,{"icbCode":"4570", "icbLevel": 3, "icbName": "Pharmaceuticals & Biotechnology", "icbNameVI": "Dược phẩm L3"}
+        ,{"icbCode":"8350", "icbLevel": 3, "icbName": "Banks", "icbNameVI": "Ngân hàng L3"}
+        ,{"icbCode":"8770", "icbLevel": 3, "icbName": "Financial Services", "icbNameVI": "Dịch vụ tài chính L3"}
+        ,{"icbCode":"8980", "icbLevel": 3, "icbName": "Equity Investment Instruments", "icbNameVI": "Quỹ đầu tư L3"}
+        ,{"icbCode":"8990", "icbLevel": 3, "icbName": "Nonequity Investment Instruments", "icbNameVI": ""}
+        ,{"icbCode":"8570", "icbLevel": 3, "icbName": "Life Insurance", "icbNameVI": "Bảo hiểm nhân thọ L3"}
+        ,{"icbCode":"8530", "icbLevel": 3, "icbName": "Nonlife Insurance", "icbNameVI": "Bảo hiểm phi nhân thọ L3"}
+        ,{"icbCode":"8630", "icbLevel": 3, "icbName": "Real Estate Investment & Services", "icbNameVI": "Bất động sản L3"}
+        ,{"icbCode":"8670", "icbLevel": 3, "icbName": "Real Estate Investment Trusts", "icbNameVI": "Ủy thác đầu tư bất động sản L3"}
+        ,{"icbCode":"3350", "icbLevel": 3, "icbName": "Automobiles & Parts", "icbNameVI": "Ô tô và phụ tùng L3"}
+        ,{"icbCode":"3720", "icbLevel": 3, "icbName": "Household Goods & Home Construction", "icbNameVI": "Hàng gia dụng L3"}
+        ,{"icbCode":"3740", "icbLevel": 3, "icbName": "Leisure Goods", "icbNameVI": "Hàng hóa giải trí L3"}
+        ,{"icbCode":"3760", "icbLevel": 3, "icbName": "Personal Goods", "icbNameVI": "Hàng cá nhân L3"}
+        ,{"icbCode":"5550", "icbLevel": 3, "icbName": "Media", "icbNameVI": "Truyền thông L3"}
+        ,{"icbCode":"5370", "icbLevel": 3, "icbName": "General Retailers", "icbNameVI": "Bán lẻ L3"}
+        ,{"icbCode":"5750", "icbLevel": 3, "icbName": "Travel & Leisure", "icbNameVI": "Du lịch & Giải trí L3"}
+        ,{"icbCode":"3530", "icbLevel": 3, "icbName": "Beverages", "icbNameVI": "Bia và đồ uống L3"}
+        ,{"icbCode":"3570", "icbLevel": 3, "icbName": "Food Producers", "icbNameVI": "Sản xuất thực phẩm L3"}
+        ,{"icbCode":"3780", "icbLevel": 3, "icbName": "Tobacco", "icbNameVI": "Thuốc lá L3"}
+        ,{"icbCode":"5330", "icbLevel": 3, "icbName": "Food & Drug Retailers", "icbNameVI": "Phân phối thực phẩm & dược phẩm L3"}
+        ,{"icbCode":"2350", "icbLevel": 3, "icbName": "Construction & Materials", "icbNameVI": "Xây dựng và Vật liệu L3"}
+        ,{"icbCode":"2710", "icbLevel": 3, "icbName": "Aerospace & Defense", "icbNameVI": "Hàng không vũ trụ và quốc phòng L3"}
+        ,{"icbCode":"2730", "icbLevel": 3, "icbName": "Electronic & Electrical Equipment", "icbNameVI": "Điện tử & Thiết bị điện L3"}
+        ,{"icbCode":"2720", "icbLevel": 3, "icbName": "General Industrials", "icbNameVI": "Hàng công nghiệp L3"}
+        ,{"icbCode":"2750", "icbLevel": 3, "icbName": "Industrial Engineering", "icbNameVI": "Công nghiệp nặng L3"}
+        ,{"icbCode":"2790", "icbLevel": 3, "icbName": "Support Services", "icbNameVI": "Tư vấn & Hỗ trợ Kinh doanh L3"}
+        ,{"icbCode":"2770", "icbLevel": 3, "icbName": "Industrial Transportation", "icbNameVI": "Vận tải L3"}
+        ,{"icbCode":"1730", "icbLevel": 3, "icbName": "Forestry & Paper", "icbNameVI": "Lâm nghiệp và Giấy L3"}
+        ,{"icbCode":"1750", "icbLevel": 3, "icbName": "Industrial Metals & Mining", "icbNameVI": "Kim loại L3"}
+        ,{"icbCode":"1770", "icbLevel": 3, "icbName": "Mining", "icbNameVI": "Khai khoáng L3"}
+        ,{"icbCode":"1350", "icbLevel": 3, "icbName": "Chemicals", "icbNameVI": "Hóa chất L3"}
+        ,{"icbCode":"0530", "icbLevel": 3, "icbName": "Oil & Gas Producers", "icbNameVI": "Sản xuất Dầu khí L3"}
+        ,{"icbCode":"0570", "icbLevel": 3, "icbName": "Oil Equipment, Services & Distribution", "icbNameVI": "Thiết bị, Dịch vụ và Phân phối Dầu khí L3"}
+        ,{"icbCode":"0580", "icbLevel": 3, "icbName": "Alternative Energy", "icbNameVI": "Năng lượng thay thế L3"}
+        ,{"icbCode":"7530", "icbLevel": 3, "icbName": "Electricity", "icbNameVI": "Sản xuất & Phân phối Điện L3"}
+        ,{"icbCode":"7570", "icbLevel": 3, "icbName": "Gas, Water & Multi-utilities", "icbNameVI": "Nước & Khí đốt L3"}
+          ,{"icbCode":"9578", "icbLevel": 4, "icbName": "Telecommunications Equipment", "icbNameVI": ""}
+          ,{"icbCode":"9533", "icbLevel": 4, "icbName": "Computer Services", "icbNameVI": ""}
+          ,{"icbCode":"9537", "icbLevel": 4, "icbName": "Software", "icbNameVI": ""}
+          ,{"icbCode":"9535", "icbLevel": 4, "icbName": "Internet", "icbNameVI": ""}
+          ,{"icbCode":"9576", "icbLevel": 4, "icbName": "Semiconductors", "icbNameVI": ""}
+          ,{"icbCode":"2733", "icbLevel": 4, "icbName": "Electrical Components & Equipment", "icbNameVI": ""}
+          ,{"icbCode":"9572", "icbLevel": 4, "icbName": "Computer Hardware", "icbNameVI": ""}
+          ,{"icbCode":"9574", "icbLevel": 4, "icbName": "Electronic Office Equipment", "icbNameVI": ""}
+          ,{"icbCode":"9578", "icbLevel": 4, "icbName": "Telecommunications Equipment", "icbNameVI": ""}
+          ,{"icbCode":"5553", "icbLevel": 4, "icbName": "Broadcasting & Entertainment", "icbNameVI": ""}
+          ,{"icbCode":"6535", "icbLevel": 4, "icbName": "Fixed Line Telecommunications", "icbNameVI": ""}
+          ,{"icbCode":"6575", "icbLevel": 4, "icbName": "Mobile Telecommunications", "icbNameVI": ""}
+          ,{"icbCode":"4533", "icbLevel": 4, "icbName": "Health Care Providers", "icbNameVI": ""}
+          ,{"icbCode":"4535", "icbLevel": 4, "icbName": "Medical Equipment", "icbNameVI": ""}
+          ,{"icbCode":"4537", "icbLevel": 4, "icbName": "Medical Supplies", "icbNameVI": ""}
+          ,{"icbCode":"4573", "icbLevel": 4, "icbName": "Biotechnology", "icbNameVI": ""}
+          ,{"icbCode":"4577", "icbLevel": 4, "icbName": "Pharmaceuticals", "icbNameVI": ""}
+          ,{"icbCode":"8355", "icbLevel": 4, "icbName": "Banks", "icbNameVI": ""}
+          ,{"icbCode":"8773", "icbLevel": 4, "icbName": "Consumer Finance", "icbNameVI": ""}
+          ,{"icbCode":"8779", "icbLevel": 4, "icbName": "Mortgage Finance", "icbNameVI": ""}
+          ,{"icbCode":"8775", "icbLevel": 4, "icbName": "Specialty Finance", "icbNameVI": ""}
+          ,{"icbCode":"8771", "icbLevel": 4, "icbName": "Asset Managers", "icbNameVI": ""}
+          ,{"icbCode":"8777", "icbLevel": 4, "icbName": "Investment Services", "icbNameVI": ""}
+          ,{"icbCode":"8676", "icbLevel": 4, "icbName": "Mortgage REITs", "icbNameVI": ""}
+          ,{"icbCode":"8985", "icbLevel": 4, "icbName": "Equity Investment Instruments", "icbNameVI": ""}
+          ,{"icbCode":"8995", "icbLevel": 4, "icbName": "Nonequity Investment Instruments", "icbNameVI": ""}
+          ,{"icbCode":"8575", "icbLevel": 4, "icbName": "Life Insurance", "icbNameVI": ""}
+          ,{"icbCode":"8532", "icbLevel": 4, "icbName": "Full Line Insurance", "icbNameVI": ""}
+          ,{"icbCode":"8534", "icbLevel": 4, "icbName": "Insurance Brokers", "icbNameVI": ""}
+          ,{"icbCode":"8538", "icbLevel": 4, "icbName": "Reinsurance", "icbNameVI": ""}
+          ,{"icbCode":"8536", "icbLevel": 4, "icbName": "Property & Casualty Insurance", "icbNameVI": ""}
+          ,{"icbCode":"8633", "icbLevel": 4, "icbName": "Real Estate Holding & Development", "icbNameVI": ""}
+          ,{"icbCode":"8637", "icbLevel": 4, "icbName": "Real Estate Services", "icbNameVI": ""}
+          ,{"icbCode":"8674", "icbLevel": 4, "icbName": "Diversified REITs", "icbNameVI": ""}
+          ,{"icbCode":"8677", "icbLevel": 4, "icbName": "Hotel & Lodging REITs", "icbNameVI": ""}
+          ,{"icbCode":"8671", "icbLevel": 4, "icbName": "Industrial & Office REITs", "icbNameVI": ""}
+          ,{"icbCode":"8673", "icbLevel": 4, "icbName": "Residential REITs", "icbNameVI": ""}
+          ,{"icbCode":"8672", "icbLevel": 4, "icbName": "Retail REITs", "icbNameVI": ""}
+          ,{"icbCode":"8675", "icbLevel": 4, "icbName": "Specialty REITs", "icbNameVI": ""}
+          ,{"icbCode":"3357", "icbLevel": 4, "icbName": "Tires", "icbNameVI": ""}
+          ,{"icbCode":"3353", "icbLevel": 4, "icbName": "Automobiles", "icbNameVI": ""}
+          ,{"icbCode":"3355", "icbLevel": 4, "icbName": "Auto Parts", "icbNameVI": ""}
+          ,{"icbCode":"5377", "icbLevel": 4, "icbName": "Specialized Consumer Services", "icbNameVI": ""}
+          ,{"icbCode":"3728", "icbLevel": 4, "icbName": "Home Construction", "icbNameVI": ""}
+          ,{"icbCode":"3726", "icbLevel": 4, "icbName": "Furnishings", "icbNameVI": ""}
+          ,{"icbCode":"3722", "icbLevel": 4, "icbName": "Durable Household Products", "icbNameVI": ""}
+          ,{"icbCode":"3743", "icbLevel": 4, "icbName": "Consumer Electronics", "icbNameVI": ""}
+          ,{"icbCode":"3747", "icbLevel": 4, "icbName": "Toys", "icbNameVI": ""}
+          ,{"icbCode":"3745", "icbLevel": 4, "icbName": "Recreational Products", "icbNameVI": ""}
+          ,{"icbCode":"3763", "icbLevel": 4, "icbName": "Clothing & Accessories", "icbNameVI": ""}
+          ,{"icbCode":"3765", "icbLevel": 4, "icbName": "Footwear", "icbNameVI": ""}
+          ,{"icbCode":"5555", "icbLevel": 4, "icbName": "Media Agencies", "icbNameVI": ""}
+          ,{"icbCode":"5557", "icbLevel": 4, "icbName": "Publishing", "icbNameVI": ""}
+          ,{"icbCode":"5373", "icbLevel": 4, "icbName": "Broadline Retailers", "icbNameVI": ""}
+          ,{"icbCode":"5371", "icbLevel": 4, "icbName": "Apparel Retailers", "icbNameVI": ""}
+          ,{"icbCode":"5375", "icbLevel": 4, "icbName": "Home Improvement Retailers", "icbNameVI": ""}
+          ,{"icbCode":"5379", "icbLevel": 4, "icbName": "Specialty Retailers", "icbNameVI": ""}
+          ,{"icbCode":"5751", "icbLevel": 4, "icbName": "Airlines", "icbNameVI": ""}
+          ,{"icbCode":"5759", "icbLevel": 4, "icbName": "Travel & Tourism", "icbNameVI": ""}
+          ,{"icbCode":"5752", "icbLevel": 4, "icbName": "Gambling", "icbNameVI": ""}
+          ,{"icbCode":"5753", "icbLevel": 4, "icbName": "Hotels", "icbNameVI": ""}
+          ,{"icbCode":"5755", "icbLevel": 4, "icbName": "Recreational Services", "icbNameVI": ""}
+          ,{"icbCode":"5757", "icbLevel": 4, "icbName": "Restaurants & Bars", "icbNameVI": ""}
+          ,{"icbCode":"3533", "icbLevel": 4, "icbName": "Brewers", "icbNameVI": ""}
+          ,{"icbCode":"3535", "icbLevel": 4, "icbName": "Distillers & Vintners", "icbNameVI": ""}
+          ,{"icbCode":"3537", "icbLevel": 4, "icbName": "Soft Drinks", "icbNameVI": ""}
+          ,{"icbCode":"3573", "icbLevel": 4, "icbName": "Farming, Fishing & Plantations", "icbNameVI": ""}
+          ,{"icbCode":"3577", "icbLevel": 4, "icbName": "Food Products", "icbNameVI": ""}
+          ,{"icbCode":"3785", "icbLevel": 4, "icbName": "Tobacco", "icbNameVI": ""}
+          ,{"icbCode":"5337", "icbLevel": 4, "icbName": "Food Retailers & Wholesalers", "icbNameVI": ""}
+          ,{"icbCode":"5333", "icbLevel": 4, "icbName": "Drug Retailers", "icbNameVI": ""}
+          ,{"icbCode":"3767", "icbLevel": 4, "icbName": "Personal Products", "icbNameVI": ""}
+          ,{"icbCode":"3724", "icbLevel": 4, "icbName": "Nondurable Household Products", "icbNameVI": ""}
+          ,{"icbCode":"2357", "icbLevel": 4, "icbName": "Heavy Construction", "icbNameVI": ""}
+          ,{"icbCode":"2353", "icbLevel": 4, "icbName": "Building Materials & Fixtures", "icbNameVI": ""}
+          ,{"icbCode":"2713", "icbLevel": 4, "icbName": "Aerospace", "icbNameVI": ""}
+          ,{"icbCode":"2717", "icbLevel": 4, "icbName": "Defense", "icbNameVI": ""}
+          ,{"icbCode":"2737", "icbLevel": 4, "icbName": "Electronic Equipment", "icbNameVI": ""}
+          ,{"icbCode":"2727", "icbLevel": 4, "icbName": "Diversified Industrials", "icbNameVI": ""}
+          ,{"icbCode":"2723", "icbLevel": 4, "icbName": "Containers & Packaging", "icbNameVI": ""}
+          ,{"icbCode":"2757", "icbLevel": 4, "icbName": "Industrial Machinery", "icbNameVI": ""}
+          ,{"icbCode":"2797", "icbLevel": 4, "icbName": "Industrial Suppliers", "icbNameVI": ""}
+          ,{"icbCode":"2795", "icbLevel": 4, "icbName": "Financial Administration", "icbNameVI": ""}
+          ,{"icbCode":"2791", "icbLevel": 4, "icbName": "Business Support Services", "icbNameVI": ""}
+          ,{"icbCode":"2793", "icbLevel": 4, "icbName": "Business Training & Employment Agencies", "icbNameVI": ""}
+          ,{"icbCode":"2779", "icbLevel": 4, "icbName": "Trucking", "icbNameVI": ""}
+          ,{"icbCode":"2753", "icbLevel": 4, "icbName": "Commercial Vehicles & Trucks", "icbNameVI": ""}
+          ,{"icbCode":"2775", "icbLevel": 4, "icbName": "Railroads", "icbNameVI": ""}
+          ,{"icbCode":"2773", "icbLevel": 4, "icbName": "Marine Transportation", "icbNameVI": ""}
+          ,{"icbCode":"2771", "icbLevel": 4, "icbName": "Delivery Services", "icbNameVI": ""}
+          ,{"icbCode":"2777", "icbLevel": 4, "icbName": "Transportation Services", "icbNameVI": ""}
+          ,{"icbCode":"1733", "icbLevel": 4, "icbName": "Forestry", "icbNameVI": ""}
+          ,{"icbCode":"1737", "icbLevel": 4, "icbName": "Paper", "icbNameVI": ""}
+          ,{"icbCode":"1775", "icbLevel": 4, "icbName": "General Mining", "icbNameVI": ""}
+          ,{"icbCode":"1757", "icbLevel": 4, "icbName": "Iron & Steel", "icbNameVI": ""}
+          ,{"icbCode":"1753", "icbLevel": 4, "icbName": "Aluminum", "icbNameVI": ""}
+          ,{"icbCode":"1755", "icbLevel": 4, "icbName": "Nonferrous Metals", "icbNameVI": ""}
+          ,{"icbCode":"1773", "icbLevel": 4, "icbName": "Diamonds & Gemstones", "icbNameVI": ""}
+          ,{"icbCode":"1777", "icbLevel": 4, "icbName": "Gold Mining", "icbNameVI": ""}
+          ,{"icbCode":"1779", "icbLevel": 4, "icbName": "Platinum & Precious Metals", "icbNameVI": ""}
+          ,{"icbCode":"1353", "icbLevel": 4, "icbName": "Commodity Chemicals", "icbNameVI": ""}
+          ,{"icbCode":"1357", "icbLevel": 4, "icbName": "Specialty Chemicals", "icbNameVI": ""}
+          ,{"icbCode":"0537", "icbLevel": 4, "icbName": "Integrated Oil & Gas", "icbNameVI": ""}
+          ,{"icbCode":"0533", "icbLevel": 4, "icbName": "Exploration & Production", "icbNameVI": ""}
+          ,{"icbCode":"0573", "icbLevel": 4, "icbName": "Oil Equipment & Services", "icbNameVI": ""}
+          ,{"icbCode":"0577", "icbLevel": 4, "icbName": "Pipelines", "icbNameVI": ""}
+          ,{"icbCode":"1771", "icbLevel": 4, "icbName": "Coal", "icbNameVI": ""}
+          ,{"icbCode":"0587", "icbLevel": 4, "icbName": "Alternative Fuels", "icbNameVI": ""}
+          ,{"icbCode":"0583", "icbLevel": 4, "icbName": "Renewable Energy Equipment", "icbNameVI": ""}
+          ,{"icbCode":"7537", "icbLevel": 4, "icbName": "Alternative Electricity", "icbNameVI": ""}
+          ,{"icbCode":"7535", "icbLevel": 4, "icbName": "Conventional Electricity", "icbNameVI": ""}
+          ,{"icbCode":"7575", "icbLevel": 4, "icbName": "Multi-utilities", "icbNameVI": ""}
+          ,{"icbCode":"7573", "icbLevel": 4, "icbName": "Gas Distribution", "icbNameVI": ""}
+          ,{"icbCode":"7577", "icbLevel": 4, "icbName": "Water", "icbNameVI": ""}
+          ,{"icbCode":"2799", "icbLevel": 4, "icbName": "Waste & Disposal Services", "icbNameVI": ""}
+  ]
+}

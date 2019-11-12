@@ -1,0 +1,28 @@
+summary: Price Data
+description: Price Data
+get:
+  tags:
+  - "Price Data"
+  summary: 'Get Price Data'
+  description: 'Get Price Data'
+  x-swagger-router-controller: PriceData
+  operationId: 'GetPriceData'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    - $ref: '#/components/parameters/Frequently'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+    - $ref: '#/components/parameters/From'
+    - $ref: '#/components/parameters/To'
+    
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PriceDataList'
+    '400':
+      description: Invalid value
+      content: {}

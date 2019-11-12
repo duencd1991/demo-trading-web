@@ -1,0 +1,23 @@
+.change-language{
+  display: inline-block;
+  a{
+    span{
+      width: 15px;
+      border-radius: 15px;
+      line-height: 0px;
+      margin-top: 0px;
+      img{
+        margin-top: -5px;
+      }
+    }
+  }
+}
+.light-mode{
+  .change-language{
+    a{
+      span{
+        background-color: $l_white;
+      }
+    }
+  }
+}

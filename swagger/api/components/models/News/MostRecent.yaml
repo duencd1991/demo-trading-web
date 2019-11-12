@@ -1,0 +1,51 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      categoryName:
+        type: "string"
+      comGroupCode: 
+        type: "string"
+      contributor: 
+        type: "string"
+      createDate:
+        type: "string"
+      index: 
+        type: "integer"
+      isFavorite: 
+        type: "boolean"
+      newsCategoryCode: 
+        type: "string"
+      newsId: 
+        type: "integer"
+      newsShortContent:
+        type: "string"
+      newsSourceLink: 
+        type: "string"
+      newsTitle: 
+        type: "string"
+      organCode:
+        type: "string"
+      priceInfo: 
+        type: "string"
+      publicDate:
+        type: "string"
+      sourceCode: 
+        type: "string"
+      ticker:
+        type: "string"
+      trustAbility: 
+        type: "string"

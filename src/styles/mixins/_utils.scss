@@ -1,0 +1,30 @@
+// Visually hidden element.
+@mixin vhidden() {
+  opacity: 0;
+  visibility: hidden;
+}
+
+// Visually display element.
+@mixin vdisplay {
+  opacity: 1;
+  visibility: visible;
+}
+// Overlay background
+@mixin overlay($bg: black, $alpha: 0.5, $z-index: 5) {
+  @include absolute(0, 0, 0, 0);
+  background-color: rgba($bg, $alpha);
+  z-index: $z-index;
+}
+
+// PADDING TOP IMAGE
+@mixin paddingTop($width, $height) {
+  content: "";
+  display: block;
+  padding-top: percentage($height/$width);
+}
+//border-radius
+@each $var in 3, 5, 7, 10 {
+  .border-radius-#{$var} {
+    border-radius: #{$var}px !important;
+  }
+}

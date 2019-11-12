@@ -1,0 +1,218 @@
+//fix custome
+//fix body
+body.light-mode {
+  color: $l_white;
+  background-color: $l_bg_container !important;
+  //fix leftsidebar
+  div.sideleft-section {
+    ul {
+      li {
+        a {
+          opacity: 1 !important;
+          &:hover {
+            background-color: $l_ta_color_7 !important;
+            i {
+              color: $l_dark !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  //fix header top
+  .fiidropdown {
+    a {
+      color: $l_white !important;
+      .notifi-dot {
+        &:before {
+          color: $l_dark !important;
+        }
+      }
+    }
+  }
+  .change-language a span {
+    background-color: transparent !important;
+  }
+  .group-list {
+    color: $l_dark !important;
+    .title-group {
+      background-color: rgba($l_b_color_2, 0.25) !important;
+      font-weight: 600;
+    }
+  }
+  .sideleft-section ul li a {
+    opacity: 0.8 !important;
+    &:hover {
+      color: $l_dark !important;
+    }
+  }
+
+  //fix table
+  .table-sticky-head thead th {
+    background-color: #2b457d !important;
+    color: $l_dark !important;
+  }
+  .table-sticky-first-column tbody tr td:first-child {
+    background-color: $l_ta_color_2 !important;
+  }
+  .table-sticky-first-column tbody tr:nth-child(2n) td:first-child {
+    background-color: $l_dark !important;
+  }
+  div table.table-hover tbody tr:hover {
+    background-color: $color-hover-table-light !important;
+  }
+  .lm_header .lm_tab {
+    color: $l_t_color_5 !important;
+  }
+
+  //light mode
+  //bg wrap
+  .lm_goldenlayout {
+    background: $l_t_color_3 !important;
+  }
+  //bg card
+  .lm_content {
+    background: $l_t_color_1 !important;
+  }
+  //bg tab
+  .lm_row > .lm_item {
+    background: $l_t_color_4 !important;
+  }
+  .lm_header .lm_tab {
+    background: $l_t_color_1 !important;
+  }
+  //noti maque
+  .notifi-maque {
+    .item-content {
+      color: $l_white;
+    }
+  }
+  //golden layout
+  .lm_popout,
+  .lm_maximise {
+    color: $l_white;
+  }
+  .lm_header {
+    .lm_tab {
+      box-shadow: none !important;
+      border-radius: 2px;
+      &:hover {
+        box-shadow: none !important;
+      }
+      .lm_title {
+        opacity: 0.6;
+      }
+      &.lm_active {
+        .lm_title {
+          opacity: 1;
+        }
+      }
+      .lm_close_tab {
+        background-image: none !important;
+        &:before {
+          content: '\e904';
+          font-family: 'fiintrade';
+          position: absolute;
+          z-index: 1;
+          top: 3px;
+          left: 0px;
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .day-ranger {
+    .text-inline {
+      color: $l_dark;
+    }
+  }
+  .btn-cus {
+    .icon-chart-btn,
+    .icon-plus-s,
+    .icon-settings {
+      color: #2b457d;
+    }
+  }
+  .footer-section {
+    .text-white-50 {
+      color: rgba(#1f2023, 1) !important;
+    }
+    .text-white {
+      color: #1f2023 !important;
+      font-weight: 600;
+    }
+    .bor-s-color-5.border {
+      border-radius: 20px !important;
+    }
+  }
+  .list-filter {
+    .line-drop {
+      border-bottom: 1px solid rgba(#2c73e8, 0.3) !important;
+      .btn-group {
+        .drop-cus {
+          border: none !important;
+          font-weight: 600;
+          &:after {
+            border-top: 0.3em solid #2c73e8;
+          }
+        }
+      }
+    }
+  }
+  .btn-cus-nomal.active {
+    color: #fff;
+  }
+  .checkbox {
+    label {
+      .text-white {
+        color: $l_white !important;
+      }
+    }
+  }
+  .search-filter {
+    .drop-search {
+      a {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .list-filter {
+    .item-filter {
+      .btn-group {
+        .drop-cus:focus:after {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .btn.btn-cus-nomal.calendar-btnsug {
+    color: #2b457d !important;
+  }
+  .top-nav {
+    .tab-normal {
+      .tab-timer__item {
+        background-color: #f1f3f4;
+        a {
+          &.active {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .bg-bor-sp {
+    background-color: #f1f3f4;
+  }
+}
+.list-filter {
+  .line-drop {
+    border-bottom: 1px solid rgba(#2c73e8, 0.3) !important;
+    .btn-group {
+      .drop-cus {
+        border: none !important;
+      }
+    }
+  }
+}

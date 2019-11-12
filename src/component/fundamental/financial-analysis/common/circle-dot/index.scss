@@ -1,0 +1,33 @@
+.circle-dot {
+  .circle {
+    line-height: 200px;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+  
+  .circle-good {
+    background-color: #4bde8a;
+  }
+
+  .circle-excellent {
+    background-color: #5f99ff;
+  }
+
+  .circle-neutral {
+    background-color: #f8bc06;
+  }
+
+  .circle-be-alert {
+    background-color: #ff8200;
+  }
+  .circle-watch-out {
+    background-color: #eb505a;
+  }
+}

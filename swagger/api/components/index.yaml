@@ -1,0 +1,14 @@
+#-------------------------------
+# Reusable schemas (data models)
+#-------------------------------
+schemas:
+  $ref: schemas.yaml
+#-------------------------------
+# Reusable operation parameters
+#-------------------------------
+parameters:
+  $ref: parameters.yaml
+#-------------------------------
+# Reusable responses
+#-------------------------------
+#responses:

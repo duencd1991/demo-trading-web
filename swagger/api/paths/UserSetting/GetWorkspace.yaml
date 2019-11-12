@@ -1,0 +1,21 @@
+summary: System and User Workspace
+description: System and User Workspace
+get:
+  tags:
+  - "UserSetting"
+  summary: 'Get Workspace'
+  description: 'Get Workspace'
+  x-swagger-router-controller: UserSetting
+  operationId: 'GetWorkspace'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Workspace'
+    '400':
+      description: Invalid value
+      content: {}

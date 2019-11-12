@@ -1,0 +1,24 @@
+summary: FinancialStatement IncomeStatement
+description: FinancialStatement IncomeStatement
+get:
+  tags:
+  - "FinancialStatement"
+  summary: 'IncomeStatement'
+  description: 'IncomeStatement'
+  x-swagger-router-controller: FinancialStatement
+  operationId: 'GetIncomeStatement'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/OrganCode'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/IncomeStatement'
+    '400':
+      description: Invalid value
+      content: {}

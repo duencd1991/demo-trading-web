@@ -1,0 +1,38 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      eventId:
+        type: "integer"
+      eventListCode:
+        type: "string"
+      eventTitle:
+        type: "string"
+      exerciseDate:
+        type: "string"
+      exrightDate:
+        type: "string"
+      organCode:
+        type: "string"
+      publicDate:
+        type: "string"
+      recordDate: 
+        type: "string"
+      sourceUrl:
+        type: "string"
+      ticker: 
+        type: "string"
+      

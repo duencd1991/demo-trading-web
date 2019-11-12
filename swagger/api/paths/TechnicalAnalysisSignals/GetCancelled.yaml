@@ -1,0 +1,22 @@
+summary: Cancelled
+description: Cancelled
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get Cancelled'
+  description: 'Get Cancelled'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetCancelled'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/AverageVolume10D'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Cancelled'
+    '400':
+      description: Invalid value
+      content: {}

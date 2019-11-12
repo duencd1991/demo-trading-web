@@ -1,0 +1,24 @@
+summary: Price Depth
+description: Price Depth
+get:
+  tags:
+  - "Price Depth"
+  summary: 'GetPriceDepth'
+  description: 'GetPriceDepth'
+  x-swagger-router-controller: PriceDepth
+  operationId: 'GetPriceDepth'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PriceDepth'
+    '400':
+      description: Invalid value
+      content: {}

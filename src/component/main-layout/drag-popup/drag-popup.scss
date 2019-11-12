@@ -1,0 +1,46 @@
+.drag-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .drag-popup-content {
+    cursor: move;
+    position: absolute;
+    width: 307px;
+    background-color: rgba(#d8d8d8, 0.9);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    .drag-popup-header {
+      padding: 5px 10px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #273040;
+      text-transform: uppercase;
+      border-bottom: 1px solid #273040;
+    }
+    .drag-popup-body {
+      padding: 10px;
+      font-size: 20px;
+      color: #273040;
+      a {
+        background: #005197;
+        padding: 5px 20px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 10px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.search-filter-wrapper {
+  .show {
+    display: block !important;
+  }
+
+  .hover {
+    background-color: #005197;
+  }
+
+  .search-box-small-text {
+    height: 34px;
+    border-radius: 0;
+    background: #1f2329;
+    color: gray;
+    font-size: 11px;
+    padding: 16px 0 10px;
+    border-bottom: 2px solid #555555;
+    font-weight: normal;
+  }
+
+  &.fixed-position {
+    width: 346px;
+  }
+}
+

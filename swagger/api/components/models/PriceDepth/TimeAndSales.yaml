@@ -1,0 +1,33 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        ticker:
+          type: "string"    
+        organCode:
+          type: "string"
+        matches:
+          type: "array"
+          items:
+            type: object
+            properties:
+              tradingDate:
+                type: "string"
+              matchType:
+                type: "number"
+              matchPrice:
+                type: "number"
+              priceChange:
+                type: "number"
+              percentPriceChange:
+                type: "number"
+              matchVolume:
+                type: "number"
+              totalMatchVolume:
+                type: "number"
+              ceilingPrice:
+                type: "number"
+              floorPrice:
+                type: "number"

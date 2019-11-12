@@ -1,0 +1,22 @@
+summary: Alert ScreenerParameters
+description: Screener ScreenerParameters
+get:
+  tags:
+  - "Screener"
+  summary: 'ScreenerParameters'
+  description: 'ScreenerParameters'
+  x-swagger-router-controller: Screener
+  operationId: 'GetScreenerParameters'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ScreenerParameters'
+    '400':
+      description: Invalid value
+      content: {}

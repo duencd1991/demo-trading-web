@@ -1,0 +1,24 @@
+summary: Price Depth
+description: Price Depth
+get:
+  tags:
+  - "Price Depth"
+  summary: 'GetTimeAndSales'
+  description: 'GetTimeAndSales'
+  x-swagger-router-controller: PriceDepth
+  operationId: 'GetTimeAndSales'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TimeAndSales'
+    '400':
+      description: Invalid value
+      content: {}

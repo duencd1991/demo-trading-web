@@ -1,0 +1,65 @@
+@import './../../../../../styles/variables';
+
+$tool_alert_gray_color: #afb1b3;
+
+.edit-setting-personal {
+  .body-setting-personal {
+    .body-col-content {
+      margin-right: 60px;
+      .body-row-content {
+        position: relative;
+        margin: 3px 0;
+        .condition-drop-down {
+          width: 175px;
+          .item-filter {
+            .btn-group {
+              width: 100% !important;
+              .drop-cus {
+                width: 100% !important;
+                text-align: left !important;
+              }
+              .drop-mecus {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-remove-delete {
+    font-size: 11px;
+    height: 20px;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: solid 0.3px $b_color_2;
+    background: $b_color_2;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .btn-remove-cancel {
+    margin-left: 5px;
+    font-size: 11px;
+    height: 20px;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border: solid 0.3px $l_p_color_2;
+    background-color: $s_color_3;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .text-transparent {
+    color: $tool_alert_gray_color;
+  }
+  .text-font-weight {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,22 @@
+summary: Proprietary
+description: Proprietary
+get:
+  tags:
+  - "MoneyFlow"
+  summary: 'Get Proprietary'
+  description: 'Get Proprietary'
+  x-swagger-router-controller: "MoneyFlow"
+  operationId: 'GetProprietary'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Proprietary'
+    '400':
+      description: Invalid value
+      content: {}

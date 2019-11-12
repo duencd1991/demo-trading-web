@@ -1,0 +1,40 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      cashDividendPayouts:
+        type: "array"
+        properties:
+          valuePerShare: 
+            type: "integer"
+          exrightYear: 
+            type: "integer"
+          exrightMonth: 
+            type: "integer"
+      cashDividendPlans: 
+        type: "array"
+        properties:
+          dividendYear:
+            type: "integer"
+          valuePerShare: 
+            type: "integer"
+      organCode:
+        type: "string"
+      dividendPayoutRatio: $ref: "#/components/schemas/itemRatioYear"
+      dividendYield: $ref: "#/components/schemas/itemRatioYear"
+      dps: $ref: "#/components/schemas/itemRatioYear"
+      eps: $ref: "#/components/schemas/itemRatioYear"
+      priceEarningRatio: $ref: "#/components/schemas/itemRatioYear"

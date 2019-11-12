@@ -1,0 +1,15 @@
+type: "object"
+properties:
+  cmf:
+    type: "number"
+  ma5: 
+    type: "integer"
+  roc:
+    type: "number"
+  rockPrev:
+    type: "number"
+  rsi:
+    type: "integer"
+  rsiPrev:
+    type: "integer"
+    

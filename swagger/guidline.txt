@@ -1,0 +1,60 @@
+npm install multi-file-swagger -g
+npm install test-openapi -g
+
+npm install --save connect js-yaml json-refs moment namor oas3-tools swagger-tools
+
+cd api
+multi-file-swagger -o yaml index.yaml > api/swagger.yaml
+test-openapi api/swagger.yaml
+
+
+pm2 set pm2-auto-pull:interval 60000
+
+http://localhost:8080/api-docs
+http://localhost:8080/docs
+
+pm2 deploy <configuration_file> <environment> setup
+
+
+pm2 deploy production setup
+pm2 deploy production update
+pm2 deploy production exec "pm2 reload all"
+
+# Start all applications
+pm2 start ecosystem.config.js
+
+# Start only the app named worker-app
+pm2 start ecosystem.config.js --only worker-app
+
+# Stop all
+pm2 stop ecosystem.config.js
+
+# Restart all
+pm2 start   ecosystem.config.js
+## Or
+pm2 restart ecosystem.config.js
+
+# Reload all
+pm2 reload ecosystem.config.js
+
+# Delete all
+pm2 delete ecosystem.config.js
+
+$ pm2 install pm2-auto-pull
+
+## Uninstall
+
+$ pm2 uninstall pm2-auto-pull
+
+## Configure auto pull interval
+
+$ pm2 set pm2-auto-pull:interval 60000
+
+
+https://codeburst.io/automate-your-deployment-process-with-pm2-b0fd7c256223
+
+http://pm2.keymetrics.io/docs/usage/startup/
+
+
+cd swagger
+pm2 start index.js -name FiinTrade-Swagger

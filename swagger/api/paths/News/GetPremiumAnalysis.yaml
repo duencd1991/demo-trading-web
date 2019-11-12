@@ -1,0 +1,23 @@
+summary: PremiumAnalysis
+description: PremiumAnalysis
+get:
+  tags:
+  - "News"
+  summary: 'Get PremiumAnalysis'
+  description: 'Get PremiumAnalysis'
+  x-swagger-router-controller: "News"
+  operationId: 'GetPremiumAnalysis'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PremiumAnalysis'
+    '400':
+      description: Invalid value
+      content: {}

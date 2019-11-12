@@ -1,0 +1,21 @@
+summary: Get list organization
+description: Get list organization
+get:
+  tags:
+  - "Master"
+  summary: 'Get List Organization'
+  description: 'Get List Organization'
+  x-swagger-router-controller: Master
+  operationId: 'GetListOrganization'
+  parameters:
+    - $ref: '#/components/parameters/language'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:      
+          schema:
+            $ref: "#/components/schemas/ListOrganization"
+    '400':
+      description: Invalid value
+      content: {}

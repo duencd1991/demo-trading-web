@@ -1,0 +1,141 @@
+type: "object"
+properties:
+  ticker:
+    type: "string"
+  items:
+    type: "array"
+    items:
+      properties:
+        price:
+          type: "object"
+          properties:
+            matchPrice:
+              type: "number"
+            priceChange:
+              type: "number"
+            percentPriceChange:
+              type: "number"
+            openPrice:
+              type: "number"
+            highestPrice:
+              type: "number"
+            lowestPrice:
+              type: "number"
+            referencePrice:
+              type: "number"
+            foreignBuyVolumeTotal:
+              type: "number"
+            foreignSellVolumeTotal:
+              type: "number"
+            averagePrice:
+              type: "number"
+            totalMatchValue:
+              type: "number"
+            totalMatchVolume:
+              type: "number"
+        bidAsk:
+          type: "object"
+          properties:
+            best1Bid:
+              type: "number"
+            best1BidVolume:
+              type: "number"
+            best2Bid:
+              type: "number"
+            best2BidVolume:
+              type: "number"
+            best3Bid:
+              type: "number"
+            best3BidVolume:
+              type: "number"
+            best4Bid:
+              type: "number"
+            best4BidVolume:
+              type: "number"
+            best5Bid:
+              type: "number"
+            best5BidVolume:
+              type: "number"
+            best6Bid:
+              type: "number"
+            best6BidVolume:
+              type: "number"
+            best7Bid:
+              type: "number"
+            best7BidVolume:
+              type: "number"
+            best8Bid:
+              type: "number"
+            best8BidVolume:
+              type: "number"
+            best9Bid:
+              type: "number"
+            best9BidVolume:
+              type: "number"
+            best10Bid:
+              type: "number"
+            best10BidVolume:
+              type: "number"
+            best1Offer:
+              type: "number"
+            best1OfferVolume:
+              type: "number"
+            best2Offer:
+              type: "number"
+            best2OfferVolume:
+              type: "number"
+            best3Offer:
+              type: "number"
+            best3OfferVolume:
+              type: "number"
+            best4Offer:
+              type: "number"
+            best4OfferVolume:
+              type: "number"
+            best5Offer:
+              type: "number"
+            best5OfferVolume:
+              type: "number"
+            best6Offer:
+              type: "number"
+            best6OfferVolume:
+              type: "number"
+            best7Offer:
+              type: "number"
+            best7OfferVolume:
+              type: "number"
+            best8Offer:
+              type: "number"
+            best8OfferVolume:
+              type: "number"
+            best9Offer:
+              type: "number"
+            best9OfferVolume:
+              type: "number"
+            best10Offer:
+              type: "number"
+            best10OfferVolume:
+              type: "number"
+        extraInfo:
+          type: "object"  
+          properties:
+            averageVolume1Month:
+              type: "number"
+            averageVolume2Week:
+              type: "number"
+            foreignerPercentage:
+              type: "number"
+            rtd21:
+              type: "number"
+            rtq12:
+              type: "number"
+            rtd25:
+              type: "number"
+            rtd14:
+              type: "number"
+            rtd35:
+              type: "number"
+            rtd11:
+              type: "number"
+            
+        

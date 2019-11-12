@@ -1,0 +1,38 @@
+{
+  "items" : [ {
+	"typeCode" : "Custom",
+    "code" : "1000",
+    "watchListId" : "00010",
+    "text" : "My Porfolio"
+  }, {
+	"typeCode" : "Custom",
+    "code" : "1000",
+    "watchListId" : "00020",
+    "text" : "Potential List"
+  }, {
+	"typeCode" : "CompanyGroup",
+    "code" : "VN30",
+    "watchListId" : "VN30",
+    "text" : "VN30"
+  }, {
+	"typeCode" : "CompanyGroup",
+    "code" : "HNX30",
+    "watchListId" : "HNX30",
+    "text" : "HNX30"
+  }, {
+	"typeCode" : "Sector",  
+    "code" : "0001",
+    "watchListId" : "0500 - Dầu khí",
+    "text" : "Dầu khí"
+  }, {
+	"typeCode" : "Sector",
+    "code" : "1000",
+    "watchListId" : "1300",
+    "text" : "Hóa chất"
+  }, {
+	"typeCode" : "Sector",
+    "code" : "1000",
+    "watchListId" : "1700",
+    "text" : "Tài nguyên cơ bản"
+  } ]
+}

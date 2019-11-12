@@ -1,0 +1,42 @@
+.na-top-content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .action-content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .info-content {
+    margin: 8px 0;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    .main-text {
+      color: white;
+    }
+    .sub-text {
+      margin: 0 4px;
+      color: #47c3ff;
+    }
+  }
+
+  .label-text {
+    font-size: 10px;
+    width: 40px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+}
+
+.light-mode {
+  .na-top-content-wrapper .info-content .main-text {
+    color: #1f2023;
+  }
+}

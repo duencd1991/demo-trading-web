@@ -1,0 +1,114 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        heatMap:
+          type: "object"
+          properties:
+            comGroupCode:
+              type: "string"
+            heatmaps:
+              type: "array"
+              properties:
+                asianMarket:
+                  type: "array"
+                  properties:
+                    indexChange:
+                      type: "number"
+                    indexValue:
+                      type: "number"
+                    percentIndexChange:
+                      type: "string"
+                    tradingDate:
+                      type: "string"
+                    worldIndexCode:
+                      type: "string"
+                centralBankRate:
+                  type: "object"
+                  properties:
+                    exchangeRate:
+                      type: "number"
+                    previousExchangeRate:
+                      type: "number"
+                    previousPublicDate:
+                      type: "string"
+                    publicDate: 
+                      type: "string"
+                europMarket:
+                  type: "array"
+                  properties:
+                    indexChange: 
+                      type: "number"
+                    indexValue:
+                      type: "number"
+                    percentIndexChange:
+                      type: "number"
+                    tradingDate:
+                      type: "string"
+                    worldIndexCode:
+                      type: "string"
+                foreignFlow:
+                  type: "object"
+                  properties:
+                    foreignBuyValueMatched:
+                      type: "number"
+                    foreignSellValueMatched:
+                      type: "number"
+                    netForeign: 
+                      type: "number"
+                    tradingDate:
+                      type: "string"
+                oilWtiPrice:
+                  type: "object"
+                  properties:
+                    percentPriceChange:
+                      type: "number"
+                    price:
+                      type: "number"
+                    priceChange:
+                      type: "number"
+                    tradingDate:
+                      type: "string"
+                timeRange:
+                  type: "string"
+                usMarket:
+                  type: "array"
+                  properties:
+                    indexChange: 
+                      type: "number"
+                    indexValue:
+                      type: "number"
+                    percentIndexChange:
+                      type: "number"
+                    tradingDate:
+                      type: "string"
+                    worldIndexCode:
+                      type: "string"
+                vnIndex:
+                  type: "object"
+                  properties:
+                    closeIndex:
+                      type: "number"
+                    indexChange:
+                      type: "number"
+                    indexValue:
+                      type: "number"
+                    percentIndexChange:
+                      type: "number"
+                    tradingDate:
+                      type: "string"
+                worldGoldPrice:
+                  type: "object"
+                    properties:
+                      buyPrice:
+                        type: "number"
+                      buyPriceChange:
+                        type: "number"
+                      percentBuyPriceChange:
+                        type: "number"
+                      tradingDate:
+                        type: "string"
+
+        

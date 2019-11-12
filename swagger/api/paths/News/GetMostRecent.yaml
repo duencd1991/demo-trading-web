@@ -1,0 +1,23 @@
+summary: MostRecent
+description: MostRecent
+get:
+  tags:
+  - "News"
+  summary: 'Get MostRecent'
+  description: 'Get MostRecent'
+  x-swagger-router-controller: "News"
+  operationId: 'GetMostRecent'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/MostRecent'
+    '400':
+      description: Invalid value
+      content: {}

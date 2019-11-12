@@ -1,0 +1,13 @@
+.footer-section{
+  width: 100%;
+  height: 36px;
+  background-color: $t_color_2;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+.light-mode{
+  .footer-section{
+    background-color: $l_t_color_2;
+  }
+}

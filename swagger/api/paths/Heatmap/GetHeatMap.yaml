@@ -1,0 +1,25 @@
+summary: Heat Map
+description: Heat Map
+get:
+  tags:
+  - "Heat Map"
+  summary: 'HeatMap'
+  description: 'HeatMap'
+  x-swagger-router-controller: Heatmap
+  operationId: 'GetHeatMap'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Exchange'
+    - $ref: '#/components/parameters/Creiteria'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Heatmap'
+    '400':
+      description: Invalid value
+      content: {}

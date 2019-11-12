@@ -1,0 +1,25 @@
+summary: Alert GetNotificationList
+description: Alert GetNotificationList
+get:
+  tags:
+  - "Alert"
+  summary: 'NotificationList'
+  description: 'NotificationList'
+  x-swagger-router-controller: Alert
+  operationId: 'GetNotificationList'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/OrganCode'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/NotificationList'
+    '400':
+      description: Invalid value
+      content: {}

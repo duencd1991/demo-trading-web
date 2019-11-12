@@ -1,0 +1,24 @@
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get Summary Watch List'
+  description: 'Get Summary Watch List'
+  x-swagger-router-controller: "WatchList"
+  operationId: 'GetWatchListSummary'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/id'
+    - $ref: '#/components/parameters/watchListId'
+    - $ref: '#/components/parameters/watchListType'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SummaryWatchList'
+    '400':
+      description: Invalid value
+      content: {}
+summary: Summary Watch List
+description: Summary Watch List

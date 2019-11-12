@@ -1,0 +1,65 @@
+type: "object"
+properties:
+  buy:
+    type: "array"
+      properties:
+        ceilingPrice:
+          type: "integer"
+        floorPrice: 
+          type: "integer"
+        foreignBuyValueMatched: 
+          type: "integer"
+        foreignSellValueMatched: 
+          type: "integer"
+        marketType: 
+          type: "string"
+        matchPrice: 
+          type: "integer"
+        organCode:
+          type: "string"
+        percentPriceChange: 
+          type: "number"
+        priceChange: 
+          type: "integer"
+        referencePrice: 
+          type: "integer"
+        ticker: 
+          type: "string"
+        timeRange: 
+          type: "string"
+  ],
+  comGroupCode: 
+    type: "string"
+  foreignBuyValueMatched: 
+    type: "integer"
+  foreignSellValueMatched: 
+    type: "integer"
+  sell:
+    type: "array"
+    properties:
+      ceilingPrice: 
+        type: "integer"
+      floorPrice: 
+        type: "integer"
+      foreignBuyValueMatched: 
+        type: "integer"
+      foreignSellValueMatched: 
+        type: "integer"
+      marketType: 
+        type: "string"
+      matchPrice: 
+        type: "integer"
+      organCode:
+        type: "string"
+      percentPriceChange: 
+        type: "number"
+      priceChange: 
+        type: "integer"
+      referencePrice: 
+        type: "integer"
+      ticker: 
+        type: "string"
+      timeRange: 
+        type: "string"
+  timeRange:
+    type: "string"

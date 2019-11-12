@@ -1,0 +1,24 @@
+summary: Pressing
+description: Pressing
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get Pressing'
+  description: 'Get Pressing'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetPressing'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/AverageVolume10D'
+    - $ref: '#/components/parameters/OrderType'
+    - $ref: '#/components/parameters/Proportion'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Pressing'
+    '400':
+      description: Invalid value
+      content: {}

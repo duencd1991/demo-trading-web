@@ -1,0 +1,25 @@
+summary: CalendarWatchList
+description: CalendarWatchList
+get:
+  tags:
+  - "MarketCalendar"
+  summary: 'Get CalendarWatchList'
+  description: 'Get CalendarWatchList'
+  x-swagger-router-controller: "Calendar"
+  operationId: 'GetCalendarWatchList'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+    # - $ref: '#/components/parameters/watchListType'
+    # - $ref: '#/components/parameters/watchListId'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CalendarWatchList'
+    '400':
+      description: Invalid value
+      content: {}

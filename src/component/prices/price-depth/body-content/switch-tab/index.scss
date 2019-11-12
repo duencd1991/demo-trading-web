@@ -1,0 +1,49 @@
+@import "../../../../../styles/variables";
+
+.switch-tab-wrapper {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: center;
+  margin-bottom: 16px;
+  
+  i {
+    margin-left: 4px;
+    margin-bottom: 4px;
+    color: $grey;
+  }
+  
+  .level-item {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__title {
+      font-size: 10px;
+      color: $white;
+      font-weight: 600;
+      
+      &--grey {
+        color: $grey;
+      }
+    }
+    
+    &__underline {
+      width: 20px;
+      height: 2px;
+
+      &--selected{
+        background-color: #47c3ff;
+      }
+    }
+  }
+}
+
+.light-mode {
+  .switch-tab-wrapper .level-item__title {
+    color: #1f2023;
+  }
+}

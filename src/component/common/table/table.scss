@@ -1,0 +1,336 @@
+@import '../../../styles/variables';
+
+table > thead th {
+  padding: 0;
+}
+
+.custom-table > tbody > tr > td,
+.custom-table > tbody > tr > th {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  overflow: inherit !important;
+}
+
+.custom-table {
+  z-index: 10;
+  user-select: none;
+
+  tbody {
+    user-select: none;
+  }
+
+  tr {
+    user-select: none;
+
+    td {
+      height: 1px; // https://stackoverflow.com/questions/3542090/how-to-make-div-fill-td-height
+    }
+
+    &.hover,
+    &.highlight {
+      td {
+        background-color: $b_color_2 !important;
+      }
+
+      .hover-item {
+        background-color: $b_color_2 !important;
+      }
+    }
+
+    &:hover {
+      .star-wrapper {
+        opacity: 1;
+      }
+    }
+  }
+
+  .dragover {
+    opacity: 0.1;
+  }
+
+  .no-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-weight: 400;
+  }
+}
+
+.table-sticky-head {
+  thead {
+    user-select: none;
+
+    th {
+      position: -webkit-sticky !important;
+      position: sticky !important;
+      top: 0;
+      z-index: 3;
+      background-color: $ta_color_1;
+    }
+  }
+}
+
+.table-sticky-first-column {
+  thead {
+    th {
+      &:first-child {
+        left: 0;
+        z-index: 4;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(2n) {
+        td {
+          &:first-child {
+            background-color: $t_color_1;
+          }
+        }
+      }
+
+      &.hover {
+        td {
+          background-color: $b_color_2 !important;
+        }
+
+        .cell-hover-icon {
+          display: flex;
+        }
+      }
+
+      td {
+        &:first-child {
+          position: sticky !important;
+          left: 0;
+          z-index: 2;
+          background-color: $ta_color_2;
+        }
+      }
+    }
+  }
+}
+
+.table-loading {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0px;
+  background: url(../../../assets/images/svg/loading.svg) no-repeat center
+    center;
+  background-size: 15px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    background: rgba(31, 35, 41, 1);
+    background: -moz-linear-gradient(
+      top,
+      rgba(31, 35, 41, 1) 0%,
+      rgba(35, 41, 49, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      left bottom,
+      color-stop(0%, rgba(31, 35, 41, 1)),
+      color-stop(100%, rgba(35, 41, 49, 1))
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(31, 35, 41, 1) 0%,
+      rgba(35, 41, 49, 1) 100%
+    );
+    background: -o-linear-gradient(
+      top,
+      rgba(31, 35, 41, 1) 0%,
+      rgba(35, 41, 49, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      top,
+      rgba(31, 35, 41, 1) 0%,
+      rgba(35, 41, 49, 1) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(31, 35, 41, 1) 0%,
+      rgba(35, 41, 49, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f2329', endColorstr='#232931', GradientType=0);
+  }
+}
+
+.sort-status {
+  position: absolute;
+  right: 7px;
+  margin-left: 10px;
+  top: 7px;
+
+  .sort-up {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 4px 4px;
+    border-color: transparent transparent $white transparent;
+
+    &.table-sort-active {
+      border-color: transparent transparent $b_color_1 transparent;
+    }
+  }
+
+  .sort-down {
+    margin-top: 2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: $white transparent transparent transparent;
+
+    &.table-sort-active {
+      border-color: $b_color_1 transparent transparent transparent;
+    }
+  }
+}
+
+.table-loading-blur {
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.light-mode {
+  .table-sticky-head {
+    thead {
+      th {
+        background-color: $ta_color_1;
+      }
+    }
+  }
+
+  .custom-table {
+    tr {
+      &.hover,
+      &.highlight {
+        td {
+          background-color: $color-hover-table-light !important;
+        }
+
+        .hover-item {
+          background-color: $color-hover-table-light !important;
+        }
+      }
+    }
+  }
+
+  .table-sticky-first-column {
+    tbody {
+      tr {
+        &:nth-child(2n) {
+          td {
+            &:first-child {
+              background-color: $t_color_1;
+            }
+          }
+
+          &:hover {
+            td {
+              background-color: $color-hover-table-light !important;
+            }
+
+            td {
+              &:first-child {
+                background-color: $color-hover-table-light !important;
+              }
+            }
+          }
+        }
+
+        &:hover,
+        &.highlight {
+          td {
+            background-color: $color-hover-table-light !important;
+          }
+
+          td {
+            &:first-child {
+              background-color: $color-hover-table-light !important;
+            }
+          }
+        }
+
+        td {
+          &:first-child {
+            background-color: $ta_color_2;
+          }
+        }
+      }
+    }
+  }
+
+  .table-loading {
+    background-color: rgba(0, 0, 0, 0.3);
+    background: url(../../../assets/images/svg/loading.svg) no-repeat center
+      center;
+
+    &:before {
+      background: rgba(31, 35, 41, 1);
+      background: -moz-linear-gradient(
+        top,
+        rgba(31, 35, 41, 1) 0%,
+        rgba(35, 41, 49, 1) 100%
+      );
+      background: -webkit-gradient(
+        left top,
+        left bottom,
+        color-stop(0%, rgba(31, 35, 41, 1)),
+        color-stop(100%, rgba(35, 41, 49, 1))
+      );
+      background: -webkit-linear-gradient(
+        top,
+        rgba(31, 35, 41, 1) 0%,
+        rgba(35, 41, 49, 1) 100%
+      );
+      background: -o-linear-gradient(
+        top,
+        rgba(31, 35, 41, 1) 0%,
+        rgba(35, 41, 49, 1) 100%
+      );
+      background: -ms-linear-gradient(
+        top,
+        rgba(31, 35, 41, 1) 0%,
+        rgba(35, 41, 49, 1) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgba(31, 35, 41, 1) 0%,
+        rgba(35, 41, 49, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f2329', endColorstr='#232931', GradientType=0);
+    }
+  }
+
+  .sort-status {
+    .sort-up {
+      border-color: transparent transparent $white transparent;
+
+      &.active {
+        border-color: transparent transparent $b_color_1 transparent;
+      }
+    }
+
+    .sort-down {
+      border-color: $white transparent transparent transparent;
+
+      &.active {
+        border-color: $b_color_1 transparent transparent transparent;
+      }
+    }
+  }
+}

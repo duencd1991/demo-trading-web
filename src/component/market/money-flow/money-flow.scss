@@ -1,0 +1,229 @@
+@import '../../../styles/variables';
+
+.light-mode {
+  .money-flow-wrapper {
+    .list-filter .line-drop .btn-group .drop-cus {
+      color: $l_white;
+    }
+  }
+}
+
+.buy-sell-tree-map-ticker-info {
+  font-size: 9px;
+  background-color: $white;
+  border-radius: 4px;
+  color: $l_bg-wrap-date;
+  position: fixed;
+  z-index: 10;
+  white-space: nowrap;
+
+  .ticker-info-wrapper {
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 600;
+
+    .text-bold {
+      font-weight: 600;
+    }
+
+    .matched {
+      font-weight: 600;
+    }
+  }
+
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .triangle-top-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent $white transparent transparent;
+    left: -6px;
+    top: 0;
+  }
+
+  .triangle-top-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: $white transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: -6px;
+  }
+
+  .triangle-bottom-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: $white transparent transparent transparent;
+    left: 0;
+    bottom: -6px;
+  }
+
+  .triangle-bottom-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent $white transparent transparent;
+    right: 0;
+    bottom: -7px;
+  }
+
+  .ceil-text-color {
+    color: $l_color_12;
+  }
+
+  .increase-text-color {
+    color: $l_color_3;
+  }
+
+  .ref-text-color {
+    color: $c_color_4;
+  }
+
+  .reduced-text-color {
+    color: $c_color_2;
+  }
+
+  .floor-text-color {
+    color: $c_color_3;
+  }
+}
+
+.money-flow-wrapper {
+  height: 100%;
+
+  .money-flow-chart {
+    background-color: $t_color_2;
+    border-radius: 10px;
+    border: solid 1px rgba($border-color-chart, 0.4);
+  }
+
+  .buy-sell-tree-map {
+    .tree-map-wrapper {
+      flex: 1;
+      //min-width: 400px;
+      min-height: 400px;
+    }
+
+    .ceil-text-color {
+      color: $l_color_12;
+    }
+
+    .increase-text-color {
+      color: $l_color_3;
+    }
+
+    .ref-text-color {
+      color: $c_color_4;
+    }
+
+    .reduced-text-color {
+      color: $c_color_2;
+    }
+
+    .floor-text-color {
+      color: $c_color_3;
+    }
+  }
+
+  .bg-blur {
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .text-footer {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+}
+
+body.light-mode {
+  .money-flow-tree-map {
+    .node {
+      color: $white;
+    }
+  }
+}
+
+.money-flow-tree-map {
+  .node {
+    position: absolute;
+    background-color: white;
+    transition: width 0.1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+    &.blur {
+      opacity: 0.5;
+    }
+
+    &.ref-price-bg {
+      background-color: $c_color_4 !important;
+    }
+
+    &.increase-price-bg {
+      background-color: $l_color_3 !important;
+    }
+
+    &.reduced-price-bg {
+      background-color: $c_color_2 !important;
+    }
+
+    &.ceil-price-bg {
+      background-color: $l_color_12 !important;
+    }
+
+    &.floor-price-bg {
+      background-color: $c_color_3 !important;
+    }
+
+    .ticker {
+      text-align: center;
+      cursor: default;
+
+      .price-change {
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  .no-data {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .title {
+    background-color: #153f63;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.light-mode {
+  .money-flow-tree-map {
+    .title {
+      background-color: #2b457d;
+    }
+  }
+}

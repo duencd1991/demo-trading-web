@@ -1,0 +1,23 @@
+summary: AutoNews
+description: AutoNews
+get:
+  tags:
+  - "News"
+  summary: 'Get AutoNews'
+  description: 'Get AutoNews'
+  x-swagger-router-controller: "News"
+  operationId: 'GetAutoNews'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AutoNews'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,31 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      comGroupCode:
+        type: "string"
+      oneMonth:
+        type: "object"
+        items: $ref: "#/components/schemas/itemProprietaryByTime"
+      oneWeek:
+        type: "object"
+        items: $ref: "#/components/schemas/itemProprietaryByTime"
+      today: 
+        type: "object"
+        items: $ref: "#/components/schemas/itemProprietaryByTime"
+      yearToDate:
+        type: "object"
+        items: $ref: "#/components/schemas/itemProprietaryByTime"      

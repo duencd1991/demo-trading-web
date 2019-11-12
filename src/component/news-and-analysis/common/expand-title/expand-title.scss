@@ -1,0 +1,33 @@
+@import '../../../../styles/variables';
+
+.expand-title-wrap {
+  .content-expand {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  a {
+    color: $white;
+  }
+
+  a:visited {
+    color: $grey;
+  }
+}
+.light-mode {
+  .expand-title-wrap {
+    a {
+      color: $l_white;
+    }
+    a:visited {
+      color: $grey;
+    }
+  }
+  td[colspan='5'] {
+    p.group-list-date {
+      border-left: 0px;
+    }
+  }
+}

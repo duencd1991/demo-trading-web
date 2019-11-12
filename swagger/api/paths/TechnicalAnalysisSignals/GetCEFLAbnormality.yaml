@@ -1,0 +1,24 @@
+summary: CEFLAbnormality
+description: CEFLAbnormality
+get:
+  tags:
+  - "TechnicalAnalysisSignals"
+  summary: 'Get CEFLAbnormality'
+  description: 'Get CEFLAbnormality'
+  x-swagger-router-controller: "TechnicalAnalysisSignals"
+  operationId: 'GetCEFLAbnormality'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/AbnormalityType'
+    - $ref: '#/components/parameters/AverageVolume10D'
+    - $ref: '#/components/parameters/RateOfUnmatched'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CEFLAbnormality'
+    '400':
+      description: Invalid value
+      content: {}

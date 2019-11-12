@@ -1,0 +1,298 @@
+type: "array"
+properties:
+  bsI141:
+    type: "integer"
+  bsS134: 
+    type: "integer"
+  bsa1: 
+    type: "integer"
+  bsa2: 
+    type: "integer"
+  bsa3: 
+    type: "integer"
+  bsa4: 
+    type: "integer"
+  bsa5: 
+    type: "integer"
+  bsa6: 
+    type: "integer"
+  bsa7: 
+    type: "integer"
+  bsa8: 
+    type: "integer"
+  bsa9: 
+    type: "integer"
+  bsa10: 
+    type: "integer"
+  bsa11: 
+    type: "integer"
+  bsa12: 
+    type: "integer"
+  bsa13: 
+    type: "integer"
+  bsa14: 
+    type: "integer"
+  bsa15: 
+    type: "integer"
+  bsa16: 
+    type: "integer"
+  bsa17: 
+    type: "integer"
+  bsa18: 
+    type: "integer"
+  bsa19: 
+    type: "integer"
+  bsa20: 
+    type: "integer"
+  bsa21: 
+    type: "integer"
+  bsa22: 
+    type: "integer"
+  bsa23: 
+    type: "integer"
+  bsa24: 
+    type: "integer"
+  bsa25: 
+    type: "integer"
+  bsa26: 
+    type: "integer"
+  bsa27: 
+    type: "integer"
+  bsa28: 
+    type: "integer"
+  bsa29: 
+    type: "integer"
+  bsa30: 
+    type: "integer"
+  bsa31: 
+    type: "integer"
+  bsa32:
+    type: "integer"
+  bsa33: 
+    type: "integer"
+  bsa34: 
+    type: "integer"
+  bsa35: 
+    type: "integer"
+  bsa36: 
+    type: "integer"
+  bsa37: 
+    type: "integer"
+  bsa38: 
+    type: "integer"
+  bsa39: 
+    type: "integer"
+  bsa40: 
+    type: "integer"
+  bsa41: 
+    type: "integer"
+  bsa42: -
+    type: "integer"
+  bsa43: 
+    type: "integer"
+  bsa44: 
+    type: "integer"
+  bsa45: 
+    type: "integer"
+  bsa46: 
+    type: "integer"
+  bsa47: 
+    type: "integer"
+  bsa48: 
+    type: "integer"
+  bsa49: 
+    type: "integer"
+  bsa50: 
+    type: "integer"
+  bsa51: 
+    type: "integer"
+  bsa52: 
+    type: "integer"
+  bsa53: 
+    type: "integer"
+  bsa54: 
+    type: "integer"
+  bsa55: 
+    type: "integer"
+  bsa56: 
+    type: "integer"
+  bsa57: 
+    type: "integer"
+  bsa58: 
+    type: "integer"
+  bsa59: 
+    type: "integer"
+  bsa60: 
+    type: "integer"
+  bsa61: 
+    type: "integer"
+  bsa62: 
+    type: "integer"
+  bsa63: 
+    type: "integer"
+  bsa64: 
+    type: "integer"
+  bsa65: 
+    type: "integer"
+  bsa66: 
+    type: "integer"
+  bsa67: 
+    type: "integer"
+  bsa68: 
+    type: "integer"
+  bsa69: 
+    type: "integer"
+  bsa70: 
+    type: "integer"
+  bsa71: 
+    type: "integer"
+  bsa72: 
+    type: "integer"
+  bsa73: 
+    type: "integer"
+  bsa74: 
+    type: "integer"
+  bsa76: 
+    type: "integer"
+  bsa77: 
+    type: "integer"
+  bsa78: 
+    type: "integer"
+  bsa79: 
+    type: "integer"
+  bsa80: 
+    type: "integer"
+  bsa81: 
+    type: "integer"
+  bsa82: 
+    type: "integer"
+  bsa83: 
+    type: "integer"
+  bsa84: 
+    type: "integer"
+  bsa85:
+    type: "integer"
+  bsa86: 
+    type: "integer"
+  bsa87: 
+    type: "integer"
+  bsa89: 
+    type: "integer"
+  bsa90: 
+    type: "integer"
+  bsa91: 
+    type: "integer"
+  bsa92: 
+    type: "integer"
+  bsa93: 
+    type: "integer"
+  bsa94: 
+    type: "integer"
+  bsa95: 
+    type: "integer"
+  bsa96: 
+    type: "integer"
+  bsa159: 
+    type: "integer"
+  bsa160: 
+    type: "integer"
+  bsa161: 
+    type: "integer"
+  bsa162: 
+    type: "integer"
+  bsa163: 
+    type: "integer"
+  bsa164: 
+    type: "integer"
+  bsa165: 
+    type: "integer"
+  bsa166: 
+    type: "integer"
+  bsa167: 
+    type: "integer"
+  bsa168: 
+    type: "integer"
+  bsa169: 
+    type: "integer"
+  bsa170: 
+    type: "integer"
+  bsa171: 
+    type: "integer"
+  bsa172: 
+    type: "integer"
+  bsa173: 
+    type: "integer"
+  bsa175: 
+    type: "integer"
+  bsa176: 
+    type: "integer"
+  bsa177: 
+    type: "integer"
+  bsa178: 
+    type: "integer"
+  bsa210: 
+    type: "integer"
+  bsa211: 
+    type: "integer"
+  bsb97: 
+    type: "integer"
+  bsb98: 
+    type: "integer"
+  bsb99: 
+    type: "integer"
+  bsb100: 
+    type: "integer"
+  bsb101: 
+    type: "integer"
+  bsb102: 
+    type: "integer"
+  bsb103: 
+    type: "integer"
+  bsb104: 
+    type: "integer"
+  bsb105: 
+    type: "integer"
+  bsb106: 
+    type: "integer"
+  bsb107: 
+    type: "integer"
+  bsb108: 
+    type: "integer"
+  bsb109: 
+    type: "integer"
+  bsb110: 
+    type: "integer"
+  bsb111: 
+    type: "integer"
+  bsb112: 
+    type: "integer"
+  bsb113: 
+    type: "integer"
+  bsb114: 
+    type: "integer"
+  bsb115: 
+    type: "integer"
+  bsb116: 
+    type: "integer"
+  bsb117: 
+    type: "integer"
+  bsb118: 
+    type: "integer"
+  bsb119: 
+    type: "integer"
+  bsb120: 
+    type: "integer"
+  bsb121: 
+    type: "integer"
+  bsb174: 
+    type: "integer"
+  otherAssetBank: 
+    type: "integer"
+  otherAssetNonBank: 
+    type: "integer"
+  otherLiabilties: 
+    type: "integer"
+  quarterReport: 
+    type: "integer"
+  yearReport: 
+    type: "integer"

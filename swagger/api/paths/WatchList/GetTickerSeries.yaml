@@ -1,0 +1,25 @@
+summary: Get Ticker series
+description: Get Ticker series
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get 2 day series'
+  description: 'Get 2 day series'
+  x-swagger-router-controller: WatchList
+  operationId: 'GetTickerSeries'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/OrganCode'
+    - $ref: '#/components/parameters/TimeRange'
+    - $ref: '#/components/parameters/id'
+    
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/TickerSeries'
+    '400':
+      description: Invalid value
+      content: {}

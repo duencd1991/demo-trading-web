@@ -1,0 +1,24 @@
+summary: Price Data
+description: Price Data
+get:
+  tags:
+  - "Price Data"
+  summary: 'GetLatestPrice'
+  description: 'GetLatestPrice'
+  x-swagger-router-controller: PriceData
+  operationId: 'GetLatestPrice'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    
+  responses:
+    '200':
+      description: successful operation
+      content: {}
+      #content:
+      #  application/json:
+      #    schema:
+      #      $ref: '#/components/schemas/PriceDataList'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,15 @@
+export default {
+  tooltipBuyTitle: 'Foreign Buy Value: ',
+  tooltipBuyNetTitle: 'Foreign Net: ',
+  tooltipSellTitle: 'Foreign Sell Value: ',
+  tooltipSellNetTitle: 'Foreign Net: ',
+  footerText: 'Price: x 1,000. Volume: x 1,000. Value: x 1,000,000',
+  total_foreign_trading: 'TOTAL FOREIGN TRADING',
+  billion_vnd: 'Billion (VND)',
+  total_foreign_buy_value: 'Total Foreign Buy Value: ',
+  total_foreign_sell_value: 'Total Foreign Sell Value: ',
+  net_foreign_value: 'Net Foreign Value: ',
+  foreign_buy: 'Foreign Buy',
+  foreign_sell: 'Foreign Sell',
+  net_foreign: 'Net Foreign',
+};

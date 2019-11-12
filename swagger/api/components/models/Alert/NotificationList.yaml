@@ -1,0 +1,39 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      alertCode: 
+        type: "string"
+      alertType:  
+        type: "string"
+      createDate:  
+        type: "string"
+      message: 
+        type: "string"
+      newsId:  
+        type: "integer"
+      notificationId:   
+        type: "integer"
+      organCode:  
+        type: "string"
+      referenceId:  
+        type: "string"
+      status:   
+        type: "integer"
+      ticker:  
+        type: "string"
+      tradingDate:  
+        type: "string"

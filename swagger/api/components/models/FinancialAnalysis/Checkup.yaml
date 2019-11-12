@@ -1,0 +1,75 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      checkupItem:
+        type: "object"
+        properties:
+          checkupInfors:
+            type: "array"
+            properties:
+              rateComment:
+                type: "string"
+              rateIndicatorId: 
+                type: "integer"
+              rateIndicatorName:
+                type: "string"
+              rateResult:
+                type: "string"
+              rateValue:
+                type: "number"
+          lengthReport: 
+            type: "integer"
+          marketCap: 
+            type: "integer"
+          organCode: 
+            type: "string"
+          organShortName:
+            type: "string"
+          ticker: 
+            type: "string"
+          yearReport: 
+            type: "integer"
+        comparingCheckupItems:
+          type: "array"
+          properties:
+            checkupInfors:
+              type: "array"
+              properties:
+                rateComment:
+                  type: "string"
+                rateIndicatorId: 
+                  type: "integer"
+                rateIndicatorName: 
+                  type: "string"
+                rateResult:
+                  type: "string"
+                rateValue: 
+                  type: "number"
+            lengthReport: 
+              type: "integer"
+            marketCap: 
+              type: "integer"
+            organCode:
+              type: "string"
+            organShortName:
+              type: "string"
+            ticker:
+              type: "string"
+            yearReport: 
+              type: "integer"
+        organCode:
+          type: "string"

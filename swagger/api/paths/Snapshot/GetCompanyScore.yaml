@@ -1,0 +1,24 @@
+summary: Fundamental CompanyScore
+description: Fundamental CompanyScore
+get:
+  tags:
+  - "Fundamental"
+  summary: 'CompanyScore'
+  description: 'CompanyScore'
+  x-swagger-router-controller: Snapshot
+  operationId: 'GetCompanyScore'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/OrganCode'
+    
+  responses:
+    '200':
+      description: successful operation
+      #content: {}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CompanyScore'
+    '400':
+      description: Invalid value
+      content: {}

@@ -1,0 +1,111 @@
+//font system
+$font-size-sm: 14px;
+$font-size-default: 16px;
+$font-size-lg: 20px;
+//
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color: $t_color_1;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $l_color_5;
+$link-decoration: none;
+$link-hover-color: $l_color_5;
+$link-hover-decoration: none;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", 'Source Sans Pro',
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+$font-custom-heading: 'Source Sans Pro', $font-family-sans-serif;
+$font-custom-body: 'Source Sans Pro', $font-family-sans-serif;
+$font-family-base: $font-custom-body;
+// stylelint-enable value-keyword-case
+
+$font-size-root: 16px;
+$font-size-base: 0.75rem; // Assumes the browser default, typically `12px`
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * 0.875);
+
+$font-weight-u-light: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-c-bold: 700;
+$font-weight-black: 900;
+
+$arr-font-weight: ();
+$arr-font-weight: map-merge(
+  (
+    "u-light": $font-weight-u-light,
+    "light": $font-weight-light,
+    "normal": $font-weight-normal,
+    "medium": $font-weight-medium,
+    "bold": $font-weight-bold,
+    "c-bold": $font-weight-c-bold,
+    "black": $font-weight-black
+  ),
+  $arr-font-weight
+);
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+// $h1-font-size: $font-size-base * 16.25; // 260px
+// $h2-font-size: $font-size-base * 10.625; // 170px
+// $h3-font-size: $font-size-base * 5.625; // 90px
+// $h4-font-size: $font-size-base * 3.75; // 60px
+// $h5-font-size: $font-size-base * 3.125; // 50px
+// $h6-font-size: $font-size-base * 1.875; // 30px
+
+$arr-font-size: ();
+$arr-font-size: map-merge(
+  (
+    "10": 10px,
+    "11": 11px,
+    "12": 12px,
+    "13": 13px,
+    "14": 14px,
+    "15": 15px,
+    "16": 16px,
+    "17": 17px,
+    "18": 18px,
+    "20": 20px,
+    "24": 24px,
+    "30": 30px,
+    "48": 48px,
+    "50": 50px,
+    "64": 64px,
+    "96": 96px,
+    "128": 128px
+  ),
+  $arr-font-size
+);
+
+$headings-font-weight: $font-weight-black;
+$headings-line-height: 1.2;
+$headings-color: $s_color_1;
+
+$arr-line-height: ();
+$arr-line-height: map-merge(
+  (
+    "1": 1,
+    "base": $line-height-base,
+    "2": 2
+  ),
+  $arr-line-height
+);
+

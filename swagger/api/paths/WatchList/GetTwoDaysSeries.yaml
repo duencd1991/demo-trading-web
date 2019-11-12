@@ -1,0 +1,23 @@
+summary: 2 day series
+description: 2 day series
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get 2 day series'
+  description: 'Get 2 day series'
+  x-swagger-router-controller: WatchList
+  operationId: 'GetTwoDaysSeries'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/OrganCode'
+    
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ChartTwoDaySeries'
+    '400':
+      description: Invalid value
+      content: {}

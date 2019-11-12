@@ -1,0 +1,162 @@
+type: "array"
+properties:
+  cfa1: 
+    type: "integer"
+  cfa2:  
+    type: "integer"
+  cfa3:  
+    type: "integer"
+  cfa4:  
+    type: "integer"
+  cfa5:  
+    type: "integer"
+  cfa6:  
+    type: "integer"
+  cfa7:  
+    type: "integer"
+  cfa8:  
+    type: "integer"
+  cfa9:  
+    type: "integer"
+  cfa10:  
+    type: "integer"
+  cfa11:  
+    type: "integer"
+  cfa12:  
+    type: "integer"
+  cfa13:  
+    type: "integer"
+  cfa14:
+    type: "integer"
+  cfa15:  
+    type: "integer"
+  cfa16:  
+    type: "integer"
+  cfa17:  
+    type: "integer"
+  cfa18:  
+    type: "integer"
+  cfa19:  
+    type: "integer"
+  cfa20:  
+    type: "integer"
+  cfa21:  
+    type: "integer"
+  cfa22:  
+    type: "integer"
+  cfa23:  
+    type: "integer"
+  cfa24:  
+    type: "integer"
+  cfa25:  
+    type: "integer"
+  cfa26: 
+    type: "integer"
+  cfa27:  
+    type: "integer"
+  cfa28:  
+    type: "integer"
+  cfa29:  
+    type: "integer"
+  cfa30:  
+    type: "integer"
+  cfa31:  
+    type: "integer"
+  cfa32:  
+    type: "integer"
+  cfa33:  
+    type: "integer"
+  cfa34:  
+    type: "integer"
+  cfa35:  
+    type: "integer"
+  cfa36:  
+    type: "integer"
+  cfa37:  
+    type: "integer"
+  cfa38:  
+    type: "integer"
+  cfa43:  
+    type: "integer"
+  cfa103:  
+    type: "integer"
+  cfa104:  
+    type: "integer"
+  cfa105:  
+    type: "integer"
+  cfb48:  
+    type: "integer"
+  cfb49:  
+    type: "integer"
+  cfb50:  
+    type: "integer"
+  cfb51:  
+    type: "integer"
+  cfb52:  
+    type: "integer"
+  cfb53:  
+    type: "integer"
+  cfb54:  
+    type: "integer"
+  cfb55:  
+    type: "integer"
+  cfb56:  
+    type: "integer"
+  cfb57:  
+    type: "integer"
+  cfb58:  
+    type: "integer"
+  cfb59:  
+    type: "integer"
+  cfb60:  
+    type: "integer"
+  cfb61:  
+    type: "integer"
+  cfb62:  
+    type: "integer"
+  cfb63:  
+    type: "integer"
+  cfb64:  
+    type: "integer"
+  cfb65:  
+    type: "integer"
+  cfb66:  
+    type: "integer"
+  cfb67:  
+    type: "integer"
+  cfb68:  
+    type: "integer"
+  cfb69:  
+    type: "integer"
+  cfb70:  
+    type: "integer"
+  cfb71:  
+    type: "integer"
+  cfb72:  
+    type: "integer"
+  cfb73:  
+    type: "integer"
+  cfb74:  
+    type: "integer"
+  cfb75:  
+    type: "integer"
+  cfb76:  
+    type: "integer"
+  cfb77:  
+    type: "integer"
+  cfb78:  
+    type: "integer"
+  cfb79:  
+    type: "integer"
+  cfb80:  
+    type: "integer"
+  cfb81:  
+    type: "integer"
+  cfb106:  
+    type: "integer"
+  organCode:  
+    type: "string"
+  quarterReport:  
+    type: "integer"
+  yearReport:  
+    type: "integer"

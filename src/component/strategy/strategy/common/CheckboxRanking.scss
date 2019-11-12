@@ -1,0 +1,23 @@
+.fiinTradeStrategy {
+  .value-header {
+    min-width: 610px;
+    .check-list-inline {
+      flex-direction: column !important;
+      position: relative !important;
+      width: fit-content !important;
+      .checkbox {
+        min-height: 18px !important;
+        height: auto !important;
+      }
+      .checkbox input[type='checkbox'] {
+        width: fit-content !important;
+      }
+      .checkbox input[type='checkbox'] + label {
+        width: fit-content !important;
+        a {
+          // color: #fff !important;
+        }
+      }
+    }
+  }
+}

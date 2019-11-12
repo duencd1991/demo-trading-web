@@ -1,0 +1,62 @@
+@import '../../../../styles/variables';
+
+$black: #000000;
+$blue: #003b63;
+.index2-time-range-wrapper {
+  .bar-header {
+    height: 22px;
+    background-color: $blue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bar-header-item {
+    width: 50px;
+    font-size: 10px;
+  }
+
+  .bar-header-item > span:hover {
+    cursor: pointer;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 3px 6px;
+    color: $black;
+    font-weight: bold;
+  }
+
+  .bar-header-text {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 3px 6px;
+    color: $blue;
+    font-weight: bold;
+  }
+
+  .text-align-left {
+    text-align: left;
+  }
+
+  .text-align-right {
+    text-align: right;
+  }
+
+  .text-align-center {
+    text-align: center;
+  }
+}
+
+.light-mode {
+  .index2-time-range-wrapper {
+    .bar-header {
+      color: #ffffff;
+      height: 25px;
+      background-color: #2b457d;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+summary: Contribution
+description: Contribution
+get:
+  tags:
+  - "MoneyFlow"
+  summary: 'Get Contribution'
+  description: 'Get Contribution'
+  x-swagger-router-controller: "MoneyFlow"
+  operationId: 'GetContribution'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/ComGroupCode'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Contribution'
+    '400':
+      description: Invalid value
+      content: {}

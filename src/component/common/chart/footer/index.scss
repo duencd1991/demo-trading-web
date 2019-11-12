@@ -1,0 +1,38 @@
+$size: 5px;
+
+.chart-footer-swap {
+  .half-circle-left-item {
+    display: inline-block;
+    height: $size * 2;
+    width: $size;
+    border-bottom-left-radius: $size * 2;
+    border-top-left-radius: $size * 2;
+    vertical-align: middle;
+  }
+  .half-circle-right-item {
+    display: inline-block;
+    height: $size * 2;
+    width: $size;
+    border-bottom-right-radius: $size * 2;
+    border-top-right-radius: $size * 2;
+    vertical-align: middle;
+  }
+  .circle-item {
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+  }
+  .label {
+    display: inline-block;
+    margin: 0 15px 0 5px;
+    font-size: 12px;
+  }
+  .line-item {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,20 @@
+@import './../../../styles/variables';
+.top-mover-content {
+  height: 95% !important;
+
+  .custom-table > tbody > tr > td,
+  .custom-table > tbody > tr > th {
+    padding-left: 1px !important;
+    padding-right: 2px !important;
+    overflow: inherit !important;
+  }
+}
+.top-mover-footer {
+  margin-top: 40px !important;
+}
+
+.chart-data-wraper {
+  overflow: auto;
+  flex-direction: column;
+  display: flex;
+}

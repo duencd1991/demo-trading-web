@@ -1,0 +1,49 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      ceilingPrice: 
+        type: "integer"
+      floorPrice: 
+        type: "integer"
+      lastClose: 
+        type: "integer"
+      lastVolume: 
+        type: "integer"
+      matchPrice: 
+        type: "integer"
+      nrOfDay: 
+        type: "integer"
+      organCode: 
+        type: "string"
+      rank: 
+        type: "integer"
+      referencePrice: 
+        type: "integer"
+      rsI14:
+        type: "number"
+      ticker:
+        type: "string"
+      totalMatchVolume: 
+        type: "integer"
+      totalRank: 
+        type: "integer"
+      totalTradingTime:
+        type: "number"
+      tradingDate:
+        type: "string"
+      volumeExpected: 
+        type: "number"

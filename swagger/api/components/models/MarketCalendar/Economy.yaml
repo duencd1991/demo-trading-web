@@ -1,0 +1,38 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      eventTitle:
+        type: "string"
+      forecastValue:
+        type: "integer"
+      issueDateFrom: 
+        type: "string"
+      levelName: 
+        type: "string"
+      newsId: 
+        type: "integer"
+      newsSourceLink: 
+        type: "string"
+      previousValue: 
+        type: "integer"
+      recentValue: 
+        type: "integer"
+      sourceUrl: 
+        type: "string"
+      unitCode: 
+        type: "string"
+      

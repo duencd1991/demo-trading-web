@@ -1,0 +1,123 @@
+/*left-info-widget*/
+.left-info-widget__title {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $white;
+  border-bottom: 1px solid $l_p_color_2;
+  height: 26px;
+}
+.left-info-widget__metas {
+  i {
+    font-size: 10px;
+  }
+  .item-first {
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    strong {
+      float: left;
+    }
+    & > span {
+      float: left;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 5px;
+      line-height: 12px;
+      & > small {
+        float: left;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        &:first-child {
+          font-weight: 600;
+        }
+        &:last-child {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .item-second {
+    color: $white;
+    width: 100%;
+    span {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: 300;
+      font-size: 10px;
+      small {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        &:last-child {
+          margin-right: 0px;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  .item-total-volume {
+    color: $white;
+    font-weight: 300;
+    font-size: 10px;
+    width: 100%;
+    span {
+      font-weight: 600;
+    }
+  }
+  .item-card-arrow {
+    width: 100%;
+    float: left;
+    border-radius: 2px;
+    background-color: $t_color_2;
+    border: 1px solid $t_color_5;
+    padding: 10px 0px;
+    div {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      padding: 0px;
+      height: 25px;
+      line-height: 25px;
+      padding-left: 12px;
+      span {
+        float: left;
+        margin-right: 6px;
+        i {
+          font-size: 12px;
+        }
+      }
+      small {
+        font-size: 7px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.light-mode {
+  .left-info-widget__title {
+    color: $l_white;
+    border-bottom: 2px solid $l_p_color_2;
+  }
+  .left-info-widget__metas {
+    .item-second {
+      color: $l_white;
+    }
+    .item-total-volume {
+      color: $l_white;
+    }
+    .item-card-arrow {
+      background-color: $l_t_color_2;
+      border: 1px solid rgba(#555555, 0.2);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import './../../../styles/variables';
+
+.workspace-wrap {
+  .text-input {
+    max-width: 50px;
+    border: 0;
+    display: inline-block;
+    background: transparent;
+    color: $white;
+    padding: 0;
+    margin: 0;
+  }
+}

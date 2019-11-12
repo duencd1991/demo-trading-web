@@ -1,0 +1,88 @@
+$radius-btn: 20px;
+.btn-more {
+  color: $b_color_1;
+  background-color: $gray-200;
+
+  &:hover {
+    color: $white;
+    background-color: $b_color_1;
+  }
+}
+
+.btn-add-to-card {
+  @include button-variant($b_color_1, $b_color_1);
+}
+
+.btn-cancel {
+  @include button-variant($b_color_2, $b_color_2);
+}
+.btn-cus{
+  border-radius: $radius-btn;
+  height: 20px;
+  width: 20px;
+  //line-height: 20px;
+  padding: 0px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  &:after{
+    display: none;
+  }
+}
+.btn-cus-nomal{
+  border-radius: $radius-btn;
+  height: 20px;
+  line-height: 18px;
+  padding: 0px 15px;
+  text-align: center;
+  font-size: 11px;
+  color: $white;
+  text-transform: uppercase;
+  &.active{
+    background-color: $b_color_2 !important;
+    font-weight: 600;
+  }
+  &:hover{
+    color: $white;
+  }
+  &:after{
+    display: none;
+  }
+}
+.btn-groupcus-line{
+  display: inline-block;
+  background-color: $b_color_3;
+  border-radius: $radius-btn;
+  .btn-cus-nomal{
+    font-weight: 600;
+  }
+}
+.light-mode{
+  .btn-more {
+    color: $l_b_color_1;
+    &:hover {
+      color: $l_white;
+      background-color: $l_b_color_1;
+    }
+  }
+
+  .btn-add-to-card {
+    @include button-variant($l_b_color_1, $l_b_color_1);
+  }
+
+  .btn-cancel {
+    @include button-variant($l_b_color_2, $l_b_color_2);
+  }
+  .btn-cus{
+    color: $l_white;
+  }
+  .btn-cus-nomal{
+    color: #2b457d;
+    &.active{
+      background-color: $l_b_color_2 !important;
+    }
+  }
+  .btn-groupcus-line{
+    background-color: $l_b_color_3;
+  }
+}

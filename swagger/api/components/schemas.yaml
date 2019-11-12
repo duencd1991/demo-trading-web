@@ -1,0 +1,259 @@
+#-------------------------------
+# Master
+#-------------------------------
+ListOrganization:
+  $ref: "./models/Master/ListOrganization.yaml"  
+itemListOrganization:
+  $ref: "./models/Master/itemListOrganization.yaml" 
+AllCompanyGroup:
+  $ref: "./models/Master/AllCompanyGroup.yaml"  
+itemAllCompanyGroup:
+  $ref: "./models/Master/itemAllCompanyGroup.yaml"   
+AllDerivatives:
+  $ref: "./models/Master/AllDerivatives.yaml"  
+itemAllDerivatives:
+  $ref: "./models/Master/itemAllDerivatives.yaml" 
+AllIcbIndustry:
+  $ref: "./models/Master/AllIcbIndustry.yaml"  
+itemAllIcbIndustry:
+  $ref: "./models/Master/itemAllIcbIndustry.yaml" 
+  
+#-------------------------------
+# UserSetting
+#-------------------------------
+UserWatchList:
+  $ref: "./models/UserSetting/UserWatchList.yaml"
+Workspace:
+  $ref: "./models/UserSetting/Workspace.yaml"
+itemWorkspace:
+  $ref: "./models/UserSetting/itemWorkspace.yaml"
+TopScreeners:
+  $ref: "./models/UserSetting/TopScreeners.yaml"
+#-------------------------------
+# WatchList 
+#-------------------------------
+SummaryWatchList:
+  $ref: ./models/WatchList/SummaryWatchList.yaml
+itemWatchList:
+  $ref: ./models/WatchList/itemWatchList.yaml
+
+ChartTwoDaySeries:
+  $ref: ./models/WatchList/ChartTwoDaySeries.yaml
+itemsChartTwodaySeries:
+  $ref: ./models/WatchList/itemsChartTwodaySeries.yaml
+itemsChartOnedaySeries:
+  $ref: ./models/WatchList/itemsChartOnedaySeries.yaml
+  
+PutthroughList:
+  $ref: ./models/WatchList/PutthroughList.yaml
+itemPutthroughList:
+  $ref: ./models/WatchList/itemPutthroughList.yaml
+  
+DerivativesList:
+  $ref: ./models/WatchList/DerivativesList.yaml
+itemDerivativesList:
+  $ref: ./models/WatchList/itemDerivativesList.yaml
+
+TickerSeries:
+  $ref: ./models/WatchList/TickerSeries.yaml
+itemTickerSeries:
+  $ref: ./models/WatchList/itemTickerSeries.yaml
+
+WatchListNews:
+  $ref: ./models/WatchList/WatchListNews.yaml
+Technical:
+  $ref: ./models/WatchList/Technical.yaml
+#-------------------------------
+# PriceData
+#-------------------------------
+PriceDataList:
+  $ref: ./models/PriceData/PriceDataList.yaml
+itemPriceDataList:
+  $ref: ./models/PriceData/itemPriceDataList.yaml
+  
+#LatestPrice:
+#  $ref: ./models/PriceData/LatestPrice.yaml 
+
+#-------------------------------
+# PriceData
+#-------------------------------  
+PriceDepth:
+  $ref: ./models/PriceDepth/PriceDepth.yaml
+
+TimeAndSales:
+  $ref: ./models/PriceDepth/TimeAndSales.yaml
+
+#-------------------------------
+# TopMover
+#-------------------------------  
+TopVolume:
+  $ref: ./models/TopMover/TopVolume.yaml
+TopBreakout:
+  $ref: ./models/TopMover/TopBreakout.yaml  
+TopValue:
+  $ref: ./models/TopMover/TopValue.yaml
+TopGainers:
+  $ref: ./models/TopMover/TopGainers.yaml
+MarketCalendar:
+  $ref: ./models/TopMover/MarketCalendar.yaml
+MoneyFlow:
+  $ref: ./models/TopMover/MoneyFlow.yaml
+TopLosers:
+  $ref: ./models/TopMover/TopLosers.yaml
+TopNewHigh:
+  $ref: ./models/TopMover/TopNewHigh.yaml
+TopNewLow:
+  $ref: ./models/TopMover/TopNewLow.yaml
+TopForeignTrade:
+  $ref: ./models/TopMover/TopForeignTrade.yaml
+#-------------------------------
+# HeatMap
+#-------------------------------
+Heatmap:
+  $ref: ./models/Heatmap/Heatmap.yaml
+
+#-------------------------------
+# Fundamental - Snapshot
+#-------------------------------
+Snapshot:
+  $ref: ./models/Snapshot/Snapshot.yaml
+CompanyScore:
+  $ref: ./models/Snapshot/CompanyScore.yaml  
+Ownership:
+  $ref: ./models/Snapshot/Ownership.yaml
+ShareHolderTooltip:
+  $ref: ./models/Snapshot/ShareHolderTooltip.yaml
+#-------------------------------
+# Market In-Depth
+#-------------------------------
+LatestIndices:
+  $ref: ./models/MarketInDepth/LatestIndices.yaml
+Prospect: 
+  $ref: ./models/MarketInDepth/Prospect.yaml
+IndexSeries:
+  $ref: ./models/MarketInDepth/IndexSeries.yaml
+MarketAnomaly:
+  $ref: ./models/MarketInDepth/MarketAnomaly.yaml
+
+#-------------------------------
+# Money Flow
+Contribution:
+  $ref: ./models/MoneyFlow/Contribution.yaml
+itemContribution:
+  $ref: ./models/MoneyFlow/itemContribution.yaml
+itemTop:
+  $ref: ./models/MoneyFlow/itemTop.yaml
+
+Foreign:
+  $ref: ./models/MoneyFlow/Foreign.yaml
+itemForeignByTime:
+  $ref: ./models/MoneyFlow/itemForeignByTime.yaml
+
+Proprietary:
+  $ref: ./models/MoneyFlow/Proprietary.yaml
+itemProprietaryByTime:
+  $ref: ./models/MoneyFlow/itemProprietaryByTime.yaml
+#-------------------------------
+
+#-------------------------------
+# MarketCalendar
+Economy:
+  $ref: ./models/MarketCalendar/Economy.yaml
+CorporateEarning:
+  $ref: ./models/MarketCalendar/CorporateEarning.yaml
+CalendarWatchList:
+  $ref: ./models/MarketCalendar/CalendarWatchList.yaml
+#-------------------------------
+
+#-------------------------------
+#TechnicalAnalysisSignals
+Indicators:
+  $ref: ./models/TechnicalAnalysisSignals/Indicators.yaml
+itemIndicator:
+  $ref: ./models/TechnicalAnalysisSignals/itemIndicator.yaml
+
+Overview:
+  $ref: ./models/TechnicalAnalysisSignals/Overview.yaml
+CEFLAbnormality:
+  $ref: ./models/TechnicalAnalysisSignals/CEFLAbnormality.yaml
+Cancelled:
+  $ref: ./models/TechnicalAnalysisSignals/Cancelled.yaml
+Pressing:
+  $ref: ./models/TechnicalAnalysisSignals/Pressing.yaml
+Aggressive:
+  $ref: ./models/TechnicalAnalysisSignals/Aggressive.yaml
+Closing:
+  $ref: ./models/TechnicalAnalysisSignals/Closing.yaml
+PriceVolumeAnalysis:
+$ref: ./models/TechnicalAnalysisSignals/PriceVolumeAnalysis.yaml
+#-------------------------------
+
+#-------------------------------
+#News
+AggregatorNews:
+  $ref: ./models/News/AggregatorNews.yaml
+AutoNews:
+  $ref: ./models/News/AutoNews.yaml
+PremiumAnalysis:
+  $ref: ./models/News/PremiumAnalysis.yaml
+MostRecent:
+  $ref: ./models/News/MostRecent.yaml
+Rumors:
+  $ref: ./models/News/Rumors.yaml
+#-------------------------------
+
+#-------------------------------
+#FinancialAnalysis
+Checkup:
+  $ref: ./models/FinancialAnalysis/Checkup.yaml
+FinancialRatio:
+  $ref: ./models/FinancialAnalysis/FinancialRatio.yaml
+ZMFScore:
+  $ref: ./models/FinancialAnalysis/ZMFScore.yaml
+#-------------------------------
+
+#-------------------------------
+#ConsensusAnalysis
+Consensus:
+  $ref: ./models/ConsensusAnalysis/Consensus.yaml
+#-------------------------------
+
+#-------------------------------
+#CashDividendAnalysis
+Analysis:
+  $ref: ./models/CashDividendAnalysis/Analysis.yaml
+itemRatioYear:
+  $ref: ./models/CashDividendAnalysis/itemRatioYear.yaml
+#-------------------------------
+
+#-------------------------------
+#FinancialStatement
+BalanceSheet:
+  $ref: ./models/FinancialStatement/BalanceSheet.yaml
+itemBalanceSheet:
+  $ref: ./models/FinancialStatement/itemBalanceSheet.yaml
+
+IncomeStatement:
+  $ref: ./models/FinancialStatement/IncomeStatement.yaml
+itemIncomeStatement:
+  $ref: ./models/FinancialStatement/itemIncomeStatement.yaml
+
+CashFlow:
+  $ref: ./models/FinancialStatement/CashFlow.yaml
+itemCashFlow:
+  $ref: ./models/FinancialStatement/itemCashFlow.yaml
+#-------------------------------
+
+#-------------------------------
+#Alert
+NotificationList:
+  $ref: ./models/Alert/NotificationList.yaml
+AllSystemAlerts:
+  $ref: ./models/Alert/AllSystemAlerts.yaml
+PersonalAlertTypes:
+  $ref: ./models/Alert/PersonalAlertTypes.yaml
+#-------------------------------
+
+#Screener
+ScreenerParameters:
+  $ref: ./models/Screener/ScreenerParameters.yaml

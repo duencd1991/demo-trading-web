@@ -1,0 +1,12 @@
+type: "object"
+properties:
+  ibcCode:
+    type: "integer"
+    example: "10"
+  icbName:
+    type: "string"  
+    example: "Technology"
+  icbLevel:
+    type: "integer"
+    example: "1"
+    

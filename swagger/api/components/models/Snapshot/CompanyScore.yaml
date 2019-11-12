@@ -1,0 +1,24 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        value:
+          type: "number"
+        vgm:
+          type: "number"
+        growth:
+          type: "number"
+        momentum:
+          type: "number"
+        icbRank:
+          type: "number"
+        icbTotalRanked:
+          type: "number"
+        indexRank:
+          type: "number"
+        indexTotalRanked:
+          type: "number"
+        comGroupCode:
+          type: "string"

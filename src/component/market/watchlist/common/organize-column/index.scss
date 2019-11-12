@@ -1,0 +1,18 @@
+@import "./../../../../../styles/variables";
+
+.organize-column-wrap {
+  .text-no-data {
+    color: $white;
+  }
+  .search-input {
+    padding: 3px 25px 3px 10px !important;
+  }
+}
+
+.light-mode {
+  .organize-column-wrap {
+    .text-no-data {
+      color: $l-white;
+    }
+  }
+}

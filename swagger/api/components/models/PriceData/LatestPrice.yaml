@@ -1,0 +1,12 @@
+type: "object"
+properties:
+  dataTableId:
+    type: "string"
+  pageSize:
+    type: "integer"
+  totalCount:
+    type: "integer"
+  listData:
+    type: "array"
+    items:
+      $ref: "#/components/schemas/itemPriceDataList"

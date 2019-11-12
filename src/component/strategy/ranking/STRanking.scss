@@ -1,0 +1,36 @@
+@import '../../../styles/variables';
+
+$bluish: #005197;
+.st_ranking {
+  .btn-clicked {
+    background-color: $bluish !important;
+  }
+  .list-filter {
+    .filter-industry {
+      height: 23px;
+      margin-left: 18px;
+      .drop-cus {
+        background: transparent !important;
+        border-bottom: 1px solid $b_color_3 !important;
+        border-top: 0px !important;
+        border-radius: 0px !important;
+      }
+    }
+  }
+  .tab-content-st-ranking {
+    height: calc(100% - 75px) !important;
+  }
+}
+.light-mode {
+  .st_ranking {
+    .list-filter {
+      .filter-industry {
+        .drop-cus {
+          border: none !important;
+          border-bottom: 1px solid $b_color_3 !important;
+          border-radius: 0px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/* star vote */
+.star-vote{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 48px;
+  height: 14px;
+  text-align: left;
+  .star-real{
+    font-size: 9px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    color: $l_color_1;
+    overflow: hidden;
+  }
+  .star-out{
+    font-size: 9px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: $l_color_1;
+  }
+}
+/*end star vote */
+.light-mode{
+  .star-vote{
+    .star-real{
+      color: $l_l_color_1;
+    }
+    .star-out{
+      color: $l_l_color_1;
+    }
+  }
+}

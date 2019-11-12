@@ -1,0 +1,227 @@
+#-------------------------------
+# Master
+#-------------------------------
+/Master/GetListOrganization:
+  $ref: ./Master/GetListOrganization.yaml
+
+/Master/GetAllCompanyGroup:
+  $ref: ./Master/GetAllCompanyGroup.yaml
+  
+/Master/GetAllDerivatives:
+  $ref: ./Master/GetAllDerivatives.yaml  
+  
+/Master/GetAllIcbIndustry:
+  $ref: ./Master/GetAllIcbIndustry.yaml 
+  
+#-------------------------------
+# UserSetting
+#-------------------------------
+/UserSetting/GetUserWatchList:
+  $ref: ./UserSetting/GetUserWatchList.yaml
+
+/UserSetting/GetWorkspace:
+  $ref: ./UserSetting/GetWorkspace.yaml
+
+/UserSetting/getTopScreeners:
+  $ref: ./UserSetting/getTopScreeners.yaml
+
+#-------------------------------
+# WatchList
+#-------------------------------
+/WatchList/GetWatchListSummary:
+  $ref: ./WatchList/GetWatchListSummary.yaml
+
+/WatchList/GetTwoDaysSeries:
+  $ref: ./WatchList/GetTwoDaysSeries.yaml
+
+/WatchList/GetPutThrough:
+  $ref: ./WatchList/GetPutThrough.yaml
+
+/WatchList/GetDerivatives:
+  $ref: ./WatchList/GetDerivatives.yaml
+
+/WatchList/GetWatchListNews:
+  $ref: ./WatchList/GetWatchListNews.yaml
+
+/WatchList/GetTickerSeries:
+  $ref: ./WatchList/GetTickerSeries.yaml
+
+/WatchList/GetTechnical:
+  $ref: ./WatchList/GetTechnical.yaml
+#-------------------------------
+# PriceData
+#-------------------------------
+/PriceData/GetPriceData:
+  $ref: ./PriceData/GetPriceData.yaml
+/PriceData/GetLatestPrice:
+  $ref: ./PriceData/GetLatestPrice.yaml 
+#-------------------------------
+# PriceDepth
+#-------------------------------
+/PriceDepth/GetPriceDepth:
+  $ref: ./PriceDepth/GetPriceDepth.yaml  
+  
+/TimeAndSales/GetTimeAndSales:
+  $ref: ./PriceDepth/GetTimeAndSales.yaml 
+
+#-------------------------------
+# TopMover
+#------------------------------
+/TopMover/GetTopVolume:
+  $ref: ./TopMover/GetTopVolume.yaml 
+/TopMover/GetTopValue:
+  $ref: ./TopMover/GetTopValue.yaml 
+/TopMover/GetTopBreakout:
+  $ref: ./TopMover/GetTopBreakout.yaml 
+/TopMover/GetTopGainers:
+  $ref: ./TopMover/GetTopGainers.yaml 
+/TopMover/GetTopLosers:
+  $ref: ./TopMover/GetTopLosers.yaml   
+/TopMover/GetMoneyFlow:
+  $ref: ./TopMover/GetMoneyFlow.yaml 
+/TopMover/GetTopNewHigh:
+  $ref: ./TopMover/GetTopNewHigh.yaml 
+/TopMover/GetTopNewLow:
+  $ref: ./TopMover/GetTopNewLow.yaml 
+/TopMover/GetTopForeignTrading:
+  $ref: ./TopMover/GetTopForeignTrading.yaml 
+
+/TopMover/GetMarketCalendar:
+  $ref: ./TopMover/GetMarketCalendar.yaml 
+#-------------------------------
+# Heatmap
+#------------------------------
+/HeatMap/GetHeatMap:
+  $ref: ./Heatmap/GetHeatMap.yaml 
+#-------------------------------
+# Heatmap
+#------------------------------
+
+/Snapshot/GetCompanyScore:
+  $ref: ./Snapshot/GetCompanyScore.yaml
+/Snapshot/GetSnapshot:
+  $ref: ./Snapshot/GetSnapshot.yaml
+/Ownership/GetOwnership:
+  $ref: ./Snapshot/GetOwnership.yaml
+/Ownership/GetShareHolderTooltip:
+  $ref: ./Snapshot/GetShareHolderTooltip.yaml
+
+#-------------------------------
+# MarketInDepth
+/MarketInDepth/GetLatestIndices:
+  $ref: ./MarketInDepth/GetLatestIndices.yaml
+/MarketInDepth/GetProspect:
+  $ref: ./MarketInDepth/GetProspect.yaml
+/MarketInDepth/GetIndexSeries:
+  $ref: ./MarketInDepth/GetIndexSeries.yaml
+/MarketIndepth/GetValuationSeries:
+  $ref: ./MarketInDepth/GetValuationSeries.yaml
+/MarketIndepth/GetLiquiditySeries:
+  $ref: ./MarketInDepth/GetLiquiditySeries.yaml
+/MarketIndepth/GetMarketAnomaly:
+  $ref: ./MarketInDepth/GetMarketAnomaly.yaml
+#------------------------------
+
+#------------------------------
+# Money Flow
+/MoneyFlow/GetContribution:
+  $ref: ./MoneyFlow/GetContribution.yaml
+/MoneyFlow/GetForeign:
+  $ref: ./MoneyFlow/GetForeign.yaml
+/MoneyFlow/GetProprietary:
+  $ref: ./MoneyFlow/GetProprietary.yaml
+#------------------------------
+
+#------------------------------
+# MarketCalendar
+/Calendar/GetEconomy:
+  $ref: ./MarketCalendar/GetEconomy.yaml
+/Calendar/GetCalendarWatchList:
+  $ref: ./MarketCalendar/GetCalendarWatchList.yaml
+/Calendar/GetCorporateEarning:
+  $ref: ./MarketCalendar/GetCorporateEarning.yaml
+#------------------------------
+
+#------------------------------
+#TechnicalAnalysisSignals:
+/TechnicalAnalysisSignals/GetIndicators:
+  $ref: ./TechnicalAnalysisSignals/GetIndicators.yaml
+/TechnicalAnalysisSignals/getOverview:
+  $ref: ./TechnicalAnalysisSignals/getOverview.yaml
+/TechnicalAnalysisSignals/GetCEFLAbnormality:
+  $ref: ./TechnicalAnalysisSignals/GetCEFLAbnormality.yaml
+/TechnicalAnalysisSignals/GetCancelled:
+  $ref: ./TechnicalAnalysisSignals/GetCancelled.yaml
+/TechnicalAnalysisSignals/GetPressing:
+  $ref: ./TechnicalAnalysisSignals/GetPressing.yaml
+/TechnicalAnalysisSignals/GetAggressive:
+  $ref: ./TechnicalAnalysisSignals/GetAggressive.yaml
+/TechnicalAnalysisSignals/GetClosing:
+  $ref: ./TechnicalAnalysisSignals/GetClosing.yaml
+/TechnicalAnalysisSignals/GetPriceVolumeAnalysis:
+  $ref: ./TechnicalAnalysisSignals/GetPriceVolumeAnalysis.yaml
+#------------------------------
+
+#------------------------------
+#News
+/News/GetAggregatorNews:
+  $ref: ./News/GetAggregatorNews.yaml
+/News/GetAutoNews:
+  $ref: ./News/GetAutoNews.yaml
+/News/GetPremiumAnalysis:
+  $ref: ./News/GetPremiumAnalysis.yaml
+/News/GetMostRecent:
+  $ref: ./News/GetMostRecent.yaml
+/News/GetRumors:
+  $ref: ./News/GetRumors.yaml
+#------------------------------
+
+#------------------------------
+#FinancialAnalysis
+/FinancialAnalysis/GetCheckup:
+  $ref: ./FinancialAnalysis/GetCheckup.yaml
+/FinancialAnalysis/GetFinancialRatio:
+  $ref: ./FinancialAnalysis/GetFinancialRatio.yaml
+/FinancialAnalysis/GetZMFScore:
+  $ref: ./FinancialAnalysis/GetZMFScore.yaml
+#------------------------------
+
+#------------------------------
+#GetAnalysis
+/CashDividendAnalysis/GetAnalysis:
+  $ref: ./CashDividendAnalysis/GetAnalysis.yaml
+#------------------------------
+
+#------------------------------
+#ConsensusAnalysis
+/ConsensusAnalysis/GetConsensus:
+  $ref: ./ConsensusAnalysis/GetConsensus.yaml
+#------------------------------
+
+#------------------------------
+#FinancialStatement
+/FinancialStatement/GetBalanceSheet:
+  $ref: ./FinancialStatement/GetBalanceSheet.yaml
+
+/FinancialStatement/GetIncomeStatement:
+  $ref: ./FinancialStatement/GetIncomeStatement.yaml
+
+/FinancialStatement/GetCashFlow:
+  $ref: ./FinancialStatement/GetCashFlow.yaml
+#------------------------------
+
+#------------------------------
+#Alert
+/Alert/GetNotificationList:
+  $ref: ./Alert/GetNotificationList.yaml
+/Alert/GetAllSystemAlerts:
+  $ref: ./Alert/GetAllSystemAlerts.yaml
+/PersonalAlert/GetPersonalAlertTypes:
+  $ref: ./Alert/GetPersonalAlertTypes.yaml
+#------------------------------
+
+#------------------------------
+#Screener
+/Screener/GetScreenerParameters:
+  $ref: ./Screener/GetScreenerParameters.yaml
+#------------------------------

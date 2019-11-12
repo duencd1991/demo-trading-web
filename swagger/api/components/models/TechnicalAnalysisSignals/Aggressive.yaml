@@ -1,0 +1,43 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      averageMatchVolume2Week:
+        type: "integer"
+      ceilingPrice: 
+        type: "integer"
+      floorPrice: 
+        type: "integer"
+      matchPrice:
+        type: "integer"
+      matchVolume: 
+        type: "integer"
+      organCode:
+        type: "string"
+      rank: 
+        type: "integer"
+      referencePrice: 
+        type: "integer"
+      ticker:
+        type: "string"
+      totalMatchVolume: 
+        type: "integer"
+      totalRank: 
+        type: "integer"
+      totalVolumeBuyUp: 
+        type: "integer"
+      totalVolumeSellDown: 
+        type: "integer"

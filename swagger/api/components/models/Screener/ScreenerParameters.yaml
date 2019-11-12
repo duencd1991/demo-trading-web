@@ -1,0 +1,36 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      code:
+        type: "string"
+      name:
+        type: "string"
+      parameters:
+        type: "array"
+        properties:
+          code:
+            type: "string"
+          name:
+            type: "string"
+          selectedValue:
+            type: "array"
+          type:
+            type: "string"
+          unit:
+            type: "string"
+          valueRange:
+            type: "array"

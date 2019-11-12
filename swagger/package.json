@@ -1,0 +1,31 @@
+{
+  "name": "swagger-wtp24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy-production": "pm2 deploy ecosystem.config.js --env production --force",
+    "reload-production": "pm2 deploy ecosystem.config.js --env production exec 'pm2 reload app'",
+    "lint": "jshint **.js"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "connect": "^3.7.0",
+    "js-yaml": "^3.13.1",
+    "json-refs": "^3.0.13",
+    "moment": "^2.24.0",
+    "namor": "^1.1.2",
+    "oas3-tools": "^1.0.2-RC2",
+    "project": "^0.1.6",
+    "swagger-tools": "^0.10.4"
+  },
+  "devDependencies": {
+    "multi-file-swagger": "^2.3.0",
+    "test-openapi": "^42.3.0"
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../../../../styles/variables';
+
+.fa-bar-chart-wrapper {
+  position: relative;
+  background-color: #1e242e;
+  border-radius: 4px;
+  border: solid 0.5px #555555;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: max-content;
+
+  .chart-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .chart-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chart-legend {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 8px;
+
+    &__item {
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+
+      .title {
+        font-size: 10px;
+        font-weight: 600;
+      }
+
+      .square {
+        width: 10px;
+        height: 10px;
+        border-radius: 1px;
+        margin-right: 4px;
+
+        &--red {
+          background-color: #e84855;
+        }
+
+        &--green {
+          background-color: #37a77d;
+        }
+
+        &--blue {
+          background-color: #359ee4;
+        }
+
+        &--yellow {
+          background-color: #facc5c;
+        }
+      }
+    }
+  }
+}

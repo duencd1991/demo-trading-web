@@ -1,0 +1,22 @@
+type: "object"
+properties:
+  ticker:
+    type: "string"
+  price:
+    type: "number"
+  volume:
+    type: "number"
+  value:
+    type: "number"
+  accumulatedValue:
+    type: "number"
+  time:
+    type: "string"
+  ceilingPrice:
+    type: "number"
+  floorPrice:
+    type: "number"
+  referencePrice:
+    type: "number"
+  matchPrice:
+    type: "number"

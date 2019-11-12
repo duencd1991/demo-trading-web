@@ -1,0 +1,97 @@
+//icon-pen-1
+.wrap-box-icon-pen {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.underline-icon-pen {
+  width: 6px;
+  height: 12px;
+  background: #1f2329;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+  transform: translateX(2px);
+}
+
+.wrap-pen-icon {
+  width: 6px;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #1f2329;
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+.wrap-pen-icon:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  border-top: 3px solid #eee;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.intestine-pen {
+  width: 2px;
+  height: 11px;
+  background: #1f2329;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 2;
+}
+
+//icon-pen-2
+.border-wrap-icon-pen {
+  width: 12px;
+  height: 12px;
+  background: #1f2329;
+  border: 1px solid #ffffff;
+  position: absolute;
+  //transform: translateX(2px);
+}
+
+.position-top {
+  transform: translate(-1px, -9px);
+}
+
+.intestine-pen-position-top {
+  width: 2px;
+  height: 8px;
+  background: #1f2329;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 2;
+}
+
+.wrap-pen-icon-position-top {
+  width: 6px;
+  height: 14px;
+  background: #ffffff;
+  border: 1px solid #1f2329;
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+.wrap-pen-icon-position-top:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  border-top: 3px solid #eee;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+}

@@ -1,0 +1,24 @@
+@import "../../../../styles/variables";
+
+.item-infor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 10px;
+
+  &--first-row, &--second-row {
+    display: flex;
+    .item {
+      display: flex;
+      margin-right: 4px;
+
+      .main-text {
+          color: $grey;
+      }
+
+      .sub-text {
+          margin-left: 2px;
+      }
+    }
+  }
+}

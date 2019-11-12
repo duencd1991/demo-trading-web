@@ -1,0 +1,27 @@
+.footer-status{
+  .btn-border{
+    padding: 3px 10px;
+  }
+  button{
+    border: 0px;
+    background:  transparent;
+    color: $white;
+    font-size: 15px;
+  }
+}
+.footer-section{
+  .text-white{
+    font-weight: 600;
+  }
+  .bor-s-color-5.border{
+    border-radius: 20px !important;
+    border-color: #009d5b !important;
+  }
+}
+.light-mode{
+  .footer-status{
+    button{
+      color: $l_white;
+    }
+  }
+}

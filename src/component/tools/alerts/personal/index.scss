@@ -1,0 +1,30 @@
+@import "./../../../../styles/variables";
+
+.alert-personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: auto;
+
+  .btn-add-setting {
+    margin-bottom: 10px;
+  }
+
+  .search-box-and-setting {
+    // width: 105px;
+    padding-bottom: 10px;
+  }
+
+  .icon-pencil-edit::before {
+    opacity: 0.25;
+    cursor: pointer;
+  }
+
+  .icon-bin-delete::before {
+    opacity: 0.25;
+    cursor: pointer;
+  }
+  .toggle-component {
+    margin: 0 auto;
+  }
+}

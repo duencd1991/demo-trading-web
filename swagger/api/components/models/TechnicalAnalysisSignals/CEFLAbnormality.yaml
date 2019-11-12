@@ -1,0 +1,51 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      abnormalityType:
+        type: "string"
+      averageMatchVolume2Week:
+        type: "integer"
+      ceilingPrice: 
+        type: "integer"
+      floorPrice: 
+        type: "integer"
+      matchPrice: 
+        type: "integer"
+      organCode:
+        type: "string"
+      previouseSession: 
+        type: "integer"
+      rank: 
+        type: "integer"
+      ratio:
+        type: "number"
+      referencePrice: 
+        type: "integer"
+      session: 
+        type: "integer"
+      ticker:
+        type: "string"
+      totalMatchVolume: 
+        type: "integer"
+      totalRank: 
+        type: "integer"
+      tradingDate:
+        type: "string"
+      volumeCEUnmatched: 
+        type: "integer"
+      volumeFLUnmatched: 
+        type: "integer"

@@ -1,0 +1,62 @@
+@import '../../../../styles/variables';
+.mini-bar-chart-wrapper,
+.mini-area-chart-wrapper {
+  margin-top: -1px;
+
+  .react-stockchart {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .bottom-line {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: $l_p_color_2;
+    width: 30px;
+    left: 10px;
+    bottom: 4px;
+  }
+
+  .top-line {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: $l_p_color_2;
+    width: 30px;
+    left: 10px;
+    top: 2px;
+  }
+}
+
+.no-data-mini-bar-chart {
+  width: 30px;
+  height: 10px;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  margin: -1px auto 0;
+
+  &.light {
+    .bar {
+      background-color: $l_bo_color_1;
+    }
+  }
+
+  .bar {
+    background-color: #acf0f2;
+    margin-left: 1px;
+    height: 1px;
+    width: 5px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    background-color: $l_p_color_2;
+  }
+}

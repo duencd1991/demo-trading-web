@@ -1,0 +1,13 @@
+.select-com-wrap {
+  .disabled {
+    opacity: 0.8;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  .hide {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+}

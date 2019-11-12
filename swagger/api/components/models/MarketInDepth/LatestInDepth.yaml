@@ -1,0 +1,101 @@
+type: "object"
+properties:
+  items:
+    type: "array"
+    items:
+      properties:
+        ceiling: 
+          type: "string"
+        closeIndex:
+          type: "number"
+        comGroupCode:
+          type: "string"
+        floor:
+          type: "number"
+        foreignBuyValueDeal:
+          type: "number"
+        foreignBuyValueMatched:
+          type: "number"
+        foreignBuyValueTotal:
+          type: "number"
+        foreignBuyVolumeDeal:
+          type: "number"
+        foreignBuyVolumeMatched:
+          type: "number"
+        foreignBuyVolumeTotal:
+          type: "number"
+        foreignCurrentRoom:
+          type: "number"
+        foreignSellValueDeal:
+          type: "number"
+        foreignSellValueMatched:
+          type: "number"
+        foreignSellValueTotal:
+          type: "number"
+        foreignSellVolumeDeal:
+          type: "number"
+        foreignSellVolumeMatched:
+          type: "number"
+        foreignSellVolumeTotal:
+          type: "number"
+        foreignTotalRoom:
+          type: "number"
+        highestIndex:
+          type: "number"
+        indexChange:
+          type: "number"
+        indexId:
+          type: "number"
+        indexValue:
+          type: "number"
+        lowestIndex:
+          type: "number"
+        marketStatus:
+          type: "number"
+        matchValue:
+          type: "number"
+        matchVolume:
+          type: "number"
+        openIndex:
+          type: "number"
+        percentIndexChange:
+          type: "number"
+        referenceIndex:
+          type: "number"
+        status:
+          type: "number"
+        totalDealValue:
+          type: "number"
+        totalDealVolume:
+          type: "number"
+        totalDownVolume:
+          type: "number"
+        totalMatchValue:
+          type: "number"
+        totalMatchVolume:
+          type: "number"
+        totalNoChangeVolume:
+          type: "number"
+        totalStockDownPrice:
+          type: "number"
+        totalStockNoChangePrice:
+          type: "number"
+        totalStockOverCeiling:
+          type: "number"
+        totalStockUnderFloor:
+          type: "number"
+        totalStockUpPrice:
+          type: "number"
+        totalTrade:
+          type: "number"
+        totalUpVolume:
+          type: "number"
+        totalValue:
+          type: "number"
+        totalVolume:
+          type: "number"
+        tradingDate:
+          type: "string"
+        typeIndex:
+          type: "number"
+        

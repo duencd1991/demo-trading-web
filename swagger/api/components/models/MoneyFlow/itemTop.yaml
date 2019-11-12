@@ -1,0 +1,26 @@
+type: "object"
+properties:
+  averageVolume1Week:
+    type: "integer"
+  contribution:
+    type: "number"
+  contributionPercent:
+    type: "number"
+  matchPrice:
+    type: "integer"
+  organCode:
+    type: "string"
+  percentPriceChange: 
+    type: "number"
+  priceChange:
+    type: "integer"
+  rank:
+    type: "integer"
+  rtd11: 
+    type: "integer"
+  ticker: 
+    type: "string"
+  totalMatchValue: 
+    type: "integer"
+  totalMatchVolume: 
+    type: "integer"

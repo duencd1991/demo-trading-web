@@ -1,0 +1,23 @@
+summary: Valuation Series
+description: Valuation Series
+get:
+  tags:
+  - "MarketInDepth"
+  summary: 'Get Valuation Series'
+  description: 'Get Valuation Series'
+  x-swagger-router-controller: "MarketInDepth"
+  operationId: 'GetValuationSeries'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Code'
+    - $ref: '#/components/parameters/TimeRange'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ValuationSeries'
+    '400':
+      description: Invalid value
+      content: {}

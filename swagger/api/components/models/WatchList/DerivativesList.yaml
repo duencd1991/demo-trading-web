@@ -1,0 +1,17 @@
+type: "object"
+properties:
+  items:
+    type: "object"
+    properties:
+      hose:
+        type: "array"
+        items:
+          $ref: "#/components/schemas/itemDerivativesList"
+      hnx:
+        type: "array"
+        items:
+          $ref: "#/components/schemas/itemDerivativesList"
+      upcom:
+        type: "array"
+        items:
+          $ref: "#/components/schemas/itemDerivativesList"

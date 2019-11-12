@@ -1,0 +1,20 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      quarterly: "#/components/schemas/itemBalanceSheet"
+      yearly: "#/components/schemas/itemBalanceSheet"
+      

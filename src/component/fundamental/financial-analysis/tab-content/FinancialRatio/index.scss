@@ -1,0 +1,18 @@
+@import "../../../../../styles/variables";
+
+.fr-wrapper {
+  display: flex;
+
+  .right-content {
+    display: flex;
+    width: 50%;
+    min-width: 600px;
+  }
+
+  .left-content {
+    display: flex;
+    width: 50%;
+    min-width: 700px;
+    max-height: 500px;
+  }
+}

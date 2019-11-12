@@ -1,0 +1,25 @@
+summary: Get WatchListNews
+description: Get WatchListNews
+get:
+  tags:
+  - "WatchList"
+  summary: 'Get WatchListNews'
+  description: 'Get WatchListNews'
+  x-swagger-router-controller: "WatchList"
+  operationId: 'GetWatchListNews'
+  parameters:
+    - $ref: '#/components/parameters/language'
+    - $ref: '#/components/parameters/Page'
+    - $ref: '#/components/parameters/PageSize'
+    - $ref: '#/components/parameters/watchListId'
+    - $ref: '#/components/parameters/watchListType'
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/WatchListNews'
+    '400':
+      description: Invalid value
+      content: {}

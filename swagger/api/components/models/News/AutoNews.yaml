@@ -1,0 +1,244 @@
+type: "object"
+properties:
+  error:
+    type: "string"
+  packageId:
+    type: "string"
+  page:
+    type: "integer"
+  pageSize:
+    type: "integer"
+  status:
+    type: "string"
+  totalCount:
+    type: "integer"
+  items:
+    type: "array"
+    properties:
+      categoryName:
+        type: "string"
+      comGroupCode: 
+        type: "string"
+      contributor: 
+        type: "string"
+      createDate: 
+        type: "string"
+      index: 
+        type: "object"
+        properties:
+          ceiling:
+            type: "integer"
+          closeIndex: 
+            type: "integer"
+          comGroupCode: 
+            type: "string"
+          floor: 
+            type: "integer"
+          foreignBuyValueDeal: 
+            type: "integer"
+          foreignBuyValueMatched: 
+            type: "integer"
+          foreignBuyValueTotal: 
+            type: "integer"
+          foreignBuyVolumeDeal: 
+            type: "integer"
+          foreignBuyVolumeMatched: 
+            type: "integer"
+          foreignBuyVolumeTotal: 
+            type: "integer"
+          foreignCurrentRoom: 
+            type: "integer"
+          foreignSellValueDeal: 
+            type: "integer"
+          foreignSellValueMatched: 
+            type: "integer"
+          foreignSellValueTotal: 
+            type: "integer"
+          foreignSellVolumeDeal: 
+            type: "integer"
+          foreignSellVolumeMatched: 
+            type: "integer"
+          foreignSellVolumeTotal: 
+            type: "integer"
+          foreignTotalRoom: 
+            type: "integer"
+          highestIndex:
+            type: "number"
+          indexChange:
+            type: "number"
+          indexId: 
+            type: "integer"
+          indexValue: 
+            type: "number"
+          lowestIndex: 
+            type: "number"
+          marketStatus:
+            type: "string"
+          matchValue: 
+            type: "integer"
+          matchVolume: 
+            type: "integer"
+          openIndex: 
+            type: "number"
+          percentIndexChange: 
+            type: "number"
+          referenceIndex: 
+            type: "number"
+          status: 
+            type: "integer"
+          totalDealValue: 
+            type: "integer"
+          totalDealVolume: 
+            type: "integer"
+          totalDownVolume: 
+            type: "integer"
+          totalMatchValue: 
+            type: "integer"
+          totalMatchVolume: 
+            type: "integer"
+          totalNoChangeVolume: 
+            type: "integer"
+          totalStockDownPrice: 
+            type: "integer"
+          totalStockNoChangePrice: 
+            type: "integer"
+          totalStockOverCeiling: 
+            type: "integer"
+          totalStockUnderFloor: 
+            type: "integer"
+          totalStockUpPrice: 
+            type: "integer"
+          totalTrade: 
+            type: "integer"
+          totalUpVolume: 
+            type: "integer"
+          totalValue: 
+            type: "integer"
+          totalVolume: 
+            type: "integer"
+          tradingDate: 
+            type: "string"
+          typeIndex: 
+            type: "integer"
+      isFavorite: 
+        type: "boolean"
+      newsCategoryCode:
+        type: "string"
+      newsId: 
+        type: "integer"
+      newsShortContent: 
+        type: "string"
+      newsSourceLink: 
+        type: "string"
+      newsTitle: 
+        type: "string"
+      organCode:
+        type: "string"
+      priceInfo: 
+        type: "object"
+        properties:
+          averagePrice: 
+            type: "integer"
+          best1Bid: 
+            type: "integer"
+          best1BidVolume: 
+            type: "integer"
+          best1Offer: 
+            type: "integer"
+          best1OfferVolume: 
+            type: "integer"
+          ceilingPrice: 
+            type: "integer"
+          closePrice: 
+            type: "integer"
+          comGroupCode:
+            type: "string"
+          dealPrice: 
+            type: "integer"
+          dealValue: 
+            type: "integer"
+          dealVolume: 
+            type: "integer"
+          floorPrice: 
+            type: "integer"
+          foreignBuyValueDeal: 
+            type: "integer"
+          foreignBuyValueMatched: 
+            type: "integer"
+          foreignBuyValueTotal: 
+            type: "integer"
+          foreignBuyVolumeDeal: 
+            type: "integer"
+          foreignBuyVolumeMatched: 
+            type: "integer"
+          foreignBuyVolumeTotal: 
+            type: "integer"
+          foreignCurrentRoom: 
+            type: "integer"
+          foreignSellValueDeal: 
+            type: "integer"
+          foreignSellValueMatched: 
+            type: "integer"
+          foreignSellValueTotal: 
+            type: "integer"
+          foreignSellVolumeDeal: 
+            type: "integer"
+          foreignSellVolumeMatched: 
+            type: "integer"
+          foreignSellVolumeTotal: 
+            type: "integer"
+          foreignTotalRoom: 
+            type: "integer"
+          highestPrice: 
+            type: "integer"
+          lowestPrice: 
+            type: "integer"
+          marketStatus: null
+          matchPrice: 
+            type: "integer"
+          matchType: 
+            type: "integer"
+          matchValue: 
+            type: "integer"
+          matchVolume: 
+            type: "integer"
+          openPrice: 
+            type: "integer"
+          organCode:
+            type: "string"
+          percentPriceChange: 
+            type: "number"
+          priceChange: 
+            type: "integer"
+          referenceDate: 
+            type: "string"
+          referencePrice: 
+            type: "integer"
+          ticker:
+            type: "string"
+          totalBuyTradeVolume: 
+            type: "integer"
+          totalDealValue: 
+            type: "integer"
+          totalDealVolume: 
+            type: "integer"
+          totalMatchValue:  
+            type: "integer"
+          totalMatchVolume: 
+            type: "integer"
+          totalSellTradeVolume: 
+            type: "integer"
+          totalValue: 
+            type: "integer"
+          totalVolume:  
+            type: "integer"
+          tradingDate:
+            type: "string"
+      publicDate:
+        type: "string"
+      sourceCode: 
+        type: "string"
+      ticker:
+        type: "string"
+      trustAbility: 
+        type: "string"
